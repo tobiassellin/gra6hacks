@@ -270,25 +270,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const adWrap = document.createElement("div");
     adWrap.className = "infeed-ad-card";
     adWrap.setAttribute("role", "complementary");
-    adWrap.setAttribute("aria-label", `In-feed annons ${slotIndex}`);
+    adWrap.setAttribute("aria-label", `Annons ${slotIndex}`);
 
-    const adSlot = document.createElement("div");
-    adSlot.className = "ad-slot";
-    adSlot.style.width = "100%";
-    adSlot.style.minHeight = "90px";
-    adSlot.dataset.adFormat = "fluid";
+    const ins = document.createElement("ins");
+    ins.className = "adsbygoogle";
+    ins.style.display = "block";
+    ins.dataset.adFormat = "fluid";
+    ins.dataset.adLayoutKey = "-fb+5w+4e-db+86";
+    ins.dataset.adClient = "ca-pub-3461073406787574";
+    ins.dataset.adSlot = "5444765227";
 
-    const label = document.createElement("span");
-    label.className = "ad-label";
-    label.textContent = `Annons · In-feed #${slotIndex}`;
-
-    const text = document.createElement("div");
-    text.className = "ad-placeholder-text";
-    text.textContent = "Google AdSense In-feed / Native-annons";
-
-    adSlot.append(label, text);
-    adWrap.appendChild(adSlot);
+    adWrap.appendChild(ins);
     return adWrap;
+  }
+
+  /**
+   * Initierar nya in-feed-annonser efter att de lagts till i DOM:en.
+   */
+  function initInFeedAds() {
+    const uninitializedAds = gridEl.querySelectorAll(
+      "ins.adsbygoogle:not([data-adsbygoogle-status])"
+    );
+    uninitializedAds.forEach(() => {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (_err) {
+        // Ignorera om AdSense-skriptet blockeras av annonsblockerare
+      }
+    });
   }
 
   /**
@@ -336,6 +345,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     gridEl.appendChild(fragment);
+    initInFeedAds();
   }
 
   /**
@@ -347,14 +357,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Livesökning
+  // Livesökning med debounce så in-feed-annonser inte skapas om på varje tangenttryckning
+  let searchDebounceTimer = null;
   searchInput.addEventListener("input", (event) => {
     state.search = event.target.value;
     clearSearchBtn.hidden = state.search.length === 0;
-    renderCheats();
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(() => {
+      renderCheats();
+    }, 250);
   });
 
   clearSearchBtn.addEventListener("click", () => {
+    clearTimeout(searchDebounceTimer);
     searchInput.value = "";
     state.search = "";
     clearSearchBtn.hidden = true;
