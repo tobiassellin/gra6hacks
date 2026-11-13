@@ -421,6 +421,65 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /**
+   * Övervakar AdSense-enheter och fäller automatiskt ut/ihop ytor utifrån om en annons laddats.
+   */
+  function syncAdContainer(ins) {
+    const container = ins.closest(
+      ".ad-banner-top-wrap, .ad-rectangle-wrap, .infeed-ad-card, #sticky-bottom-ad, .ad-rail"
+    );
+    if (!container) return;
+
+    const status = ins.getAttribute("data-ad-status");
+    if (status === "filled") {
+      container.classList.remove("ad-unfilled");
+      container.classList.add("ad-filled");
+      if (container.id === "sticky-bottom-ad" && !container.hidden && siteFooter) {
+        siteFooter.classList.add("has-bottom-ad");
+      }
+    } else if (status === "unfilled") {
+      container.classList.remove("ad-filled");
+      container.classList.add("ad-unfilled");
+      if (container.id === "sticky-bottom-ad" && siteFooter) {
+        siteFooter.classList.remove("has-bottom-ad");
+      }
+    }
+  }
+
+  function observeAdSlots() {
+    document.querySelectorAll("ins.adsbygoogle").forEach(syncAdContainer);
+
+    if (typeof MutationObserver !== "function") return;
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.target instanceof HTMLElement &&
+          mutation.target.matches("ins.adsbygoogle")
+        ) {
+          syncAdContainer(mutation.target);
+        } else if (mutation.type === "childList") {
+          mutation.addedNodes.forEach((node) => {
+            if (!(node instanceof HTMLElement)) return;
+            if (node.matches("ins.adsbygoogle")) {
+              syncAdContainer(node);
+            } else {
+              node.querySelectorAll("ins.adsbygoogle").forEach(syncAdContainer);
+            }
+          });
+        }
+      });
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["data-ad-status"],
+      childList: true,
+      subtree: true
+    });
+  }
+
   // Initial rendering
+  observeAdSlots();
   renderCheats();
 });

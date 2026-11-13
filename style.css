@@ -406,13 +406,20 @@ a:focus-visible {
   width: 100%;
   max-width: 728px;
   height: auto;
-  min-height: 90px;
+  min-height: 0;
 }
 
 .ad-slot--live.ad-skyscraper {
   width: 160px;
   height: auto;
-  min-height: 600px;
+  min-height: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.ad-rail.ad-filled .ad-slot--live.ad-skyscraper,
+.ad-rail:has(ins.adsbygoogle[data-ad-status="filled"]) .ad-slot--live.ad-skyscraper {
+  opacity: 1;
 }
 
 .ad-slot--live.ad-large-rectangle {
@@ -438,11 +445,25 @@ a:focus-visible {
   }
 }
 
-/* Toppbanner: 320x100 mobil -> 728x90 desktop */
+/* Toppbanner: 320x100 mobil -> 728x90 desktop (ihopfälld tills annons laddats) */
 .ad-banner-top-wrap {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-height: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.ad-banner-top-wrap.ad-filled,
+.ad-banner-top-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) {
+  max-height: none;
   margin-bottom: 22px;
+  overflow: visible;
+}
+
+.ad-banner-top-wrap.ad-unfilled {
+  display: none;
 }
 
 .ad-top-banner {
@@ -464,11 +485,25 @@ a:focus-visible {
   height: 600px;
 }
 
-/* Stor rektangel: 336x280 */
+/* Stor rektangel: 336x280 (ihopfälld tills annons laddats) */
 .ad-rectangle-wrap {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ad-rectangle-wrap.ad-filled,
+.ad-rectangle-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) {
+  max-height: none;
   margin: 30px 0;
+  overflow: visible;
+}
+
+.ad-rectangle-wrap.ad-unfilled {
+  display: none;
 }
 
 .ad-large-rectangle {
@@ -477,17 +512,34 @@ a:focus-visible {
   height: 280px;
 }
 
-/* In-feed-annonskort i rutnätet */
+/* In-feed-annonskort i rutnätet (ihopfällt utan extra grid-mellanrum tills annons laddats) */
 .infeed-ad-card {
   grid-column: 1 / -1;
   display: block;
   width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-md);
+  padding: 0;
+  margin: -8px 0;
+  min-height: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.infeed-ad-card.ad-filled,
+.infeed-ad-card:has(ins.adsbygoogle[data-ad-status="filled"]) {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
   padding: 8px;
+  margin: 0;
   min-height: 90px;
-  overflow: hidden;
+  max-height: none;
+  overflow: visible;
+}
+
+.infeed-ad-card.ad-unfilled {
+  display: none;
 }
 
 /* ==========================================================================
@@ -754,12 +806,16 @@ kbd.kbd-pending {
   border-top: 1px solid var(--border-subtle);
   background: rgba(13, 11, 20, 0.96);
   margin-top: 32px;
-  padding: 26px 16px 92px; /* Extra padding-bottom för mobil sticky 320x50 */
+  padding: 26px 16px 32px;
   text-align: center;
 }
 
+.site-footer.has-bottom-ad {
+  padding-bottom: 92px; /* Extra padding-bottom för mobil sticky 320x50 */
+}
+
 @media (min-width: 768px) {
-  .site-footer {
+  .site-footer.has-bottom-ad {
     padding-bottom: 132px; /* Extra padding-bottom för desktop sticky 728x90 */
   }
 }
@@ -807,9 +863,21 @@ kbd.kbd-pending {
   display: flex;
   justify-content: center;
   box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.65);
+  transform: translateY(110%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.sticky-bottom-ad[hidden] {
+.sticky-bottom-ad.ad-filled,
+.sticky-bottom-ad:has(ins.adsbygoogle[data-ad-status="filled"]) {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sticky-bottom-ad[hidden],
+.sticky-bottom-ad.ad-unfilled {
   display: none;
 }
 
