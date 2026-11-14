@@ -775,8 +775,14 @@ kbd.kbd-pending {
 
 @media (min-width: 768px) {
   .faq-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+.last-updated {
+  margin: 10px 0 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
 }
 
 .faq-item {
