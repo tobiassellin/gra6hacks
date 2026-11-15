@@ -1,0 +1,12 @@
+# ai.txt for gta6hacks.se
+User-Agent: *
+Allow: /
+
+Site-Name: GTA 6 Fuskkoder Sverige
+Site-URL: https://gta6hacks.se/
+Language: sv-SE
+Description: Svensk guide och sökbar databas med fuskkoder till Grand Theft Auto VI (GTA 6) för PlayStation 5, Xbox Series X|S och mobiltelefon i spelet.
+Attribution: Källa: GTA 6 Fuskkoder Sverige (https://gta6hacks.se/)
+Contact: kontakt@gta6hacks.se
+LLMs-Txt: https://gta6hacks.se/llms.txt
+Sitemap: https://gta6hacks.se/sitemap.xml
