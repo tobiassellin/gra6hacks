@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="ssdBg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#251636"/>
+      <stop offset="100%" stop-color="#0d0b14"/>
+    </linearGradient>
+    <linearGradient id="ssdSink" x1="16" y1="38" x2="104" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2c2545"/>
+      <stop offset="100%" stop-color="#141122"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="20" fill="url(#ssdBg)" stroke="rgba(255,42,133,0.38)" stroke-width="2"/>
+  <!-- M.2 Gold Connector Pins -->
+  <rect x="12" y="49" width="8" height="22" rx="2" fill="#fbbf24"/>
+  <!-- Heatsink Body -->
+  <rect x="18" y="38" width="88" height="44" rx="6" fill="url(#ssdSink)" stroke="#00e5ff" stroke-width="2.2"/>
+  <!-- Diagonal Heatsink Fins -->
+  <line x1="30" y1="38" x2="24" y2="82" stroke="#ff2a85" stroke-width="2" stroke-opacity="0.75"/>
+  <line x1="42" y1="38" x2="36" y2="82" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.65"/>
+  <line x1="88" y1="38" x2="82" y2="82" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.65"/>
+  <line x1="98" y1="38" x2="92" y2="82" stroke="#ff2a85" stroke-width="2" stroke-opacity="0.75"/>
+  <!-- Center Speed Badge -->
+  <rect x="44" y="47" width="36" height="26" rx="5" fill="#0d0b14" stroke="#ff2a85" stroke-width="1.5"/>
+  <text x="62" y="59" text-anchor="middle" fill="#00e5ff" font-family="system-ui, sans-serif" font-size="9" font-weight="900">M.2 SSD</text>
+  <text x="62" y="69" text-anchor="middle" fill="#f5f3ff" font-family="system-ui, sans-serif" font-size="7.5" font-weight="700">7400 MB/s</text>
+</svg>

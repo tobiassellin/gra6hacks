@@ -268,18 +268,24 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "PlayStation 5 DualSense Trådlös Handkontroll",
       desc: "Perfekt inför GTA 6 i Vice City – känn varje krock, explosion och gaspådrag med haptisk feedback.",
       cta: "Se pris på Amazon.se →",
+      img: "assets/controller.svg",
+      alt: "PlayStation 5 DualSense trådlös handkontroll",
       url: "https://www.amazon.se/s?k=PS5+DualSense+handkontroll&tag=gta6hacks-21"
     },
     {
       title: "Trådlöst Gaming-Headset för PS5 & Xbox Series X|S",
       desc: "Upplev 3D-ljudet på gatorna i Leonida med kristallklart ljud och bekväm passform för långa pass.",
       cta: "Kolla utbud på Amazon.se →",
+      img: "assets/headset.svg",
+      alt: "Trådlöst gaming-headset för PS5 och Xbox Series X|S",
       url: "https://www.amazon.se/s?k=gaming+headset+ps5+xbox&tag=gta6hacks-21"
     },
     {
       title: "Snabb M.2 NVMe SSD med kylfläns (1 TB / 2 TB) till PS5",
       desc: "Frigör lagringsutrymme och få blixtsnabba laddningstider inför installationen av Grand Theft Auto VI.",
       cta: "Jämför SSD på Amazon.se →",
+      img: "assets/ssd.svg",
+      alt: "Snabb M.2 NVMe SSD med kylfläns till PS5",
       url: "https://www.amazon.se/s?k=ps5+ssd+m2+heatsink&tag=gta6hacks-21"
     }
   ];
@@ -309,6 +315,14 @@ document.addEventListener("DOMContentLoaded", () => {
     fallbackLink.rel = "sponsored nofollow noopener";
     fallbackLink.className = "amazon-fallback amazon-infeed-card";
 
+    const thumb = document.createElement("img");
+    thumb.src = offer.img;
+    thumb.alt = offer.alt;
+    thumb.width = 68;
+    thumb.height = 68;
+    thumb.loading = "lazy";
+    thumb.className = "amazon-thumb";
+
     const copyWrap = document.createElement("div");
     copyWrap.className = "amazon-banner-copy";
 
@@ -329,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cta.textContent = offer.cta;
 
     copyWrap.append(badge, title, desc);
-    fallbackLink.append(copyWrap, cta);
+    fallbackLink.append(thumb, copyWrap, cta);
 
     adWrap.append(ins, fallbackLink);
     return adWrap;
