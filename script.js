@@ -276,16 +276,16 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Trådlöst Gaming-Headset för PS5 & Xbox Series X|S",
       desc: "Upplev 3D-ljudet på gatorna i Leonida med kristallklart ljud och bekväm passform för långa pass.",
       cta: "Kolla utbud på Amazon.se →",
-      img: "assets/headset.svg",
-      alt: "Trådlöst gaming-headset för PS5 och Xbox Series X|S",
+      img: "https://m.media-amazon.com/images/I/71Gc7gSd2tL._AC_SL300_.jpg",
+      alt: "Trådlöst gaming-headset för PS5 och Xbox Series X|S på Amazon.se",
       url: "https://www.amazon.se/s?k=gaming+headset+ps5+xbox&tag=gta6hacks-21"
     },
     {
       title: "Snabb M.2 NVMe SSD med kylfläns (1 TB / 2 TB) till PS5",
       desc: "Frigör lagringsutrymme och få blixtsnabba laddningstider inför installationen av Grand Theft Auto VI.",
       cta: "Jämför SSD på Amazon.se →",
-      img: "assets/ssd.svg",
-      alt: "Snabb M.2 NVMe SSD med kylfläns till PS5",
+      img: "https://m.media-amazon.com/images/I/71HdPilz0CL._AC_SL300_.jpg",
+      alt: "Snabb M.2 NVMe SSD med kylfläns till PS5 på Amazon.se",
       url: "https://www.amazon.se/s?k=ps5+ssd+m2+heatsink&tag=gta6hacks-21"
     }
   ];

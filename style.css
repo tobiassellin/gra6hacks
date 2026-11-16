@@ -561,6 +561,9 @@ a.amazon-fallback:hover {
   flex-shrink: 0;
   border-radius: 12px;
   display: block;
+  background: #ffffff;
+  object-fit: contain;
+  padding: 4px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
