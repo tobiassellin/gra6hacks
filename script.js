@@ -268,8 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "PlayStation 5 DualSense Trådlös Handkontroll",
       desc: "Perfekt inför GTA 6 i Vice City – känn varje krock, explosion och gaspådrag med haptisk feedback.",
       cta: "Se pris på Amazon.se →",
-      img: "assets/controller.svg",
-      alt: "PlayStation 5 DualSense trådlös handkontroll",
+      img: "https://m.media-amazon.com/images/I/61wKe+YH9BL._AC_SL300_.jpg",
+      alt: "PlayStation 5 DualSense trådlös handkontroll på Amazon.se",
       url: "https://www.amazon.se/s?k=PS5+DualSense+handkontroll&tag=gta6hacks-21"
     },
     {
