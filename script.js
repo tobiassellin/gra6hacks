@@ -263,8 +263,30 @@ document.addEventListener("DOMContentLoaded", () => {
     return card;
   }
 
+  const AMAZON_INFEED_OFFERS = [
+    {
+      title: "PlayStation 5 DualSense Trådlös Handkontroll",
+      desc: "Perfekt inför GTA 6 i Vice City – känn varje krock, explosion och gaspådrag med haptisk feedback.",
+      cta: "Se pris på Amazon.se →",
+      url: "https://www.amazon.se/s?k=PS5+DualSense+handkontroll&tag=gta6hacks-21"
+    },
+    {
+      title: "Trådlöst Gaming-Headset för PS5 & Xbox Series X|S",
+      desc: "Upplev 3D-ljudet på gatorna i Leonida med kristallklart ljud och bekväm passform för långa pass.",
+      cta: "Kolla utbud på Amazon.se →",
+      url: "https://www.amazon.se/s?k=gaming+headset+ps5+xbox&tag=gta6hacks-21"
+    },
+    {
+      title: "Snabb M.2 NVMe SSD med kylfläns (1 TB / 2 TB) till PS5",
+      desc: "Frigör lagringsutrymme och få blixtsnabba laddningstider inför installationen av Grand Theft Auto VI.",
+      cta: "Jämför SSD på Amazon.se →",
+      url: "https://www.amazon.se/s?k=ps5+ssd+m2+heatsink&tag=gta6hacks-21"
+    }
+  ];
+
   /**
    * Skapar ett in-feed-annonskort som skjuts in efter var 4:e fuskkod.
+   * Visar Amazon.se-rekommendation tills Google AdSense fyllt platsen.
    */
   function createInFeedAdCard(slotIndex) {
     const adWrap = document.createElement("div");
@@ -280,7 +302,36 @@ document.addEventListener("DOMContentLoaded", () => {
     ins.dataset.adClient = "ca-pub-3461073406787574";
     ins.dataset.adSlot = "5444765227";
 
-    adWrap.appendChild(ins);
+    const offer = AMAZON_INFEED_OFFERS[(slotIndex - 1) % AMAZON_INFEED_OFFERS.length];
+    const fallbackLink = document.createElement("a");
+    fallbackLink.href = offer.url;
+    fallbackLink.target = "_blank";
+    fallbackLink.rel = "sponsored nofollow noopener";
+    fallbackLink.className = "amazon-fallback amazon-infeed-card";
+
+    const copyWrap = document.createElement("div");
+    copyWrap.className = "amazon-banner-copy";
+
+    const badge = document.createElement("span");
+    badge.className = "amazon-badge";
+    badge.textContent = "Annons · Amazon.se";
+
+    const title = document.createElement("strong");
+    title.className = "amazon-banner-title";
+    title.textContent = offer.title;
+
+    const desc = document.createElement("span");
+    desc.className = "amazon-banner-sub";
+    desc.textContent = offer.desc;
+
+    const cta = document.createElement("span");
+    cta.className = "amazon-cta";
+    cta.textContent = offer.cta;
+
+    copyWrap.append(badge, title, desc);
+    fallbackLink.append(copyWrap, cta);
+
+    adWrap.append(ins, fallbackLink);
     return adWrap;
   }
 
@@ -416,13 +467,15 @@ document.addEventListener("DOMContentLoaded", () => {
     closeStickyBtn.addEventListener("click", () => {
       stickyBottomAd.hidden = true;
       if (siteFooter) {
+        siteFooter.classList.remove("has-bottom-ad");
         siteFooter.classList.add("banner-dismissed");
       }
     });
   }
 
   /**
-   * Övervakar AdSense-enheter och fäller automatiskt ut/ihop ytor utifrån om en annons laddats.
+   * Övervakar AdSense-enheter: när Google fyller en plats (data-ad-status="filled")
+   * döljs Amazon-fallbacken automatiskt till förmån för AdSense-annonsen.
    */
   function syncAdContainer(ins) {
     const container = ins.closest(
@@ -434,15 +487,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (status === "filled") {
       container.classList.remove("ad-unfilled");
       container.classList.add("ad-filled");
-      if (container.id === "sticky-bottom-ad" && !container.hidden && siteFooter) {
-        siteFooter.classList.add("has-bottom-ad");
-      }
-    } else if (status === "unfilled") {
+    } else {
       container.classList.remove("ad-filled");
-      container.classList.add("ad-unfilled");
-      if (container.id === "sticky-bottom-ad" && siteFooter) {
-        siteFooter.classList.remove("has-bottom-ad");
-      }
     }
   }
 

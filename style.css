@@ -402,6 +402,14 @@ a:focus-visible {
   overflow: visible;
 }
 
+/* Håll AdSense <ins> på 0 px höjd (men med full bredd) tills en annons fyllts */
+ins.adsbygoogle:not([data-ad-status="filled"]) {
+  max-height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+
 .ad-slot--live.ad-top-banner {
   width: 100%;
   max-width: 728px;
@@ -413,19 +421,13 @@ a:focus-visible {
   width: 160px;
   height: auto;
   min-height: 0;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.ad-rail.ad-filled .ad-slot--live.ad-skyscraper,
-.ad-rail:has(ins.adsbygoogle[data-ad-status="filled"]) .ad-slot--live.ad-skyscraper {
-  opacity: 1;
 }
 
 .ad-slot--live.ad-large-rectangle {
   width: 336px;
   max-width: 100%;
-  height: 280px;
+  height: auto;
+  min-height: 0;
 }
 
 .ad-slot--live.ad-bottom-banner {
@@ -440,30 +442,17 @@ a:focus-visible {
 @media (min-width: 768px) {
   .ad-slot--live.ad-bottom-banner {
     width: 728px;
-    min-height: 90px;
+    min-height: 56px;
     max-height: 100px;
   }
 }
 
-/* Toppbanner: 320x100 mobil -> 728x90 desktop (ihopfälld tills annons laddats) */
+/* Toppbanner */
 .ad-banner-top-wrap {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-height: 0;
-  margin-bottom: 0;
-  overflow: hidden;
-}
-
-.ad-banner-top-wrap.ad-filled,
-.ad-banner-top-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) {
-  max-height: none;
   margin-bottom: 22px;
-  overflow: visible;
-}
-
-.ad-banner-top-wrap.ad-unfilled {
-  display: none;
 }
 
 .ad-top-banner {
@@ -485,25 +474,12 @@ a:focus-visible {
   height: 600px;
 }
 
-/* Stor rektangel: 336x280 (ihopfälld tills annons laddats) */
+/* Stor rektangel: 336x280 */
 .ad-rectangle-wrap {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-height: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-.ad-rectangle-wrap.ad-filled,
-.ad-rectangle-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) {
-  max-height: none;
   margin: 30px 0;
-  overflow: visible;
-}
-
-.ad-rectangle-wrap.ad-unfilled {
-  display: none;
 }
 
 .ad-large-rectangle {
@@ -512,34 +488,201 @@ a:focus-visible {
   height: 280px;
 }
 
-/* In-feed-annonskort i rutnätet (ihopfällt utan extra grid-mellanrum tills annons laddats) */
+/* In-feed-annonskort i rutnätet */
 .infeed-ad-card {
   grid-column: 1 / -1;
   display: block;
   width: 100%;
-  background: transparent;
-  border: 0;
-  border-radius: var(--radius-md);
-  padding: 0;
-  margin: -8px 0;
-  min-height: 0;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.infeed-ad-card.ad-filled,
-.infeed-ad-card:has(ins.adsbygoogle[data-ad-status="filled"]) {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  padding: 8px;
-  margin: 0;
+  border: 1px solid rgba(255, 42, 133, 0.32);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
   min-height: 90px;
-  max-height: none;
-  overflow: visible;
+  box-shadow: var(--shadow-card);
 }
 
-.infeed-ad-card.ad-unfilled {
-  display: none;
+/* Dölj Amazon-fallback automatiskt så fort Google AdSense fyllt platsen */
+.ad-filled .amazon-fallback,
+.ad-banner-top-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) .amazon-fallback,
+.ad-rectangle-wrap:has(ins.adsbygoogle[data-ad-status="filled"]) .amazon-fallback,
+.infeed-ad-card:has(ins.adsbygoogle[data-ad-status="filled"]) .amazon-fallback,
+.sticky-bottom-ad:has(ins.adsbygoogle[data-ad-status="filled"]) .amazon-fallback,
+.ad-rail:has(ins.adsbygoogle[data-ad-status="filled"]) .amazon-fallback {
+  display: none !important;
+}
+
+/* Amazon.se Vice City Neon Fallback-komponenter */
+.amazon-fallback {
+  text-decoration: none;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, rgba(23, 20, 36, 0.98) 0%, rgba(33, 28, 54, 0.96) 100%);
+  border: 1px solid rgba(0, 229, 255, 0.32);
+  border-radius: var(--radius-md);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+a.amazon-fallback:hover {
+  text-decoration: none;
+  border-color: var(--accent-pink);
+  box-shadow: 0 0 18px rgba(255, 42, 133, 0.22);
+}
+
+.amazon-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+  margin-bottom: 3px;
+}
+
+.amazon-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #c91460, #9c0f4b);
+  border: 1px solid var(--accent-pink);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.amazon-cta:hover {
+  background: linear-gradient(135deg, #e0196c, #b51258);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.amazon-cta-secondary {
+  background: rgba(0, 229, 255, 0.14);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.amazon-top-banner,
+.amazon-infeed-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.amazon-infeed-card {
+  border: none;
+  background: transparent;
+  padding: 2px 0;
+}
+
+.amazon-banner-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 200px;
+  flex: 1;
+}
+
+.amazon-banner-title {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.amazon-banner-sub {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.amazon-rect-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  min-height: 250px;
+  text-align: left;
+}
+
+.amazon-rect-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
+.amazon-rect-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.amazon-rect-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.amazon-skyscraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 12px;
+  width: 160px;
+  min-height: 420px;
+  text-align: left;
+}
+
+.amazon-sky-title {
+  font-size: 0.98rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.amazon-sky-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.amazon-skyscraper .amazon-cta {
+  width: 100%;
+  font-size: 0.78rem;
+  padding: 8px 10px;
+}
+
+.amazon-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 12px;
+  width: 100%;
+  min-height: 46px;
+}
+
+.amazon-bottom-Bar .amazon-badge,
+.amazon-bottom-bar .amazon-badge {
+  margin-bottom: 0;
+}
+
+.amazon-bottom-text {
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.amazon-cta-sm {
+  padding: 5px 11px;
+  font-size: 0.78rem;
 }
 
 /* ==========================================================================
@@ -916,21 +1059,9 @@ kbd.kbd-pending {
   display: flex;
   justify-content: center;
   box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.65);
-  transform: translateY(110%);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.sticky-bottom-ad.ad-filled,
-.sticky-bottom-ad:has(ins.adsbygoogle[data-ad-status="filled"]) {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.sticky-bottom-ad[hidden],
-.sticky-bottom-ad.ad-unfilled {
+.sticky-bottom-ad[hidden] {
   display: none;
 }
 
