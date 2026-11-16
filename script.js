@@ -318,8 +318,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const thumb = document.createElement("img");
     thumb.src = offer.img;
     thumb.alt = offer.alt;
-    thumb.width = 68;
-    thumb.height = 68;
+    thumb.width = 96;
+    thumb.height = 88;
     thumb.loading = "lazy";
     thumb.className = "amazon-thumb";
 
