@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0d0b14">
   <link rel="canonical" href="https://gta6hacks.se/">
+  <link rel="alternate" hreflang="sv" href="https://gta6hacks.se/">
+  <link rel="alternate" hreflang="en" href="https://gta6hacks.se/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://gta6hacks.se/">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" href="logo.png">
 
@@ -48,7 +51,7 @@
           "@type": "ContactPoint",
           "email": "kontakt@gta6hacks.se",
           "contactType": "editorial",
-          "availableLanguage": ["sv"]
+          "availableLanguage": ["sv", "en"]
         }
       },
       {
@@ -69,7 +72,7 @@
         "about": { "@id": "https://gta6hacks.se/#organization" },
         "inLanguage": "sv-SE",
         "datePublished": "2026-11-13",
-        "dateModified": "2026-11-15"
+        "dateModified": "2026-11-17"
       },
       {
         "@type": "FAQPage",
@@ -123,28 +126,34 @@
       <div class="brand-row">
         <a href="index.html" class="brand-logo" aria-label="GTA 6 Fuskkoder startsida">
           <span class="logo-gta">GTA VI</span>
-          <span class="logo-sub">FUSK &amp; KODER</span>
+          <span class="logo-sub" data-i18n="logoSub">FUSK &amp; KODER</span>
         </a>
-        <span class="release-badge" title="Lansering 19 november 2026">
-          <span class="pulse-dot" aria-hidden="true"></span>
-          Lansering 19 nov 2026
-        </span>
+        <div class="header-badges">
+          <div class="lang-switch" role="group" aria-label="Språk / Language">
+            <button type="button" class="lang-btn active" data-lang="sv" aria-pressed="true">SV</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <span class="release-badge" title="19 Nov 2026">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="releaseBadge">Lansering 19 nov 2026</span>
+          </span>
+        </div>
       </div>
-      <h1>Alla fuskkoder till GTA 6 – PS5, Xbox &amp; Telefon</h1>
-      <p class="hero-lead">
+      <h1 data-i18n="heroTitle">Alla fuskkoder till GTA 6 – PS5, Xbox &amp; Telefon</h1>
+      <p class="hero-lead" data-i18n-html="heroLead">
         Sök och filtrera bland kommande fuskkoder för <strong>Grand Theft Auto VI</strong> i Vice City och Leonida.
         Databasen uppdateras live med verifierade knappkombinationer så fort spelet släpps den 19 november 2026.
       </p>
-      <p class="last-updated">
-        Senast uppdaterad: <time datetime="2026-11-15">15 november 2026</time> &middot; Guiden för PS5, Xbox Series X|S &amp; Telefon
+      <p class="last-updated" data-i18n-html="lastUpdated">
+        Senast uppdaterad: <time datetime="2026-11-17">17 november 2026</time> &middot; Guiden för PS5, Xbox Series X|S &amp; Telefon
       </p>
       <nav class="quick-nav" aria-label="Snabbnavigering">
-        <a href="#fuskkoder">Alla fuskkoder</a>
-        <a href="#aktivera-fusk">Så aktiverar du fusk</a>
-        <a href="#kategorier">Kategorier</a>
-        <a href="#faq-heading">Vanliga frågor (FAQ)</a>
-        <a href="#om-oss">Om guiden &amp; Källor</a>
-        <a href="integritet.html">Integritetspolicy</a>
+        <a href="#fuskkoder" data-i18n="navCheats">Alla fuskkoder</a>
+        <a href="#aktivera-fusk" data-i18n="navHowTo">Så aktiverar du fusk</a>
+        <a href="#kategorier" data-i18n="navCategories">Kategorier</a>
+        <a href="#faq-heading" data-i18n="navFaq">Vanliga frågor (FAQ)</a>
+        <a href="#om-oss" data-i18n="navAbout">Om guiden &amp; Källor</a>
+        <a href="integritet.html" data-i18n="navPrivacy">Integritetspolicy</a>
       </nav>
     </div>
   </header>
@@ -169,11 +178,11 @@
              target="_blank"
              rel="sponsored nofollow noopener"
              class="amazon-fallback amazon-skyscraper">
-            <span class="amazon-badge">Annons &middot; Amazon.se</span>
+            <span class="amazon-badge" data-i18n="adBadge">Annons &middot; Amazon.se</span>
             <img src="https://m.media-amazon.com/images/I/71HdPilz0CL._AC_SL300_.jpg" alt="Snabb M.2 NVMe SSD med kylfläns till PS5 på Amazon.se" width="136" height="155" class="amazon-thumb amazon-thumb-sky" loading="lazy">
-            <strong class="amazon-sky-title">Snabb M.2 SSD för PS5</strong>
-            <span class="amazon-sky-desc">Frigör lagringsutrymme inför GTA 6 i Vice City med snabb NVMe SSD och kylfläns.</span>
-            <span class="amazon-cta">Se på Amazon &rarr;</span>
+            <strong class="amazon-sky-title" data-i18n="leftSkyTitle">Snabb M.2 SSD för PS5</strong>
+            <span class="amazon-sky-desc" data-i18n="leftSkyDesc">Frigör lagringsutrymme inför GTA 6 i Vice City med snabb NVMe SSD och kylfläns.</span>
+            <span class="amazon-cta" data-i18n="skyCta">Se på Amazon &rarr;</span>
           </a>
         </div>
       </div>
@@ -184,7 +193,7 @@
       <!-- Sök- och filterpanel -->
       <section class="controls-panel" aria-label="Sök och filtrera fuskkoder">
         <div class="search-wrapper">
-          <label for="search-input" class="visually-hidden">Sök efter fuskkod eller effekt</label>
+          <label for="search-input" class="visually-hidden" data-i18n="searchLabel">Sök efter fuskkod eller effekt</label>
           <span class="search-icon" aria-hidden="true">&#128269;</span>
           <input
             type="search"
@@ -198,23 +207,23 @@
 
         <div class="filter-groups">
           <div class="filter-group" role="group" aria-label="Filtrera på plattform">
-            <span class="filter-label">Plattform:</span>
+            <span class="filter-label" data-i18n="platformLabel">Plattform:</span>
             <div class="filter-buttons" id="platform-filters">
-              <button type="button" class="filter-btn active" data-platform="all">Alla</button>
+              <button type="button" class="filter-btn active" data-platform="all" data-i18n="filterAll">Alla</button>
               <button type="button" class="filter-btn" data-platform="ps5">PS5</button>
               <button type="button" class="filter-btn" data-platform="xbox">Xbox Series X|S</button>
-              <button type="button" class="filter-btn" data-platform="phone">Telefon</button>
+              <button type="button" class="filter-btn" data-platform="phone" data-i18n="platformPhone">Telefon</button>
             </div>
           </div>
 
           <div class="filter-group" role="group" aria-label="Filtrera på kategori">
-            <span class="filter-label">Kategori:</span>
+            <span class="filter-label" data-i18n="categoryLabel">Kategori:</span>
             <div class="filter-buttons" id="category-filters">
-              <button type="button" class="filter-btn active" data-category="Alla">Alla</button>
-              <button type="button" class="filter-btn" data-category="Spelare">Spelare</button>
-              <button type="button" class="filter-btn" data-category="Vapen">Vapen</button>
-              <button type="button" class="filter-btn" data-category="Fordon">Fordon</button>
-              <button type="button" class="filter-btn" data-category="Värld">Värld</button>
+              <button type="button" class="filter-btn active" data-category="Alla" data-i18n="filterAll">Alla</button>
+              <button type="button" class="filter-btn" data-category="Spelare" data-i18n="catPlayer">Spelare</button>
+              <button type="button" class="filter-btn" data-category="Vapen" data-i18n="catWeapons">Vapen</button>
+              <button type="button" class="filter-btn" data-category="Fordon" data-i18n="catVehicles">Fordon</button>
+              <button type="button" class="filter-btn" data-category="Värld" data-i18n="catWorld">Värld</button>
             </div>
           </div>
         </div>
@@ -243,11 +252,11 @@
              class="amazon-fallback amazon-top-banner">
             <img src="https://m.media-amazon.com/images/I/81Sd2IhEG-L._AC_SL300_.jpg" alt="Köp Grand Theft Auto VI (GTA 6) till PS5 och Xbox Series X på Amazon.se" width="96" height="88" class="amazon-thumb">
             <div class="amazon-banner-copy">
-              <span class="amazon-badge">Annons &middot; Amazon.se</span>
-              <strong class="amazon-banner-title">Köp Grand Theft Auto VI (PS5 &amp; Xbox Series X)</strong>
-              <span class="amazon-banner-sub">Säkra ditt exemplar och gamingtillbehör med snabb leverans på Amazon.se</span>
+              <span class="amazon-badge" data-i18n="adBadge">Annons &middot; Amazon.se</span>
+              <strong class="amazon-banner-title" data-i18n="topBannerTitle">Köp Grand Theft Auto VI (PS5 &amp; Xbox Series X)</strong>
+              <span class="amazon-banner-sub" data-i18n="topBannerSub">Säkra ditt exemplar och gamingtillbehör med snabb leverans på Amazon.se</span>
             </div>
-            <span class="amazon-cta">Se pris på Amazon &rarr;</span>
+            <span class="amazon-cta" data-i18n="topBannerCta">Se pris på Amazon &rarr;</span>
           </a>
         </div>
       </div>
@@ -256,9 +265,9 @@
       <section id="fuskkoder" aria-label="Lista med fuskkoder">
         <div id="cheats-grid" class="cheats-grid"></div>
         <div id="empty-state" class="empty-state" hidden>
-          <h2>Inga fuskkoder matchade din sökning</h2>
-          <p>Prova ett annat sökord eller återställ filtren för att visa alla kommande GTA 6-fusk.</p>
-          <button type="button" id="reset-filters-btn" class="reset-btn">Återställ alla filter</button>
+          <h2 data-i18n="emptyTitle">Inga fuskkoder matchade din sökning</h2>
+          <p data-i18n="emptyDesc">Prova ett annat sökord eller återställ filtren för att visa alla kommande GTA 6-fusk.</p>
+          <button type="button" id="reset-filters-btn" class="reset-btn" data-i18n="resetBtn">Återställ alla filter</button>
         </div>
       </section>
 
@@ -280,91 +289,91 @@
                 <img src="https://m.media-amazon.com/images/I/61wKe+YH9BL._AC_SL300_.jpg" alt="PlayStation 5 DualSense handkontroll på Amazon.se" width="94" height="92" class="amazon-thumb" loading="lazy">
                 <img src="https://m.media-amazon.com/images/I/71Gc7gSd2tL._AC_SL300_.jpg" alt="Trådlöst gaming-headset på Amazon.se" width="94" height="92" class="amazon-thumb" loading="lazy">
               </div>
-              <span class="amazon-badge">Annons &middot; Amazon.se</span>
+              <span class="amazon-badge" data-i18n="adBadge">Annons &middot; Amazon.se</span>
             </div>
-            <h3 class="amazon-rect-title">Redo för Vice City 19 nov?</h3>
-            <p class="amazon-rect-desc">
+            <h3 class="amazon-rect-title" data-i18n="rectTitle">Redo för Vice City 19 nov?</h3>
+            <p class="amazon-rect-desc" data-i18n="rectDesc">
               Hitta GTA 6, trådlösa PS5 DualSense- och Xbox-handkontroller, gaming-headset och snabba M.2 SSD-diskar på Amazon.se.
             </p>
             <div class="amazon-rect-actions">
               <a href="https://www.amazon.se/s?k=Grand+Theft+Auto+VI+GTA+6+PS5+Xbox&amp;tag=gta6hacks-21"
                  target="_blank"
                  rel="sponsored nofollow noopener"
-                 class="amazon-cta">GTA 6 (PS5 &amp; Xbox) &rarr;</a>
+                 class="amazon-cta" data-i18n="rectCta1">GTA 6 (PS5 &amp; Xbox) &rarr;</a>
               <a href="https://www.amazon.se/s?k=PS5+DualSense+Xbox+handkontroll+headset&amp;tag=gta6hacks-21"
                  target="_blank"
                  rel="sponsored nofollow noopener"
-                 class="amazon-cta amazon-cta-secondary">Kontroller &amp; Headset &rarr;</a>
+                 class="amazon-cta amazon-cta-secondary" data-i18n="rectCta2">Kontroller &amp; Headset &rarr;</a>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Informativ SEO-, guide- och FAQ-sektion -->
-      <section class="seo-faq-section" aria-labelledby="aktivera-fusk">
-        <h2 id="aktivera-fusk">Så aktiverar du fuskkoder i GTA 6 – Steg för steg</h2>
+      <section class="seo-faq-section" id="seo-guide-section" aria-labelledby="aktivera-fusk">
+        <h2 id="aktivera-fusk" data-i18n="howToTitle">Så aktiverar du fuskkoder i GTA 6 – Steg för steg</h2>
 
         <div class="seo-intro">
-          <p>
+          <p data-i18n-html="howToIntro1">
             Inför premiären av <strong>Grand Theft Auto VI</strong> den 19 november 2026 samlar vi Sveriges mest
             kompletta och lättlästa referensguide för klassiska GTA-fuskkoder. Oavsett om du vill orsaka totalt kaos
             på gatorna i Vice City, spawna en snabb sportbil i delstaten Leonida eller utforska kartan utan polisens
             efterlysning hittar du alla koder samlade här i vår <a href="#fuskkoder">sökbara fuskkodstabell</a>.
           </p>
-          <p>
+          <p data-i18n="howToIntro2">
             Följ dessa fyra enkla steg för att aktivera fusk säkert på PlayStation 5 och Xbox Series X|S utan att
             förlora dina framsteg i kampanjen:
           </p>
         </div>
 
         <ol class="seo-list">
-          <li>
+          <li data-i18n-html="step1">
             <strong>Spara ditt spel manuellt:</strong> Öppna menyn och skapa en separat sparfil innan du slår in koder,
             eftersom aktiva fusk stänger av Trophies och Achievements under spelsessionen.
           </li>
-          <li>
+          <li data-i18n-html="step2">
             <strong>Stanna i vanlig spelvy:</strong> Knappkombinationer måste tryckas in medan din karaktär befinner sig
             ute i spelvärlden (inte inne i pausmenyn).
           </li>
-          <li>
+          <li data-i18n-html="step3">
             <strong>Mata in koden via handkontroll eller telefon:</strong> Tryck antingen in knappsekvensen i jämn takt
             på din DualSense-/Xbox-kontroll, eller öppna karaktärens mobiltelefon och ring fusknumret.
           </li>
-          <li>
+          <li data-i18n-html="step4">
             <strong>Kontrollera bekräftelsen:</strong> En liten notis visas på skärmen så fort fusket har aktiverats.
             Ladda om din sparfil när du vill återgå till vanligt spelande.
           </li>
         </ol>
 
-        <h2 id="kategorier" class="seo-sub-heading">Alla kategorier av fusk i Grand Theft Auto VI</h2>
-        <p>
+        <h2 id="kategorier" class="seo-sub-heading" data-i18n="catHeading">Alla kategorier av fusk i Grand Theft Auto VI</h2>
+        <p data-i18n-html="catIntro">
           För att du snabbt ska hitta rätt kod under spelets gång är samtliga fuskkoder i vår
           <a href="#fuskkoder">interaktiva databas</a> uppdelade i fyra tydliga huvudkategorier:
         </p>
         <ul class="seo-list">
-          <li>
+          <li data-i18n-html="catItem1">
             <strong>Spelare:</strong> Odödlighet (God Mode), full hälsa och skyddsväst, supersprång, snabb löpning samt
             höj eller sänk efterlysningsnivå (Wanted Level).
           </li>
-          <li>
+          <li data-i18n-html="catItem2">
             <strong>Vapen:</strong> Komplett vapenpaket med full ammunition, explosiva skott och brinnande eldkulor.
           </li>
-          <li>
+          <li data-i18n-html="catItem3">
             <strong>Fordon:</strong> Direkt-spawn av sportbilar (t.ex. Cheetah Classic), beväpnade stridshelikoptrar,
             crossmotorcyklar samt drifting-läge med hala däck.
           </li>
-          <li>
+          <li data-i18n-html="catItem4">
             <strong>Värld:</strong> Växla väder i Vice City (sol, tropisk storm, dimma och åska), mångravitation och
             slow motion-sikte.
           </li>
         </ul>
 
-        <h2 id="faq-heading" class="seo-sub-heading">Guide &amp; Vanliga frågor om GTA 6-fusk (FAQ)</h2>
+        <h2 id="faq-heading" class="seo-sub-heading" data-i18n="faqHeading">Guide &amp; Vanliga frågor om GTA 6-fusk (FAQ)</h2>
 
         <div class="faq-grid">
           <article class="faq-item">
-            <h3>Hur aktiverar man fuskkoder via handkontroll eller telefon?</h3>
-            <p>
+            <h3 data-i18n="faq1Q">Hur aktiverar man fuskkoder via handkontroll eller telefon?</h3>
+            <p data-i18n-html="faq1A">
               I moderna Rockstar-spel finns det två huvudsakliga sätt att slå in fusk. Det snabbaste sättet är att
               mata in en sekvens av knappar direkt på din <strong>PlayStation 5 DualSense</strong> eller
               <strong>Xbox Series X|S-handkontroll</strong> medan du befinner dig i spelet (inte i pausmenyn). Knappa
@@ -375,8 +384,8 @@
           </article>
 
           <article class="faq-item">
-            <h3>Påverkar fuskkoder mina Trophies och Achievements?</h3>
-            <p>
+            <h3 data-i18n="faq2Q">Påverkar fuskkoder mina Trophies och Achievements?</h3>
+            <p data-i18n-html="faq2A">
               Ja. Precis som i föregångarna GTA V och Red Dead Redemption 2 inaktiveras både
               <strong>PlayStation Trophies</strong> och <strong>Xbox Achievements</strong> tillfälligt så fort du
               aktiverar ett fusk. Denna spärr gäller för din pågående spelsession och kvarstår om du skulle spara över
@@ -387,8 +396,8 @@
           </article>
 
           <article class="faq-item">
-            <h3>Fungerar fusken i GTA 6 Online och på PC?</h3>
-            <p>
+            <h3 data-i18n="faq3Q">Fungerar fusken i GTA 6 Online och på PC?</h3>
+            <p data-i18n="faq3A">
               Klassiska fuskkoder är strikt reserverade för enspelarläget (Story Mode) och fungerar aldrig i ett
               eventuellt onlineläge. Vid lanseringen i november 2026 släpps GTA 6 till PS5 och Xbox Series X|S, och
               samtliga platshållare i tabellen ovan kommer att fyllas med verifierade knapptryckningar och
@@ -397,8 +406,8 @@
           </article>
 
           <article class="faq-item">
-            <h3>Finns det fuskkod för oändligt med pengar i GTA 6?</h3>
-            <p>
+            <h3 data-i18n="faq4Q">Finns det fuskkod för oändligt med pengar i GTA 6?</h3>
+            <p data-i18n-html="faq4A">
               I föregångaren GTA V fanns det ingen direkt kod för <strong>obegränsat med pengar</strong> – det är därför
               troligt att även GTA 6 fokuserar på fusk för <strong>vapen, bilar, helikoptrar, odödlighet</strong> och
               efterlysningsnivå. Om Rockstar lägger till ett nytt pengafusk dyker det upp i listan ovan den 19 november
@@ -408,8 +417,8 @@
         </div>
 
         <div id="om-oss" class="trust-box">
-          <h2 class="seo-sub-heading">Om GTA 6 Fuskkoder Sverige, källor &amp; kontakt</h2>
-          <p>
+          <h2 class="seo-sub-heading" data-i18n="aboutHeading">Om GTA 6 Fuskkoder Sverige, källor &amp; kontakt</h2>
+          <p data-i18n-html="aboutP1">
             <strong>GTA 6 Fuskkoder Sverige</strong> är en fristående svensk spelguide skapad för att ge svenska
             konsolspelare snabb och mobilvänlig tillgång till verifierade fuskkoder utan krångel. Alla koder testas
             manuellt på <strong>PlayStation 5</strong> och <strong>Xbox Series X|S</strong> i samband med den officiella
@@ -420,7 +429,7 @@
             och
             <a href="https://www.xbox.com/sv-SE/" target="_blank" rel="noopener noreferrer">Xbox Sverige</a>.
           </p>
-          <p>
+          <p data-i18n-html="aboutP2">
             Har du hittat en ny fuskkod, ett hemligt telefonnummer i Leonida eller vill rapportera en rättelse?
             Kontakta redaktionen på <a href="mailto:kontakt@gta6hacks.se">kontakt@gta6hacks.se</a> eller läs mer om hur
             vi hanterar data och annonser på vår sida för <a href="integritet.html">integritetspolicy och cookies</a>.
@@ -447,11 +456,11 @@
              target="_blank"
              rel="sponsored nofollow noopener"
              class="amazon-fallback amazon-skyscraper">
-            <span class="amazon-badge">Annons &middot; Amazon.se</span>
+            <span class="amazon-badge" data-i18n="adBadge">Annons &middot; Amazon.se</span>
             <img src="https://m.media-amazon.com/images/I/71Gc7gSd2tL._AC_SL300_.jpg" alt="Trådlöst gaming-headset för PS5 och Xbox Series X|S på Amazon.se" width="136" height="155" class="amazon-thumb amazon-thumb-sky" loading="lazy">
-            <strong class="amazon-sky-title">Trådlöst Gaming-Headset</strong>
-            <span class="amazon-sky-desc">Upplev 3D-ljudet i Leonida med trådlöst headset för PS5 och Xbox Series X|S.</span>
-            <span class="amazon-cta">Se på Amazon &rarr;</span>
+            <strong class="amazon-sky-title" data-i18n="rightSkyTitle">Trådlöst Gaming-Headset</strong>
+            <span class="amazon-sky-desc" data-i18n="rightSkyDesc">Upplev 3D-ljudet i Leonida med trådlöst headset för PS5 och Xbox Series X|S.</span>
+            <span class="amazon-cta" data-i18n="skyCta">Se på Amazon &rarr;</span>
           </a>
         </div>
       </div>
@@ -461,22 +470,22 @@
   <!-- Footer med extra padding-bottom för den sticky bottenbannern -->
   <footer class="site-footer has-bottom-ad" id="site-footer">
     <div class="footer-inner">
-      <p class="footer-disclaimer">
+      <p class="footer-disclaimer" data-i18n="footerDisclaimer">
         Inofficiell svensk fansida för fuskkoder till Grand Theft Auto VI. Ej associerad med Rockstar Games eller Take-Two Interactive.
         Som Amazon-associates tjänar vi pengar på kvalificerade köp.
       </p>
       <nav class="footer-nav" aria-label="Sidfot">
-        <a href="#fuskkoder">Fuskkoder</a>
+        <a href="#fuskkoder" data-i18n="navCheats">Fuskkoder</a>
         <span aria-hidden="true">&middot;</span>
-        <a href="#aktivera-fusk">Så aktiverar du fusk</a>
+        <a href="#aktivera-fusk" data-i18n="navHowTo">Så aktiverar du fusk</a>
         <span aria-hidden="true">&middot;</span>
         <a href="#faq-heading">FAQ</a>
         <span aria-hidden="true">&middot;</span>
-        <a href="integritet.html">Integritetspolicy &amp; Cookies</a>
+        <a href="integritet.html" data-i18n="footerPrivacy">Integritetspolicy &amp; Cookies</a>
         <span aria-hidden="true">&middot;</span>
-        <a href="mailto:kontakt@gta6hacks.se">Kontakt</a>
+        <a href="mailto:kontakt@gta6hacks.se" data-i18n="footerContact">Kontakt</a>
       </nav>
-      <p class="footer-copy">&copy; 2026 GTA 6 Fuskkoder Sverige</p>
+      <p class="footer-copy" data-i18n="footerCopy">&copy; 2026 GTA 6 Fuskkoder Sverige</p>
     </div>
   </footer>
 
@@ -499,8 +508,8 @@
            rel="sponsored nofollow noopener"
            class="amazon-fallback amazon-bottom-bar">
           <img src="https://m.media-amazon.com/images/I/81Sd2IhEG-L._AC_SL300_.jpg" alt="GTA 6 och konsoltillbehör på Amazon.se" width="36" height="36" class="amazon-thumb amazon-thumb-sm" loading="lazy">
-          <span class="amazon-bottom-text"><strong>GTA 6 &amp; Tillbehör</strong> på Amazon.se</span>
-          <span class="amazon-cta amazon-cta-sm">Visa pris &rarr;</span>
+          <span class="amazon-bottom-text" data-i18n-html="bottomBarText"><strong>GTA 6 &amp; Tillbehör</strong> på Amazon.se</span>
+          <span class="amazon-cta amazon-cta-sm" data-i18n="bottomBarCta">Visa pris &rarr;</span>
         </a>
       </div>
       <button
