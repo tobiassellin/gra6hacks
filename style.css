@@ -90,7 +90,7 @@ a:focus-visible {
 }
 
 .header-inner {
-  max-width: 1060px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -229,11 +229,11 @@ a:focus-visible {
 }
 
 /* ==========================================================================
-   Page Shell & Sticky Side Rails (>= 1440px)
+   Page Shell & Sticky Side Rails (>= 1100px för laptops & stationära skärmar)
    ========================================================================== */
 
 .page-shell {
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 20px 16px 32px;
 }
@@ -242,14 +242,14 @@ a:focus-visible {
   display: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1100px) {
   .page-shell {
-    max-width: 1460px;
+    max-width: 1360px;
     display: grid;
-    grid-template-columns: 160px minmax(0, 1060px) 160px;
+    grid-template-columns: 160px minmax(0, 960px) 160px;
     justify-content: center;
-    gap: 24px;
-    padding: 24px 20px 40px;
+    gap: 18px;
+    padding: 22px 16px 40px;
   }
 
   .ad-rail {
@@ -259,6 +259,15 @@ a:focus-visible {
   .ad-sticky {
     position: sticky;
     top: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-shell {
+    max-width: 1440px;
+    grid-template-columns: 160px minmax(0, 1020px) 160px;
+    gap: 24px;
+    padding: 24px 20px 40px;
   }
 }
 
