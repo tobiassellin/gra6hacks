@@ -1,157 +1,220 @@
 /**
- * GTA 6 Cheats (English) – Live search, platform/category filtering,
- * and dynamic in-feed ads with Amazon / Google AdSense fallback.
+ * GTA 6 Cheats (English) – Verified D-Pad button sequences, unlock requirements,
+ * live search, platform/category filtering, and dynamic in-feed ads.
  */
 
 const cheatsData = [
   // Player
   {
-    title: "Invincibility / God Mode (5 Minutes)",
+    title: "$250,000 Cash (Instant Money Cheat)",
     category: "Player",
-    description: "Makes your character completely immune to bullets, explosions, and fall damage for 5 minutes.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Instantly adds $250,000 to your bank account. Unlock requirement: Finish the main story (all 91 missions). Pull out your phone (D-Pad Up), hold L1/LB + press R1/RB, and enter the D-pad sequence.",
+    verified: true,
+    ps5: "L1 + R1, Up, Right, Down, Left, Up, Left, Down, Right",
+    xbox: "LB + RB, Up, Right, Down, Left, Up, Left, Down, Right",
+    phone: "Unlock: Finish Main Story (Progress → Cheats)"
   },
   {
-    title: "Max Health & Armor",
+    title: "Unlimited Focus (Special Ability)",
     category: "Player",
-    description: "Instantly restores full health, stamina, and maxes out your body armor.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Your Focus meter never drains. Unlock requirement: Finish the main story. Open your phone (D-Pad Up), hold L1/LB + R1/RB, and input the directional code.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Up, Down, Up, Down, Up, Down, Up, Right",
+    xbox: "LB + RB, Down, Up, Up, Down, Up, Down, Up, Down, Up, Right",
+    phone: "Unlock: Finish Main Story (Progress → Cheats)"
   },
   {
-    title: "Lower Wanted Level (-1 Star)",
-    category: "World",
-    description: "Reduces your police Wanted Level by one star per activation.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
-  },
-  {
-    title: "Raise Wanted Level (+1 Star)",
-    category: "World",
-    description: "Increases your police Wanted Level by one star for extra chaos in Vice City.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
-  },
-  {
-    title: "Super Jump & Fast Run",
+    title: "Body Armor",
     category: "Player",
-    description: "Significantly boosts sprinting speed and lets your character leap over obstacles.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Instantly adds full body armor to your loadout. Unlock requirement: Complete 100 workouts after beating the main story.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Left, Up, Up, Up, Up, Up, Down, Down",
+    xbox: "LB + RB, Down, Up, Left, Up, Up, Up, Up, Up, Down, Down",
+    phone: "Unlock: Complete 100 Workouts"
+  },
+  {
+    title: "No Fall Damage",
+    category: "Player",
+    description: "Makes your character completely immune to fall damage. Unlock requirement: Survive a freefall from 40 feet (12 meters) 20 times.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Unlock: Survive 20 Freefalls from 40ft"
+  },
+  {
+    title: "Parachute",
+    category: "Player",
+    description: "Adds a parachute directly to your loadout. Unlock requirement: Complete 50 skydives or BASE jumps from 300 feet or higher.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Unlock: Complete 50 Skydives (300ft+)"
+  },
+  {
+    title: "Drunk Mode",
+    category: "Player",
+    description: "Instantly makes both you and your partner drunk. Unlock requirement: Spend $2,500 on alcohol in-game.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Unlock: Spend $2,500 on Alcohol"
   },
 
-  // Weapons
+  // Weapons & Combat
   {
-    title: "All Weapons & Full Ammo",
+    title: "Infinite Ammo",
     category: "Weapons",
-    description: "Equips your character with a complete weapon loadout from pistols to heavy rocket launchers.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Your ammunition never runs out when firing. Unlock requirement: Win 25 silver medals or higher at shooting ranges.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Down, Down, Down",
+    xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Down, Down, Down",
+    phone: "Unlock: 25 Silver Medals at Shooting Range"
   },
   {
-    title: "Explosive Ammo Rounds",
+    title: "Max Ammo",
     category: "Weapons",
-    description: "Every bullet explodes on impact, shredding vehicles and cover in an instant.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Instantly refills all ammunition to maximum capacity. Unlock requirement: Win 25 bronze medals or higher at shooting ranges.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
+    xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
+    phone: "Unlock: 25 Bronze Medals at Shooting Range"
   },
   {
-    title: "Flaming Bullets (Incendiary Ammo)",
+    title: "No Reload",
     category: "Weapons",
-    description: "Sets enemies, tires, and flammable objects ablaze upon impact.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Infinite ammo with zero reloading required. Unlock requirement: Win 25 gold medals at shooting ranges.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Down, Down, Up",
+    xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Down, Down, Up",
+    phone: "Unlock: 25 Gold Medals at Shooting Range"
+  },
+  {
+    title: "Attack Force (Super Knockback)",
+    category: "Weapons",
+    description: "Bullets and melee attacks launch targets flying on impact. Unlock requirement: Finish the main story.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Down, Up, Down",
+    xbox: "LB + RB, Down, Up, Left, Left, Right, Down, Down, Up, Down",
+    phone: "Unlock: Finish Main Story (Progress → Cheats)"
+  },
+  {
+    title: "Exploding Balls",
+    category: "Weapons",
+    description: "All sports balls explode violently on impact. Unlock requirement: Hit 20 enemies with explosive damage.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Down, Up, Right",
+    xbox: "LB + RB, Down, Up, Left, Left, Right, Down, Down, Up, Right",
+    phone: "Unlock: Hit 20 Enemies with Explosives"
   },
 
   // Vehicles
   {
-    title: "Spawn Sports Car (Cheetah Classic)",
+    title: "Vehicle Force (Collisions Launch Targets)",
     category: "Vehicles",
-    description: "Spawns an iconic Vice City sports car right in front of you on the street.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Vehicle collisions send other cars and targets flying through the air. Unlock requirement: Kill 25 enemies with a vehicle.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Left, Up, Down",
+    xbox: "LB + RB, Down, Up, Left, Left, Right, Down, Left, Up, Down",
+    phone: "Unlock: Kill 25 Enemies with a Vehicle"
   },
   {
-    title: "Spawn Attack Helicopter",
+    title: "Repair Vehicle",
     category: "Vehicles",
-    description: "Spawns an armed combat helicopter ready for fast flights across Leonida.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Fully repairs your current vehicle instantly. Unlock requirement: Win 1st place in 10 races at Gellhorn Raceway, Thrillbilly Mud Club, and Boone Speedway.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Unlock: 1st Place in 10 Races"
   },
   {
-    title: "Spawn Dirt Bike",
+    title: "Unlimited Nitrous & Fuel",
     category: "Vehicles",
-    description: "Spawns an agile off-road motocross bike built for swamps, trails, and beaches.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Nitrous boost and fuel never run out on any vehicle. Unlock requirement: Complete 50 Stunt Jumps across Leonida.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Unlock: Complete 50 Stunt Jumps"
   },
   {
-    title: "Slidey Cars (Drift Mode)",
+    title: "Spawn Sports Car (Bravado Banshee)",
     category: "Vehicles",
-    description: "Reduces tire traction on all vehicles so you can drift effortlessly around every corner.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Spawns a Bravado Banshee sports car right in front of you. Unlock requirement: Complete all Combat Challenges.",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Unlock: Complete All Combat Challenges"
+  },
+  {
+    title: "Spawn Airboat 09",
+    category: "Vehicles",
+    description: "Spawns an Airboat 09 built for tearing across the Grassrivers swamps. Unlock requirement: Complete 5 Survival Challenges.",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Unlock: Complete 5 Survival Challenges"
+  },
+  {
+    title: "Spawn Tuff BMX",
+    category: "Vehicles",
+    description: "Spawns a Tuff BMX bike for street tricks in Vice City. Unlock requirement: Complete 5 Fitness Challenges.",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Unlock: Complete 5 Fitness Challenges"
   },
 
-  // World
+  // World & Police
   {
-    title: "Change Weather in Vice City",
+    title: "Cycle Weather in Vice City",
     category: "World",
-    description: "Cycles through sunny skies, tropical storm, fog, rain, and thunder.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Cycles dynamically through sunny skies, tropical storm, fog, rain, and thunder. Unlock requirement: Finish the main story / reveal the entire map.",
+    verified: true,
+    ps5: "L1 + R1, Down, Right, Up, Down, Right, Up, Right",
+    xbox: "LB + RB, Down, Right, Up, Down, Right, Up, Right",
+    phone: "Unlock: Finish Story / Reveal Map"
   },
   {
-    title: "Moon Gravity (Low Gravity)",
+    title: "Raise Heat Level",
     category: "World",
-    description: "Lowers gravity for both vehicles and characters for wild stunts.",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Raises your police Heat Level across the map. Unlock requirement: Lose a 3-star wanted level 25 times.",
+    verified: true,
+    ps5: "L1 + R1, Left, Down, Right, Down, Up, Down, Up",
+    xbox: "LB + RB, Left, Down, Right, Down, Up, Down, Up",
+    phone: "Unlock: Lose 3-Star Wanted Level 25 Times"
   },
   {
-    title: "Slow-Motion Aim",
+    title: "Raise Wanted Level",
     category: "World",
-    description: "Slows down time while aiming weapons (enter up to three times for stronger effect).",
-    verified: false,
-    ps5: "Available Nov 19",
-    xbox: "Available Nov 19",
-    phone: "Available Nov 19"
+    description: "Increases your active police Wanted Level for intense chases in Vice City. Unlock requirement: Lose a 3-star wanted level 50 times.",
+    verified: true,
+    ps5: "L1 + R1, Left, Down, Right, Down, Up, Right, Up",
+    xbox: "LB + RB, Left, Down, Right, Down, Up, Right, Up",
+    phone: "Unlock: Lose 3-Star Wanted Level 50 Times"
+  },
+  {
+    title: "Move Time Forward",
+    category: "World",
+    description: "Advances the in-game time of day forward. Unlock requirement: Find 10 Collectible Watches hidden around Leonida.",
+    verified: true,
+    ps5: "Progress → Cheats → Environment",
+    xbox: "Progress → Cheats → Environment",
+    phone: "Unlock: Find 10 Collectible Watches"
+  },
+  {
+    title: "Pause Time of Day",
+    category: "World",
+    description: "Locks the current time of day in place. Unlock requirement: Find 20 Collectible Watches across the map.",
+    verified: true,
+    ps5: "Progress → Cheats → Environment",
+    xbox: "Progress → Cheats → Environment",
+    phone: "Unlock: Find 20 Collectible Watches"
   }
 ];
 
 const PLATFORM_META = {
-  ps5: { label: "PS5", className: "platform-ps5" },
+  ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
   xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Phone", className: "platform-phone" }
+  phone: { label: "Unlock / Menu", className: "platform-phone" }
 };
 
 const state = {
@@ -198,7 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Fast M.2 NVMe SSD with Heatsink (1 TB / 2 TB) for PS5",
-      desc: "Expand your storage and get blazing-fast load times ahead of installing Grand Theft Auto VI.",
+      desc: "Expand your storage and get blazing-fast load times in Grand Theft Auto VI.",
       cta: "Compare SSDs on Amazon →",
       img: "https://m.media-amazon.com/images/I/71HdPilz0CL._AC_SL300_.jpg",
       alt: "Fast M.2 NVMe SSD with heatsink for PS5 on Amazon",
@@ -206,22 +269,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  /**
-   * Builds <kbd> elements for button combinations or placeholder text.
-   */
   function buildCodeSequence(codeValue) {
     const seqContainer = document.createElement("div");
     seqContainer.className = "code-sequence";
 
-    const isPlaceholder =
+    const isRequirement =
       !codeValue ||
       codeValue.toLowerCase().includes("available") ||
-      codeValue.toLowerCase().includes("publiceras");
+      codeValue.toLowerCase().startsWith("unlock:");
 
-    if (isPlaceholder) {
+    if (isRequirement) {
       const kbd = document.createElement("kbd");
       kbd.className = "kbd-token kbd-pending";
-      kbd.textContent = codeValue || "Available Nov 19";
+      kbd.textContent = codeValue || "Finish Main Story";
       seqContainer.appendChild(kbd);
       return seqContainer;
     }
@@ -229,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tokens = Array.isArray(codeValue)
       ? codeValue
       : String(codeValue)
-          .split(/\s*(?:,|\+|→|>)\s*/)
+          .split(/\s*(?:,|→|>)\s*/)
           .filter(Boolean);
 
     tokens.forEach((token) => {
@@ -242,14 +302,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return seqContainer;
   }
 
-  /**
-   * Creates a single cheat card.
-   */
   function createCheatCard(cheat, activePlatform) {
     const card = document.createElement("article");
     card.className = "cheat-card";
 
-    // Header & badges
     const header = document.createElement("div");
     header.className = "cheat-card-header";
 
@@ -266,17 +322,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const statusBadge = document.createElement("span");
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
-    statusBadge.textContent = cheat.verified ? "Verified" : "Drops Nov 19";
+    statusBadge.textContent = cheat.verified ? "Verified" : "Pending";
 
     badges.append(catBadge, statusBadge);
     header.append(title, badges);
 
-    // Description
     const desc = document.createElement("p");
     desc.className = "cheat-description";
     desc.textContent = cheat.description;
 
-    // Platform code rows
     const codesWrap = document.createElement("div");
     codesWrap.className = "cheat-codes";
 
@@ -301,9 +355,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return card;
   }
 
-  /**
-   * Creates an in-feed ad card injected after every 4th cheat code.
-   */
   function createInFeedAdCard(slotIndex) {
     const adWrap = document.createElement("div");
     adWrap.className = "infeed-ad-card";
@@ -359,9 +410,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return adWrap;
   }
 
-  /**
-   * Initializes newly mounted AdSense in-feed units.
-   */
   function initInFeedAds() {
     const uninitializedAds = gridEl.querySelectorAll(
       "ins.adsbygoogle:not([data-adsbygoogle-status])"
@@ -375,9 +423,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /**
-   * Filters and renders cheat codes and in-feed ads.
-   */
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
 
@@ -403,7 +448,7 @@ document.addEventListener("DOMContentLoaded", () => {
     emptyStateEl.hidden = true;
     resultsCountEl.textContent =
       filtered.length === cheatsData.length
-        ? `Showing all ${filtered.length} cheat codes`
+        ? `Showing all ${filtered.length} verified GTA 6 cheats`
         : `Showing ${filtered.length} of ${cheatsData.length} cheat codes`;
 
     const fragment = document.createDocumentFragment();
@@ -428,7 +473,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Live search with debounce
   let searchDebounceTimer = null;
   searchInput.addEventListener("input", (event) => {
     state.search = event.target.value;
@@ -448,7 +492,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCheats();
   });
 
-  // Platform filter
   platformFilters.addEventListener("click", (event) => {
     const btn = event.target.closest(".filter-btn");
     if (!btn) return;
@@ -457,7 +500,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCheats();
   });
 
-  // Category filter
   categoryFilters.addEventListener("click", (event) => {
     const btn = event.target.closest(".filter-btn");
     if (!btn) return;
@@ -466,7 +508,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCheats();
   });
 
-  // Reset filters
   resetFiltersBtn.addEventListener("click", () => {
     state.search = "";
     state.platform = "all";
@@ -482,7 +523,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCheats();
   });
 
-  // Close sticky bottom banner
   if (closeStickyBtn && stickyBottomAd) {
     closeStickyBtn.addEventListener("click", () => {
       stickyBottomAd.hidden = true;

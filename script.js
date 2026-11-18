@@ -1,157 +1,220 @@
 /**
- * GTA 6 Fuskkoder (Svenska) – Interaktiv sökning, filtrering
- * och dynamiska in-feed-annonser med Amazon.se / Google AdSense-fallback.
+ * GTA 6 Fuskkoder (Svenska) – Verifierade D-Pad-koder, upplåsningskrav,
+ * livesökning, filtrering och dynamiska in-feed-annonser.
  */
 
 const cheatsData = [
-  // Spelare
+  // Spelare (Player)
   {
-    title: "Odödlighet (5 minuter)",
+    title: "$250 000 Pengar (Instant Cash)",
     category: "Spelare",
-    description: "Gör din karaktär helt immun mot kulor, explosioner och fallskador i 5 minuter.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Ger dig omedelbart $250 000 på kontot. Krav: Klara huvudberättelsen (alla 91 uppdrag). Öppna telefonen (Upp), håll inne L1/LB + tryck R1/RB och slå in D-pad-koden.",
+    verified: true,
+    ps5: "L1 + R1, Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger",
+    xbox: "LB + RB, Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger",
+    phone: "Krav: Klara storyn (Progress → Cheats)"
   },
   {
-    title: "Full hälsa och skyddsväst",
+    title: "Oändligt Fokus (Unlimited Focus)",
     category: "Spelare",
-    description: "Återställer omedelbart full hälsa, uthållighet och maximerar kroppsskyddet.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Din specialförmåga (Focus) tar aldrig slut. Krav: Klara huvudberättelsen. Öppna telefonen med Upp på styrkorset, håll L1/LB + R1/RB och mata in koden.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger",
+    xbox: "LB + RB, Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger",
+    phone: "Krav: Klara storyn (Progress → Cheats)"
   },
   {
-    title: "Sänk efterlysningsnivå (-1 stjärna)",
+    title: "Skyddsväst (Body Armor)",
     category: "Spelare",
-    description: "Minskar polisens efterlysningsnivå med en stjärna per aktivering.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Utrustar din karaktär med full skyddsväst direkt. Krav för upplåsning: Genomför 100 träningspass (workouts) efter att du klarat storyn.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner",
+    xbox: "LB + RB, Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner",
+    phone: "Krav: 100 träningspass (Workouts)"
   },
   {
-    title: "Höj efterlysningsnivå (+1 stjärna)",
+    title: "Ingen Fallskada (No Fall Damage)",
     category: "Spelare",
-    description: "Ökar polisens efterlysningsnivå med en stjärna för större utmaning i Vice City.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Gör dig helt immun mot fallskador från höga höjder. Krav för upplåsning: Överlev 20 fria fall från minst 12 meter (40 fot).",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Krav: Överlev 20 fall från 40 fot"
   },
   {
-    title: "Supersprång och snabb löpning",
+    title: "Fallskärm (Parachute)",
     category: "Spelare",
-    description: "Ökar löphastigheten markant och låter din karaktär hoppa extremt högt.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Lägger till en fallskärm i din utrustning. Krav för upplåsning: Genomför 50 fallskärmshopp eller BASE-hopp från minst 300 fot.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Krav: 50 fallskärmshopp (300 fot+)"
+  },
+  {
+    title: "Fylleri-läge (Drunk Mode)",
+    category: "Spelare",
+    description: "Gör omedelbart både dig och din partner berusade. Krav för upplåsning: Spendera totalt $2 500 på alkohol i spelet.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Krav: Spendera $2 500 på alkohol"
   },
 
-  // Vapen
+  // Vapen & Strid (Weapons & Combat)
   {
-    title: "Alla vapen och full ammunition",
+    title: "Oändlig Ammunition (Infinite Ammo)",
     category: "Vapen",
-    description: "Utrustar dig direkt med ett komplett vapenpaket från pistoler till raketgevär.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Din ammunition tar aldrig slut när du skjuter. Krav för upplåsning: Vinn 25 silvermedaljer eller högre på skjutbanan (Shooting Range).",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner",
+    xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner",
+    phone: "Krav: 25 silver på skjutbanan"
   },
   {
-    title: "Explosiva kulor",
+    title: "Full Ammunition (Max Ammo)",
     category: "Vapen",
-    description: "Varje avfyrat skott exploderar vid träff och förstör fordon på ett ögonblick.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Fyller omedelbart på maximal ammunition till alla dina vapen. Krav för upplåsning: Vinn 25 bronsmedaljer eller högre på skjutbanan.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
+    xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
+    phone: "Krav: 25 brons på skjutbanan"
   },
   {
-    title: "Eldkulor (Brinnande ammunition)",
+    title: "Ingen Omladdning (No Reload)",
     category: "Vapen",
-    description: "Sätter fyr på fiender, däck och brännbara objekt när du skjuter dem.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Oändlig ammunition och du behöver aldrig ladda om vapnet. Krav för upplåsning: Vinn 25 guldmedaljer på skjutbanan.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp",
+    xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp",
+    phone: "Krav: 25 guld på skjutbanan"
+  },
+  {
+    title: "Superkraft i Skott & Närstrid (Attack Force)",
+    category: "Vapen",
+    description: "Kulor och närstridsattacker slungar iväg fiender med enorm kraft vid träff. Krav för upplåsning: Klara huvudberättelsen.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner",
+    xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner",
+    phone: "Krav: Klara storyn (Progress → Cheats)"
+  },
+  {
+    title: "Explosiva Sportbollar (Exploding Balls)",
+    category: "Vapen",
+    description: "Alla sportbollar exploderar våldsamt vid nedslag. Krav för upplåsning: Träffa 20 fiender med explosiv skada.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger",
+    xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger",
+    phone: "Krav: Träffa 20 fiender med explosioner"
   },
 
-  // Fordon
+  // Fordon (Vehicles)
   {
-    title: "Spawna Sportbil (Cheetah Classic)",
+    title: "Fordonskraft – Krockar Slungar Mål (Vehicle Force)",
     category: "Fordon",
-    description: "Frammanar en klassisk Vice City-sportbil direkt framför dig på gatan.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Kollisioner med ditt fordon slungar iväg andra bilar och mål genom luften. Krav: Beseгра 25 fiender med ett fordon.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner",
+    xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner",
+    phone: "Krav: 25 fordons-elimineringar"
   },
   {
-    title: "Spawna Stridshelikopter",
+    title: "Reparera Fordon (Repair Vehicle)",
     category: "Fordon",
-    description: "Levererar en beväpnad attackhelikopter redo för snabba flygningar över Leonida.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Reparerar omedelbart ditt nuvarande fordon till nyskick. Krav: Ta 1:a plats i 10 lopp på Gellhorn Raceway, Thrillbilly Mud Club och Boone Speedway.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Krav: Vinn 10 lopp (1:a plats)"
   },
   {
-    title: "Spawna Crossmotor",
+    title: "Oändlig Lustgas & Bränsle (Unlimited Nitrous)",
     category: "Fordon",
-    description: "Skapar en smidig terrängmotorcykel perfekt för träskmarker och stränder.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Lustgas (Nitrous) och bränsle tar aldrig slut i fordon. Krav för upplåsning: Klara 50 stunthopp (Stunt Jumps) i Leonida.",
+    verified: true,
+    ps5: "Progress → Cheats → Player",
+    xbox: "Progress → Cheats → Player",
+    phone: "Krav: Klara 50 stunthopp"
   },
   {
-    title: "Hala däck (Drifting-läge)",
+    title: "Spawna Sportbil (Bravado Banshee)",
     category: "Fordon",
-    description: "Minskar väggreppet för alla fordon så du enkelt kan sladda i varje kurva.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Frammanar sportbilen Bravado Banshee direkt framför dig. Krav för upplåsning: Klara samtliga stridsutmaningar (Combat Challenges).",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Krav: Klara alla Combat Challenges"
+  },
+  {
+    title: "Spawna Träskbåt (Airboat 09)",
+    category: "Fordon",
+    description: "Frammanar en snabb Airboat 09 perfekt för våtmarkerna i Leonida. Krav: Klara 5 överlevnadsutmaningar (Survival Challenges).",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Krav: Klara 5 Survival Challenges"
+  },
+  {
+    title: "Spawna BMX (Tuff BMX)",
+    category: "Fordon",
+    description: "Frammanar en Tuff BMX-cykel för tricks och hopp i Vice City. Krav: Klara 5 träningsutmaningar (Fitness Challenges).",
+    verified: true,
+    ps5: "Progress → Cheats → Spawn Vehicle",
+    xbox: "Progress → Cheats → Spawn Vehicle",
+    phone: "Krav: Klara 5 Fitness Challenges"
   },
 
-  // Värld
+  // Värld & Polis (World & Police)
   {
-    title: "Ändra väder i Vice City",
+    title: "Ändra Väder i Vice City (Cycle Weather)",
     category: "Värld",
-    description: "Växlar mellan solsken, tropisk storm, dimma, regn och åskväder.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Växlar dynamiskt mellan solsken, tropisk storm, dimma, regn och åskväder i Leonida. Krav: Klara huvudberättelsen / utforska hela kartan.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Höger, Upp, Ner, Höger, Upp, Höger",
+    xbox: "LB + RB, Ner, Höger, Upp, Ner, Höger, Upp, Höger",
+    phone: "Krav: Klara storyn / öppna hela kartan"
   },
   {
-    title: "Låg gravitation (Mångravitation)",
+    title: "Höj Heat-nivå (Raise Heat Level)",
     category: "Värld",
-    description: "Minskar tyngdkraften för både fordon och karaktärer för absurda stunts.",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Ökar din Heat-nivå hos polisen över hela kartan. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 25 gånger.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
+    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
+    phone: "Krav: Fly från 3 stjärnor 25 gånger"
   },
   {
-    title: "Slow Motion-sikte",
+    title: "Höj Efterlysningsnivå (Raise Wanted Level)",
     category: "Värld",
-    description: "Saktar ner tiden när du siktar med vapen (aktivera flera gånger för starkare effekt).",
-    verified: false,
-    ps5: "Publiceras 19 nov",
-    xbox: "Publiceras 19 nov",
-    phone: "Publiceras 19 nov"
+    description: "Ökar din Wanted Level direkt för maximal polisjakt i Vice City. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 50 gånger.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
+    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
+    phone: "Krav: Fly från 3 stjärnor 50 gånger"
+  },
+  {
+    title: "Spola Fram Tiden (Move Time Forward)",
+    category: "Värld",
+    description: "Spolar fram tiden på dygnet i spelet. Krav för upplåsning: Hitta 10 samlarklockor (Collectible Watches) runt om i Leonida.",
+    verified: true,
+    ps5: "Progress → Cheats → Environment",
+    xbox: "Progress → Cheats → Environment",
+    phone: "Krav: Hitta 10 samlarklockor"
+  },
+  {
+    title: "Pausa Tiden på Dygnet (Pause Time of Day)",
+    category: "Värld",
+    description: "Låser den nuvarande tiden på dygnet. Krav för upplåsning: Hitta 20 samlarklockor (Collectible Watches) på kartan.",
+    verified: true,
+    ps5: "Progress → Cheats → Environment",
+    xbox: "Progress → Cheats → Environment",
+    phone: "Krav: Hitta 20 samlarklockor"
   }
 ];
 
 const PLATFORM_META = {
-  ps5: { label: "PS5", className: "platform-ps5" },
+  ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
   xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Telefon", className: "platform-phone" }
+  phone: { label: "Upplåsning / Meny", className: "platform-phone" }
 };
 
 const state = {
@@ -206,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const AMAZON_INFEED_OFFERS = [
     {
       title: "PlayStation 5 DualSense Trådlös Handkontroll",
-      desc: "Perfekt inför GTA 6 i Vice City – känn varje krock, explosion och gaspådrag med haptisk feedback.",
+      desc: "Perfekt för GTA 6 i Vice City – känn varje krock, explosion och gaspådrag med haptisk feedback.",
       cta: "Se pris på Amazon.se →",
       img: "https://m.media-amazon.com/images/I/61wKe+YH9BL._AC_SL300_.jpg",
       alt: "PlayStation 5 DualSense trådlös handkontroll på Amazon.se",
@@ -222,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Snabb M.2 NVMe SSD med kylfläns (1 TB / 2 TB) till PS5",
-      desc: "Frigör lagringsutrymme och få blixtsnabba laddningstider inför installationen av Grand Theft Auto VI.",
+      desc: "Frigör lagringsutrymme och få blixtsnabba laddningstider i Grand Theft Auto VI.",
       cta: "Jämför SSD på Amazon.se →",
       img: "https://m.media-amazon.com/images/I/71HdPilz0CL._AC_SL300_.jpg",
       alt: "Snabb M.2 NVMe SSD med kylfläns till PS5 på Amazon.se",
@@ -234,11 +297,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const seqContainer = document.createElement("div");
     seqContainer.className = "code-sequence";
 
-    const isPlaceholder = !codeValue || codeValue.toLowerCase().includes("publiceras");
-    if (isPlaceholder) {
+    const isRequirement =
+      !codeValue ||
+      codeValue.toLowerCase().includes("publiceras") ||
+      codeValue.toLowerCase().startsWith("krav:");
+
+    if (isRequirement) {
       const kbd = document.createElement("kbd");
       kbd.className = "kbd-token kbd-pending";
-      kbd.textContent = codeValue || "Publiceras 19 nov";
+      kbd.textContent = codeValue || "Klara storyn";
       seqContainer.appendChild(kbd);
       return seqContainer;
     }
@@ -246,7 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tokens = Array.isArray(codeValue)
       ? codeValue
       : String(codeValue)
-          .split(/\s*(?:,|\+|→|>)\s*/)
+          .split(/\s*(?:,|→|>)\s*/)
           .filter(Boolean);
 
     tokens.forEach((token) => {
@@ -279,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const statusBadge = document.createElement("span");
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
-    statusBadge.textContent = cheat.verified ? "Verifierad" : "Inväntar 19 nov";
+    statusBadge.textContent = cheat.verified ? "Verifierad" : "Inväntar kod";
 
     badges.append(catBadge, statusBadge);
     header.append(title, badges);
@@ -405,7 +472,7 @@ document.addEventListener("DOMContentLoaded", () => {
     emptyStateEl.hidden = true;
     resultsCountEl.textContent =
       filtered.length === cheatsData.length
-        ? `Visar alla ${filtered.length} fuskkoder`
+        ? `Visar alla ${filtered.length} verifierade GTA 6-fusk`
         : `Visar ${filtered.length} av ${cheatsData.length} fuskkoder`;
 
     const fragment = document.createDocumentFragment();
