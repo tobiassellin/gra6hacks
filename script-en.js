@@ -1,66 +1,115 @@
 /**
- * GTA 6 Cheats (English) – Verified D-Pad button sequences, unlock requirements,
- * live search, platform/category filtering, and dynamic in-feed ads.
+ * GTA 6 Cheats (English) – Complete list of all 61 cheats, verified D-Pad button sequences,
+ * exact unlock requirements, live search, platform/category filtering, and dynamic in-feed ads.
  */
 
 const cheatsData = [
-  // Player
+  // ==========================================
+  // PLAYER (10 Player Cheats)
+  // ==========================================
   {
     title: "$250,000 Cash (Instant Money Cheat)",
     category: "Player",
-    description: "Instantly adds $250,000 to your bank account. Unlock requirement: Finish the main story (all 91 missions). Pull out your phone (D-Pad Up), hold L1/LB + press R1/RB, and enter the D-pad sequence.",
+    description: "Instantly adds $250,000 to your account. Requirement: Finish the main story (all 91 missions). Pull out your phone (D-Pad Up), hold L1 and press R1 (PS5) / hold LB and press RB (Xbox), and enter the D-pad sequence.",
     verified: true,
     ps5: "L1 + R1, Up, Right, Down, Left, Up, Left, Down, Right",
     xbox: "LB + RB, Up, Right, Down, Left, Up, Left, Down, Right",
-    phone: "Unlock: Finish Main Story (Progress → Cheats)"
+    phone: "Unlock: Finish Main Story (91 missions)"
   },
   {
     title: "Unlimited Focus (Special Ability)",
     category: "Player",
-    description: "Your Focus meter never drains. Unlock requirement: Finish the main story. Open your phone (D-Pad Up), hold L1/LB + R1/RB, and input the directional code.",
+    description: "Your Focus meter never drains. Requirement: Finish the main story. Open your phone (D-Pad Up), hold L1 and press R1 (PS5) / hold LB and press RB (Xbox), and input the directional code.",
     verified: true,
     ps5: "L1 + R1, Down, Up, Up, Down, Up, Down, Up, Down, Up, Right",
     xbox: "LB + RB, Down, Up, Up, Down, Up, Down, Up, Down, Up, Right",
-    phone: "Unlock: Finish Main Story (Progress → Cheats)"
+    phone: "Unlock: Finish Main Story (91 missions)"
   },
   {
     title: "Body Armor",
     category: "Player",
-    description: "Instantly adds full body armor to your loadout. Unlock requirement: Complete 100 workouts after beating the main story.",
+    description: "Instantly adds full body armor to your loadout. Note: The code will not be accepted until the challenge is complete. Unlock requirement: Complete 100 workouts.",
     verified: true,
     ps5: "L1 + R1, Down, Up, Left, Up, Up, Up, Up, Up, Down, Down",
     xbox: "LB + RB, Down, Up, Left, Up, Up, Up, Up, Up, Down, Down",
     phone: "Unlock: Complete 100 Workouts"
   },
   {
+    title: "Raise Heat Level",
+    category: "Player",
+    description: "Raises your police Heat Level across Leonida. The code is accepted once the challenge is completed. Unlock requirement: Lose a 3-star wanted level 25 times.",
+    verified: true,
+    ps5: "L1 + R1, Left, Down, Right, Down, Up, Down, Up",
+    xbox: "LB + RB, Left, Down, Right, Down, Up, Down, Up",
+    phone: "Unlock: Lose 3-Star Wanted Level 25 Times"
+  },
+  {
+    title: "Raise Wanted Level",
+    category: "Player",
+    description: "Increases your active police Wanted Level for intense chases in Vice City. The code is accepted once the challenge is completed. Unlock requirement: Lose a 3-star wanted level 50 times.",
+    verified: true,
+    ps5: "L1 + R1, Left, Down, Right, Down, Up, Right, Up",
+    xbox: "LB + RB, Left, Down, Right, Down, Up, Right, Up",
+    phone: "Unlock: Lose 3-Star Wanted Level 50 Times"
+  },
+  {
     title: "No Fall Damage",
     category: "Player",
-    description: "Makes your character completely immune to fall damage. Unlock requirement: Survive a freefall from 40 feet (12 meters) 20 times.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Unlock: Survive 20 Freefalls from 40ft"
+    description: "Makes your character completely immune to fall damage from any height. Unlock requirement: Survive a freefall from 40 feet (12 meters) 20 times.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Survive 20 Freefalls from 40ft (12m)"
   },
   {
     title: "Parachute",
     category: "Player",
-    description: "Adds a parachute directly to your loadout. Unlock requirement: Complete 50 skydives or BASE jumps from 300 feet or higher.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Unlock: Complete 50 Skydives (300ft+)"
+    description: "Adds a parachute directly to your loadout. Unlock requirement: Complete 50 parachute jumps from 300 feet or higher.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 50 Parachute Jumps (300ft+)"
   },
   {
     title: "Drunk Mode",
     category: "Player",
     description: "Instantly makes both you and your partner drunk. Unlock requirement: Spend $2,500 on alcohol in-game.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Spend $2,500 on Alcohol"
   },
+  {
+    title: "Repair Vehicle",
+    category: "Player",
+    description: "Fully repairs your current vehicle instantly. Unlock requirement: Finish 1st place in 10 races at Gellhorn Raceway, Thrillbilly Mud Club, and Boone Speedway.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Win 1st Place in 10 Races"
+  },
+  {
+    title: "Unlimited Nitrous & Fuel",
+    category: "Player",
+    description: "Nitrous boost and fuel never run out on any vehicle. Unlock requirement: Complete 50 Stunt Jumps across Leonida.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 50 Stunt Jumps"
+  },
 
-  // Weapons & Combat
+  // ==========================================
+  // WEAPONS & COMBAT (11 Combat Cheats)
+  // ==========================================
+  {
+    title: "Max Ammo",
+    category: "Weapons",
+    description: "Instantly refills all gun ammunition to maximum capacity. Unlock requirement: Win 25 bronze medals or higher at shooting ranges.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
+    xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
+    phone: "Unlock: 25 Bronze Medals at Shooting Range"
+  },
   {
     title: "Infinite Ammo",
     category: "Weapons",
@@ -69,15 +118,6 @@ const cheatsData = [
     ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Down, Down, Down",
     xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Down, Down, Down",
     phone: "Unlock: 25 Silver Medals at Shooting Range"
-  },
-  {
-    title: "Max Ammo",
-    category: "Weapons",
-    description: "Instantly refills all ammunition to maximum capacity. Unlock requirement: Win 25 bronze medals or higher at shooting ranges.",
-    verified: true,
-    ps5: "L1 + R1, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
-    xbox: "LB + RB, Down, Up, Right, Down, Left, Left, Up, Up, Down, Left",
-    phone: "Unlock: 25 Bronze Medals at Shooting Range"
   },
   {
     title: "No Reload",
@@ -91,11 +131,11 @@ const cheatsData = [
   {
     title: "Attack Force (Super Knockback)",
     category: "Weapons",
-    description: "Bullets and melee attacks launch targets flying on impact. Unlock requirement: Finish the main story.",
+    description: "Bullets and melee attacks launch targets flying backward on impact. Unlock requirement: Finish the main story (91 missions).",
     verified: true,
     ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Down, Up, Down",
     xbox: "LB + RB, Down, Up, Left, Left, Right, Down, Down, Up, Down",
-    phone: "Unlock: Finish Main Story (Progress → Cheats)"
+    phone: "Unlock: Finish Main Story (91 missions)"
   },
   {
     title: "Exploding Balls",
@@ -104,13 +144,11 @@ const cheatsData = [
     verified: true,
     ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Down, Up, Right",
     xbox: "LB + RB, Down, Up, Left, Left, Right, Down, Down, Up, Right",
-    phone: "Unlock: Hit 20 Enemies with Explosives"
+    phone: "Unlock: Hit 20 Enemies with Explosive Damage"
   },
-
-  // Vehicles
   {
     title: "Vehicle Force (Collisions Launch Targets)",
-    category: "Vehicles",
+    category: "Weapons",
     description: "Vehicle collisions send other cars and targets flying through the air. Unlock requirement: Kill 25 enemies with a vehicle.",
     verified: true,
     ps5: "L1 + R1, Down, Up, Left, Left, Right, Down, Left, Up, Down",
@@ -118,52 +156,247 @@ const cheatsData = [
     phone: "Unlock: Kill 25 Enemies with a Vehicle"
   },
   {
-    title: "Repair Vehicle",
-    category: "Vehicles",
-    description: "Fully repairs your current vehicle instantly. Unlock requirement: Win 1st place in 10 races at Gellhorn Raceway, Thrillbilly Mud Club, and Boone Speedway.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Unlock: 1st Place in 10 Races"
+    title: "All Explosive Weapons",
+    category: "Weapons",
+    description: "Adds every explosive weapon to your loadout with full ammo. Unlock requirement: Throw 100 grenades.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Throw 100 Grenades"
   },
   {
-    title: "Unlimited Nitrous & Fuel",
+    title: "Incendiary Ammo (Flaming Bullets)",
+    category: "Weapons",
+    description: "Imbues all standard firearm ammunition with fire damage that ignites targets. Unlock requirement: Burn 100 enemies with fire damage.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Burn 100 Enemies with Fire Damage"
+  },
+  {
+    title: "Exploding Bottles",
+    category: "Weapons",
+    description: "Causes all bottles in the game world to explode when damaged or shot. Unlock requirement: Throw 100 Molotov cocktails.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Throw 100 Molotovs"
+  },
+  {
+    title: "Explosive Shotgun (Mason & Keen Shortstraw)",
+    category: "Weapons",
+    description: "Adds the Mason & Keen Shortstraw shotgun loaded with explosive shells to your inventory. Unlock requirement: Hit 100 enemies with explosive damage.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Hit 100 Enemies with Explosive Damage"
+  },
+  {
+    title: "Hauners H-AT (Anti-Tank Weapon)",
+    category: "Weapons",
+    description: "Adds the heavy Hauners H-AT launcher to your weapon loadout. Unlock requirement: Blow up 100 vehicles.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Blow Up 100 Vehicles"
+  },
+
+  // ==========================================
+  // VEHICLES (21 Spawn Vehicle Cheats)
+  // ==========================================
+  {
+    title: "Spawn Maibatsu Boomazoom",
     category: "Vehicles",
-    description: "Nitrous boost and fuel never run out on any vehicle. Unlock requirement: Complete 50 Stunt Jumps across Leonida.",
+    description: "Spawns a Maibatsu Boomazoom at your current location. Unlock requirement: Complete 5 Shopping Challenges.",
     verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Unlock: Complete 50 Stunt Jumps"
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Left, Up, Left",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Left, Up, Left",
+    phone: "Unlock: Complete 5 Shopping Challenges"
+  },
+  {
+    title: "Spawn MTL Pumper (Fire Truck)",
+    category: "Vehicles",
+    description: "Spawns an MTL Pumper fire truck right in front of you. Unlock requirement: Discover the MTL Pumper in the Progress menu.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Right, Right, Up",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Right, Right, Up",
+    phone: "Unlock: Discover MTL Pumper in Progress Menu"
+  },
+  {
+    title: "Spawn HVY Bulldozer",
+    category: "Vehicles",
+    description: "Spawns a heavy-duty HVY Bulldozer. Unlock requirement: Discover the HVY Bulldozer in the Progress menu.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Right, Right, Down",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Right, Right, Down",
+    phone: "Unlock: Discover HVY Bulldozer in Progress Menu"
+  },
+  {
+    title: "Spawn Tank (Hauners Rhino Tank)",
+    category: "Vehicles",
+    description: "Spawns the heavily armored Hauners Rhino Tank. Unlock requirement: Complete all Survival Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Survival Challenges"
+  },
+  {
+    title: "Spawn Fighter Jet (Hauners P-996 Lazer)",
+    category: "Vehicles",
+    description: "Spawns the Hauners P-996 Lazer military fighter jet. Unlock requirement: Complete all challenges in the entire game (100% completionist reward).",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Challenges in the Game"
   },
   {
     title: "Spawn Sports Car (Bravado Banshee)",
     category: "Vehicles",
     description: "Spawns a Bravado Banshee sports car right in front of you. Unlock requirement: Complete all Combat Challenges.",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Complete All Combat Challenges"
+  },
+  {
+    title: "Spawn Hypercar (Progen Emerus)",
+    category: "Vehicles",
+    description: "Spawns a Progen Emerus hypercar. Unlock requirement: Complete all Vehicle Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Vehicle Challenges"
+  },
+  {
+    title: "Spawn Supercar (Truffade Thrax)",
+    category: "Vehicles",
+    description: "Spawns a luxury Truffade Thrax supercar in Vice City. Unlock requirement: Complete all Shopping Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Shopping Challenges"
+  },
+  {
+    title: "Spawn Muscle Car ('65 Vapid Dominator)",
+    category: "Vehicles",
+    description: "Spawns a classic '65 Vapid Dominator muscle car. Unlock requirement: Complete all Fitness Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Fitness Challenges"
+  },
+  {
+    title: "Spawn Sport Bike (Nagasaki Carbon RS)",
+    category: "Vehicles",
+    description: "Spawns a high-speed Nagasaki Carbon RS motorcycle. Unlock requirement: Complete all Exploration Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Exploration Challenges"
+  },
+  {
+    title: "Spawn Chopper (Western Zombie Bobber)",
+    category: "Vehicles",
+    description: "Spawns a Western Zombie Bobber custom motorcycle. Unlock requirement: Complete all Criminal Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Criminal Challenges"
+  },
+  {
+    title: "Spawn Golf Cart (Brimstone Golfer)",
+    category: "Vehicles",
+    description: "Spawns a Brimstone Golfer at your location. Unlock requirement: Complete all Sports Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete All Sports Challenges"
+  },
+  {
+    title: "Spawn Sea Helicopter (Nagasaki Sea Sparrow)",
+    category: "Vehicles",
+    description: "Spawns a Nagasaki Sea Sparrow amphibious helicopter. Unlock requirement: Complete 5 Exploration Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 5 Exploration Challenges"
   },
   {
     title: "Spawn Airboat 09",
     category: "Vehicles",
     description: "Spawns an Airboat 09 built for tearing across the Grassrivers swamps. Unlock requirement: Complete 5 Survival Challenges.",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Complete 5 Survival Challenges"
+  },
+  {
+    title: "Spawn Speedboat (Speeder 700 GT)",
+    category: "Vehicles",
+    description: "Spawns a fast Speeder 700 GT powerboat. Unlock requirement: Complete 5 Combat Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 5 Combat Challenges"
+  },
+  {
+    title: "Spawn Stunt Plane (Lapwing Mallard)",
+    category: "Vehicles",
+    description: "Spawns an acrobatic Lapwing Mallard stunt plane. Unlock requirement: Complete 5 Vehicle Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 5 Vehicle Challenges"
+  },
+  {
+    title: "Spawn Dirt Bike (Maibatsu Sanchez)",
+    category: "Vehicles",
+    description: "Spawns an off-road Maibatsu Sanchez dirt bike. Unlock requirement: Complete 5 Criminal Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 5 Criminal Challenges"
   },
   {
     title: "Spawn Tuff BMX",
     category: "Vehicles",
     description: "Spawns a Tuff BMX bike for street tricks in Vice City. Unlock requirement: Complete 5 Fitness Challenges.",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Complete 5 Fitness Challenges"
   },
+  {
+    title: "Spawn Taxi (Vapid Stanier G2 Taxi)",
+    category: "Vehicles",
+    description: "Spawns a Vapid Stanier G2 Taxi cab. Unlock requirement: Complete 5 Sports Challenges.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 5 Sports Challenges"
+  },
+  {
+    title: "Spawn Ambulance (Interstate Ambulance)",
+    category: "Vehicles",
+    description: "Spawns an Interstate Ambulance emergency vehicle. Unlock requirement: Discover the Interstate Ambulance in the Progress menu.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Discover Interstate Ambulance in Progress"
+  },
+  {
+    title: "Spawn Inflatable Flamingo",
+    category: "Vehicles",
+    description: "Spawns a pink Inflatable Flamingo. Unlock requirement: Destroy 50 Cocaine Flamingos across Leonida.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Destroy 50 Cocaine Flamingos"
+  },
 
-  // World & Police
+  // ==========================================
+  // WORLD & SCREEN FILTERS (3 Environment + 16 Screen Filters)
+  // ==========================================
   {
     title: "Cycle Weather in Vice City",
     category: "World",
@@ -171,50 +404,176 @@ const cheatsData = [
     verified: true,
     ps5: "L1 + R1, Down, Right, Up, Down, Right, Up, Right",
     xbox: "LB + RB, Down, Right, Up, Down, Right, Up, Right",
-    phone: "Unlock: Finish Story / Reveal Map"
-  },
-  {
-    title: "Raise Heat Level",
-    category: "World",
-    description: "Raises your police Heat Level across the map. Unlock requirement: Lose a 3-star wanted level 25 times.",
-    verified: true,
-    ps5: "L1 + R1, Left, Down, Right, Down, Up, Down, Up",
-    xbox: "LB + RB, Left, Down, Right, Down, Up, Down, Up",
-    phone: "Unlock: Lose 3-Star Wanted Level 25 Times"
-  },
-  {
-    title: "Raise Wanted Level",
-    category: "World",
-    description: "Increases your active police Wanted Level for intense chases in Vice City. Unlock requirement: Lose a 3-star wanted level 50 times.",
-    verified: true,
-    ps5: "L1 + R1, Left, Down, Right, Down, Up, Right, Up",
-    xbox: "LB + RB, Left, Down, Right, Down, Up, Right, Up",
-    phone: "Unlock: Lose 3-Star Wanted Level 50 Times"
+    phone: "Unlock: Finish Story / Reveal Entire Map"
   },
   {
     title: "Move Time Forward",
     category: "World",
     description: "Advances the in-game time of day forward. Unlock requirement: Find 10 Collectible Watches hidden around Leonida.",
-    verified: true,
-    ps5: "Progress → Cheats → Environment",
-    xbox: "Progress → Cheats → Environment",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Find 10 Collectible Watches"
   },
   {
     title: "Pause Time of Day",
     category: "World",
     description: "Locks the current time of day in place. Unlock requirement: Find 20 Collectible Watches across the map.",
-    verified: true,
-    ps5: "Progress → Cheats → Environment",
-    xbox: "Progress → Cheats → Environment",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
     phone: "Unlock: Find 20 Collectible Watches"
+  },
+  {
+    title: "Cataclysm – Murky Smoke (Screen Filter)",
+    category: "World",
+    description: "Fills the entire game world of Leonida with dense, apocalyptic murky smoke. Unlock requirement: Discover Martha's Vamos in the Progress menu.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Right, Right",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Right, Right",
+    phone: "Unlock: Discover Martha's Vamos in Progress Menu"
+  },
+  {
+    title: "Dollhouse – Vivid Narrow Aspect (Screen Filter)",
+    category: "World",
+    description: "Applies a vivid dollhouse color filter with a narrow aspect ratio. Unlock requirement: Spend 8 hours with your partner.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Down, Right",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Down, Right",
+    phone: "Unlock: Spend 8 Hours with Your Partner"
+  },
+  {
+    title: "Faded Glory – Color CRT TV (Screen Filter)",
+    category: "World",
+    description: "Applies a nostalgic color CRT television filter across the screen. Unlock requirement: Rob 50 stores with your partner.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Left, Right",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Left, Right",
+    phone: "Unlock: Rob 50 Stores with Your Partner"
+  },
+  {
+    title: "Golden Hour – Widescreen Sunset (Screen Filter)",
+    category: "World",
+    description: "Applies a cinematic golden sunset filter paired with a widescreen aspect ratio. Unlock requirement: Spend 4 hours holding hands with your partner.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Spend 4 Hours Holding Hands with Partner"
+  },
+  {
+    title: "Powdered Sugar (Screen Filter)",
+    category: "World",
+    description: "Turns the game world stark white with sparkling highlights. Unlock requirement: Scan all space debris using WAiNK.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Scan All Space Debris with WAiNK"
+  },
+  {
+    title: "Neon Jungle (Screen Filter)",
+    category: "World",
+    description: "Drenches Vice City and Leonida in vibrant neon highlights. Unlock requirement: Discover all 16 Girlypop vehicles.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Discover All 16 Girlypop Vehicles"
+  },
+  {
+    title: "Pinhole Camera (Screen Filter)",
+    category: "World",
+    description: "Applies a classic pinhole camera vignette filter. Unlock requirement: Clear 25 gang operations with your partner.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Clear 25 Gang Operations with Partner"
+  },
+  {
+    title: "Yesteryear – B&W CRT TV (Screen Filter)",
+    category: "World",
+    description: "Applies a vintage black-and-white CRT TV filter. Unlock requirement: Discover the Ridgway in the Progress menu.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Discover the Ridgway in Progress Menu"
+  },
+  {
+    title: "Fast Forward – Motion Blur (Screen Filter)",
+    category: "World",
+    description: "Adds motion blur and accelerates cloud movement across the sky. Unlock requirement: Complete 50 meditations.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 50 Meditations"
+  },
+  {
+    title: "Fisheye Lens (Screen Filter)",
+    category: "World",
+    description: "Applies an ultra-wide fisheye camera lens filter. Unlock requirement: Catch 100 fish across Leonida.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Catch 100 Fish"
+  },
+  {
+    title: "Pixel Art – Retro Pixelated (Screen Filter)",
+    category: "World",
+    description: "Applies a retro pixelated graphical filter over the game world. Unlock requirement: Make $250,000 selling collectibles.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Make $250,000 Selling Collectibles"
+  },
+  {
+    title: "Hellscape – Heat Haze (Screen Filter)",
+    category: "World",
+    description: "Turns the world red and orange with a heavy heat-haze distortion. Unlock requirement: Steal 100 police vehicles.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Steal 100 Police Vehicles"
+  },
+  {
+    title: "Videotape – VHS Filter (Screen Filter)",
+    category: "World",
+    description: "Applies a retro 1980s VHS videotape filter. Unlock requirement: Complete 50 activities with your partner.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Complete 50 Activities with Partner"
+  },
+  {
+    title: "Dark Mirror – Upside Down (Screen Filter)",
+    category: "World",
+    description: "Flips the entire game world upside down and turns it black. Unlock requirement: Make $500,000 selling vehicles.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Make $500,000 Selling Vehicles"
+  },
+  {
+    title: "Migraine – Blurred Distortion (Screen Filter)",
+    category: "World",
+    description: "Applies a blurred, distorted visual filter across the screen. Unlock requirement: Survive 6 minutes with a 6-star Wanted level.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Survive 6 Minutes with 6-Star Wanted Level"
+  },
+  {
+    title: "Bubblegum – Purple & Yellow Sparkle (Screen Filter)",
+    category: "World",
+    description: "Turns the world purple and yellow with sparkling highlights. Unlock requirement: Find all 24 collectible cards for the Vice City Flamingos.",
+    verified: false,
+    ps5: "Code coming soon (Progress → Cheats)",
+    xbox: "Code coming soon (Progress → Cheats)",
+    phone: "Unlock: Find All 24 Vice City Flamingos Cards"
   }
 ];
 
 const PLATFORM_META = {
   ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
   xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Unlock / Menu", className: "platform-phone" }
+  phone: { label: "Unlock Requirement", className: "platform-phone" }
 };
 
 const state = {
@@ -276,6 +635,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isRequirement =
       !codeValue ||
       codeValue.toLowerCase().includes("available") ||
+      codeValue.toLowerCase().includes("coming soon") ||
       codeValue.toLowerCase().startsWith("unlock:");
 
     if (isRequirement) {
@@ -322,7 +682,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const statusBadge = document.createElement("span");
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
-    statusBadge.textContent = cheat.verified ? "Verified" : "Pending";
+    statusBadge.textContent = cheat.verified ? "Verified Code" : "Code coming soon";
 
     badges.append(catBadge, statusBadge);
     header.append(title, badges);
@@ -432,7 +792,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const matchesSearch =
         !query ||
         item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query);
+        item.description.toLowerCase().includes(query) ||
+        (item.phone && item.phone.toLowerCase().includes(query));
 
       return matchesCategory && matchesPlatform && matchesSearch;
     });
@@ -446,10 +807,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     emptyStateEl.hidden = true;
+    const verifiedCount = cheatsData.filter((c) => c.verified).length;
     resultsCountEl.textContent =
       filtered.length === cheatsData.length
-        ? `Showing all ${filtered.length} verified GTA 6 cheats`
-        : `Showing ${filtered.length} of ${cheatsData.length} cheat codes`;
+        ? `Showing all ${filtered.length} GTA 6 cheats (${verifiedCount} D-Pad codes + ${filtered.length - verifiedCount} unlock requirements)`
+        : `Showing ${filtered.length} of ${cheatsData.length} GTA 6 cheats`;
 
     const fragment = document.createDocumentFragment();
     let adCount = 0;

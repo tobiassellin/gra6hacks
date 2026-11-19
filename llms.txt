@@ -1,31 +1,47 @@
 # GTA 6 Fuskkoder Sverige (gta6hacks.se)
 
-> Komplett svensk och engelsk databas med alla verifierade fuskkoder, D-Pad-kombinationer och upplåsningskrav till Grand Theft Auto VI (GTA 6) på PlayStation 5 (PS5) och Xbox Series X|S.
+> Komplett svensk och engelsk databas med alla 61 fuskkoder, verifierade D-Pad-pilkoder, exakta upplåsningskrav och Chapter 2-kassaskåpskoder till Grand Theft Auto VI (GTA 6) på PlayStation 5 (PS5) och Xbox Series X|S.
 
-GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html) samlar alla verifierade fuskkoder och utmaningar för enspelarläget i Grand Theft Auto VI (totalt 61 fusk: 10 Player, 11 Combat, 21 Spawn Vehicle, 3 Environment och 16 Screen Filters).
+GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html) samlar samtliga 61 fusk och utmaningar för enspelarläget i Grand Theft Auto VI (10 Player, 11 Combat, 21 Spawn Vehicle, 3 Environment och 16 Screen Filters) samt fasta kassaskåpskoder för Chapter 2.
 
 ## Hur man slår in fusk i GTA 6 (PS5 & Xbox Series X|S)
-1. **Klara huvudberättelsen:** Du måste klara alla 91 huvuduppdrag i Story Mode samt fuskets specifika utmaning för att låsa upp det under *Progress → Cheats*.
-2. **Öppna telefonen:** Tryck **Upp på styrkorset (D-Pad Up)** för att ta fram mobiltelefonen.
-3. **Aktivera fuskmenyn:** Håll inne **L1 och tryck R1** (PS5) eller håll inne **LB och tryck RB** (Xbox Series X|S).
-4. **Mata in D-Pad-koden:** Tryck in fuskets riktningssekvens på styrkorset (Upp, Ner, Vänster, Höger).
+1. **Klara huvudberättelsen & utmaningen:** Du måste klara alla 91 huvuduppdrag i Story Mode samt fuskets specifika utmaning för att låsa upp det under *Progress → Cheats*. Spelet accepterar inte pilkoden förrän fuskets utmaning är avklarad.
+2. **Ta upp mobiltelefonen:** Tryck **Upp på styrkorset (↑ / D-Pad Up)**.
+3. **Aktivera fuskmenyn:** **Håll inne L1 och tryck på R1** (PS5) eller **håll inne LB och tryck på RB** (Xbox Series X|S).
+4. **Slå in pilkoden:** Mata in fuskets riktningssekvens på styrkorset (Upp, Ner, Vänster, Höger).
 
-## Verifierade D-Pad-fuskkoder i GTA 6
+## Kassaskåpskoder i GTA 6 – Chapter 2 (Port Gellhorn Safe Codes)
+- **Brooks Boatworks:** `6823` *(Nordöstra Port Gellhorn – väggkartan i kontoret på övervåningen loggar även alla 3 koder)*
+- **La Cascara Motel:** `6969` *(Port Gellhorn – Illegal Operation)*
+- **Kingpin Bowling:** `0300` *(Port Gellhorn – Illegal Operation)*
+- **Vanliga butiksrån (Store Robberies):** Slumpade koder varje gång.
+
+## Verifierade D-Pad-pilkoder i GTA 6 (18 st)
 - **$250 000 Pengar ($250,000 Cash):** `Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger` *(Krav: Klara storyn)*
 - **Oändligt Fokus (Unlimited Focus):** `Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger` *(Krav: Klara storyn)*
 - **Skyddsväst (Body Armor):** `Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner` *(Krav: 100 träningspass)*
+- **Höj Heat-nivå (Raise Heat Level):** `Vänster, Ner, Höger, Ner, Upp, Ner, Upp` *(Krav: Bli av med 3 stjärnor 25 gånger)*
+- **Höj Efterlysningsnivå (Raise Wanted Level):** `Vänster, Ner, Höger, Ner, Upp, Höger, Upp` *(Krav: Bli av med 3 stjärnor 50 gånger)*
 - **Full Ammunition (Max Ammo):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster` *(Krav: 25 brons på skjutbanan)*
 - **Oändlig Ammunition (Infinite Ammo):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner` *(Krav: 25 silver på skjutbanan)*
 - **Ingen Omladdning (No Reload):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp` *(Krav: 25 guld på skjutbanan)*
 - **Attack Force (Superkraft i skott & närstrid):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner` *(Krav: Klara storyn)*
 - **Exploding Balls (Explosiva sportbollar):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger` *(Krav: Träffa 20 fiender med explosiv skada)*
 - **Vehicle Force (Fordonskrockar slungar mål):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner` *(Krav: Besegra 25 fiender med fordon)*
-- **Höj Heat-nivå (Raise Heat Level):** `Vänster, Ner, Höger, Ner, Upp, Ner, Upp` *(Krav: Bli av med 3 stjärnor 25 gånger)*
-- **Höj Efterlysningsnivå (Raise Wanted Level):** `Vänster, Ner, Höger, Ner, Upp, Höger, Upp` *(Krav: Bli av med 3 stjärnor 50 gånger)*
-- **Ändra Väder (Cycle Weather):** `Ner, Höger, Upp, Ner, Höger, Upp, Höger` *(Krav: Klara storyn / utforska kartan)*
+- **Spawna Maibatsu Boomazoom:** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster` *(Krav: Klara 5 Shopping Challenges)*
+- **Spawna MTL Pumper (Brandbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp` *(Krav: Upptäck MTL Pumper i Progress-menyn)*
+- **Spawna HVY Bulldozer:** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner` *(Krav: Upptäck HVY Bulldozer i Progress-menyn)*
+- **Ändra Väder (Cycle Weather):** `Ner, Höger, Upp, Ner, Höger, Upp, Höger` *(Krav: Klara storyn / öppna hela kartan)*
+- **Cataclysm (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger` *(Krav: Upptäck Martha's Vamos)*
+- **Dollhouse (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger` *(Krav: Spendera 8 timmar med partner)*
+- **Faded Glory (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger` *(Krav: Råna 50 butiker med partner)*
 
-## Viktiga regler
-- Aktiverade fusk stänger tillfälligt av möjligheten att spara spelet samt PlayStation Trophies och Xbox Achievements under pågående session.
+## Populära upplåsningsfusk bland alla 61 fusk
+- **Hauners Rhino Tank (Stridsvagn):** Klara alla Survival-utmaningar.
+- **Hauners P-996 Lazer (Stridsflygplan):** Klara alla utmaningar i hela spelet.
+- **No Fall Damage (Ingen fallskada):** Överlev 20 fria fall från 12 m (40 fot).
+- **Parachute (Fallskärm):** Genomför 50 fallskärmshopp från 300 fot+.
+- **Unlimited Nitrous (Oändlig lustgas & bränsle):** Klara 50 stunthopp (Stunt Jumps).
 
 ## Viktiga länkar
 - [GTA 6 Fuskkoder (Svenska)](https://gta6hacks.se/)

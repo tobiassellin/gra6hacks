@@ -1,66 +1,115 @@
 /**
- * GTA 6 Fuskkoder (Svenska) – Verifierade D-Pad-koder, upplåsningskrav,
- * livesökning, filtrering och dynamiska in-feed-annonser.
+ * GTA 6 Fuskkoder (Svenska) – Komplett lista med alla 61 fusk, verifierade D-Pad-koder,
+ * exakta upplåsningskrav, livesökning, filtrering och dynamiska in-feed-annonser.
  */
 
 const cheatsData = [
-  // Spelare (Player)
+  // ==========================================
+  // SPELARE (10 Player Cheats)
+  // ==========================================
   {
     title: "$250 000 Pengar (Instant Cash)",
     category: "Spelare",
-    description: "Ger dig omedelbart $250 000 på kontot. Krav: Klara huvudberättelsen (alla 91 uppdrag). Öppna telefonen (Upp), håll inne L1/LB + tryck R1/RB och slå in D-pad-koden.",
+    description: "Ger dig omedelbart $250 000 på kontot. Krav: Klara huvudberättelsen (alla 91 uppdrag). Ta upp mobilen (↑), håll inne L1 och tryck R1 (PS5) / håll inne LB och tryck RB (Xbox) och slå in pilkoden.",
     verified: true,
     ps5: "L1 + R1, Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger",
     xbox: "LB + RB, Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger",
-    phone: "Krav: Klara storyn (Progress → Cheats)"
+    phone: "Krav: Klara storyn (91 uppdrag)"
   },
   {
     title: "Oändligt Fokus (Unlimited Focus)",
     category: "Spelare",
-    description: "Din specialförmåga (Focus) tar aldrig slut. Krav: Klara huvudberättelsen. Öppna telefonen med Upp på styrkorset, håll L1/LB + R1/RB och mata in koden.",
+    description: "Din specialförmåga (Focus) tar aldrig slut. Krav: Klara huvudberättelsen. Ta upp mobilen (↑), håll inne L1 och tryck R1 (PS5) / håll inne LB och tryck RB (Xbox) och mata in pilkoden.",
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger",
     xbox: "LB + RB, Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger",
-    phone: "Krav: Klara storyn (Progress → Cheats)"
+    phone: "Krav: Klara storyn (91 uppdrag)"
   },
   {
     title: "Skyddsväst (Body Armor)",
     category: "Spelare",
-    description: "Utrustar din karaktär med full skyddsväst direkt. Krav för upplåsning: Genomför 100 träningspass (workouts) efter att du klarat storyn.",
+    description: "Lägger till full skyddsväst i din utrustning direkt. Koden accepteras först när utmaningen är avklarad. Krav för upplåsning: Genomför 100 träningspass (Workouts).",
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner",
     xbox: "LB + RB, Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner",
-    phone: "Krav: 100 träningspass (Workouts)"
+    phone: "Krav: Genomför 100 träningspass (Workouts)"
+  },
+  {
+    title: "Höj Heat-nivå (Raise Heat Level)",
+    category: "Spelare",
+    description: "Ökar din Heat-nivå hos polisen i Leonida. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 25 gånger.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
+    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
+    phone: "Krav: Bli av med 3 stjärnor 25 gånger"
+  },
+  {
+    title: "Höj Efterlysningsnivå (Raise Wanted Level)",
+    category: "Spelare",
+    description: "Ökar din aktiva Wanted Level direkt för intensiv polisjakt. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 50 gånger.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
+    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
+    phone: "Krav: Bli av med 3 stjärnor 50 gånger"
   },
   {
     title: "Ingen Fallskada (No Fall Damage)",
     category: "Spelare",
     description: "Gör dig helt immun mot fallskador från höga höjder. Krav för upplåsning: Överlev 20 fria fall från minst 12 meter (40 fot).",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Krav: Överlev 20 fall från 40 fot"
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Överlev 20 fria fall från 12 m (40 fot)"
   },
   {
     title: "Fallskärm (Parachute)",
     category: "Spelare",
-    description: "Lägger till en fallskärm i din utrustning. Krav för upplåsning: Genomför 50 fallskärmshopp eller BASE-hopp från minst 300 fot.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Krav: 50 fallskärmshopp (300 fot+)"
+    description: "Lägger till en fallskärm direkt i din utrustning. Krav för upplåsning: Genomför 50 fallskärmshopp från minst 90 meter (300 fot).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: 50 fallskärmshopp från 300 fot+"
   },
   {
     title: "Fylleri-läge (Drunk Mode)",
     category: "Spelare",
     description: "Gör omedelbart både dig och din partner berusade. Krav för upplåsning: Spendera totalt $2 500 på alkohol i spelet.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Spendera $2 500 på alkohol"
   },
+  {
+    title: "Reparera Fordon (Repair Vehicle)",
+    category: "Spelare",
+    description: "Reparerar omedelbart ditt nuvarande fordon till nyskick. Krav: Ta 1:a plats i 10 lopp på Gellhorn Raceway, Thrillbilly Mud Club och Boone Speedway.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Vinn 1:a plats i 10 lopp"
+  },
+  {
+    title: "Oändlig Lustgas & Bränsle (Unlimited Nitrous)",
+    category: "Spelare",
+    description: "Lustgas (Nitrous) och bränsle tar aldrig slut i fordon. Krav för upplåsning: Klara 50 stunthopp (Stunt Jumps) i Leonida.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 50 stunthopp (Stunt Jumps)"
+  },
 
-  // Vapen & Strid (Weapons & Combat)
+  // ==========================================
+  // VAPEN & STRID (11 Combat Cheats)
+  // ==========================================
+  {
+    title: "Full Ammunition (Max Ammo)",
+    category: "Vapen",
+    description: "Fyller omedelbart på maximal ammunition till alla dina vapen. Krav för upplåsning: Vinn 25 bronsmedaljer eller högre på skjutbanan (Shooting Range).",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
+    xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
+    phone: "Krav: 25 bronsmedaljer på skjutbanan"
+  },
   {
     title: "Oändlig Ammunition (Infinite Ammo)",
     category: "Vapen",
@@ -68,34 +117,25 @@ const cheatsData = [
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner",
     xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner",
-    phone: "Krav: 25 silver på skjutbanan"
-  },
-  {
-    title: "Full Ammunition (Max Ammo)",
-    category: "Vapen",
-    description: "Fyller omedelbart på maximal ammunition till alla dina vapen. Krav för upplåsning: Vinn 25 bronsmedaljer eller högre på skjutbanan.",
-    verified: true,
-    ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
-    xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster",
-    phone: "Krav: 25 brons på skjutbanan"
+    phone: "Krav: 25 silvermedaljer på skjutbanan"
   },
   {
     title: "Ingen Omladdning (No Reload)",
     category: "Vapen",
-    description: "Oändlig ammunition och du behöver aldrig ladda om vapnet. Krav för upplåsning: Vinn 25 guldmedaljer på skjutbanan.",
+    description: "Oändlig ammunition och du behöver aldrig ladda om vapnet. Krav för upplåsning: Vinn 25 guldmedaljer på skjutbanan (Shooting Range).",
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp",
     xbox: "LB + RB, Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp",
-    phone: "Krav: 25 guld på skjutbanan"
+    phone: "Krav: 25 guldmedaljer på skjutbanan"
   },
   {
     title: "Superkraft i Skott & Närstrid (Attack Force)",
     category: "Vapen",
-    description: "Kulor och närstridsattacker slungar iväg fiender med enorm kraft vid träff. Krav för upplåsning: Klara huvudberättelsen.",
+    description: "Kulor och närstridsattacker slungar iväg fiender med enorm kraft vid träff. Krav för upplåsning: Klara huvudberättelsen (91 uppdrag).",
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner",
     xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner",
-    phone: "Krav: Klara storyn (Progress → Cheats)"
+    phone: "Krav: Klara storyn (91 uppdrag)"
   },
   {
     title: "Explosiva Sportbollar (Exploding Balls)",
@@ -104,117 +144,436 @@ const cheatsData = [
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger",
     xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger",
-    phone: "Krav: Träffa 20 fiender med explosioner"
+    phone: "Krav: Träffa 20 fiender med explosiv skada"
   },
-
-  // Fordon (Vehicles)
   {
     title: "Fordonskraft – Krockar Slungar Mål (Vehicle Force)",
-    category: "Fordon",
-    description: "Kollisioner med ditt fordon slungar iväg andra bilar och mål genom luften. Krav: Beseгра 25 fiender med ett fordon.",
+    category: "Vapen",
+    description: "Kollisioner med ditt fordon slungar iväg andra bilar och mål genom luften. Krav för upplåsning: Besegra 25 fiender med ett fordon.",
     verified: true,
     ps5: "L1 + R1, Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner",
     xbox: "LB + RB, Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner",
-    phone: "Krav: 25 fordons-elimineringar"
+    phone: "Krav: Besegra 25 fiender med fordon"
   },
   {
-    title: "Reparera Fordon (Repair Vehicle)",
-    category: "Fordon",
-    description: "Reparerar omedelbart ditt nuvarande fordon till nyskick. Krav: Ta 1:a plats i 10 lopp på Gellhorn Raceway, Thrillbilly Mud Club och Boone Speedway.",
-    verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Krav: Vinn 10 lopp (1:a plats)"
+    title: "Alla Explosiva Vapen (All Explosive Weapons)",
+    category: "Vapen",
+    description: "Lägger till samtliga explosiva vapen med full ammunition i din utrustning. Krav för upplåsning: Kasta 100 handgranater.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Kasta 100 granater"
   },
   {
-    title: "Oändlig Lustgas & Bränsle (Unlimited Nitrous)",
+    title: "Brandammunition (Incendiary Ammo)",
+    category: "Vapen",
+    description: "Förvandlar all din vanliga vapenammunition till brinnande skott som sätter eld på mål. Krav för upplåsning: Bränn 100 fiender med eldskada.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Bränn 100 fiender med eldskada"
+  },
+  {
+    title: "Explosiva Flaskor (Exploding Bottles)",
+    category: "Vapen",
+    description: "Gör att alla flaskor i spelvärlden exploderar när de skadas eller träffas. Krav för upplåsning: Kasta 100 Molotov-cocktails.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Kasta 100 Molotovs"
+  },
+  {
+    title: "Explosivt Hagelgevär (Explosive Shotgun – Shortstraw)",
+    category: "Vapen",
+    description: "Ger dig hagelgeväret Mason & Keen Shortstraw laddat med explosiva patroner. Krav för upplåsning: Träffa 100 fiender med explosiv skada.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Träffa 100 fiender med explosiv skada"
+  },
+  {
+    title: "Hauners H-AT (Pansarvärnsvapen)",
+    category: "Vapen",
+    description: "Lägger till det tunga pansarvärnsvapnet Hauners H-AT i din vapenarsenal. Krav för upplåsning: Spräng 100 fordon i luften.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Spräng 100 fordon"
+  },
+
+  // ==========================================
+  // FORDON (21 Spawn Vehicle Cheats)
+  // ==========================================
+  {
+    title: "Spawna Maibatsu Boomazoom",
     category: "Fordon",
-    description: "Lustgas (Nitrous) och bränsle tar aldrig slut i fordon. Krav för upplåsning: Klara 50 stunthopp (Stunt Jumps) i Leonida.",
+    description: "Frammanar en Maibatsu Boomazoom direkt på din position. Krav för upplåsning: Klara 5 shoppingutmaningar (Shopping Challenges).",
     verified: true,
-    ps5: "Progress → Cheats → Player",
-    xbox: "Progress → Cheats → Player",
-    phone: "Krav: Klara 50 stunthopp"
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster",
+    phone: "Krav: Klara 5 Shopping Challenges"
+  },
+  {
+    title: "Spawna MTL Pumper (Brandbil)",
+    category: "Fordon",
+    description: "Frammanar brandbilen MTL Pumper direkt framför dig. Krav för upplåsning: Upptäck MTL Pumper i Progress-menyn.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp",
+    phone: "Krav: Upptäck MTL Pumper i Progress-menyn"
+  },
+  {
+    title: "Spawna HVY Bulldozer",
+    category: "Fordon",
+    description: "Frammanar den tunga schaktmaskinen HVY Bulldozer. Krav för upplåsning: Upptäck HVY Bulldozer i Progress-menyn.",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner",
+    phone: "Krav: Upptäck HVY Bulldozer i Progress-menyn"
+  },
+  {
+    title: "Spawna Stridsvagn (Hauners Rhino Tank)",
+    category: "Fordon",
+    description: "Frammanar den bepansrade stridsvagnen Hauners Rhino Tank. Krav för upplåsning: Klara samtliga överlevnadsutmaningar (Survival Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Survival-utmaningar"
+  },
+  {
+    title: "Spawna Stridsflygplan (Hauners P-996 Lazer)",
+    category: "Fordon",
+    description: "Frammanar stridsflygplanet Hauners P-996 Lazer Jet. Krav för upplåsning: Klara samtliga utmaningar i hela spelet (100% Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla utmaningar i spelet"
   },
   {
     title: "Spawna Sportbil (Bravado Banshee)",
     category: "Fordon",
     description: "Frammanar sportbilen Bravado Banshee direkt framför dig. Krav för upplåsning: Klara samtliga stridsutmaningar (Combat Challenges).",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Klara alla Combat Challenges"
+  },
+  {
+    title: "Spawna Hyperbil (Progen Emerus)",
+    category: "Fordon",
+    description: "Frammanar hyperbilen Progen Emerus. Krav för upplåsning: Klara samtliga fordonsutmaningar (Vehicle Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Vehicle Challenges"
+  },
+  {
+    title: "Spawna Superbil (Truffade Thrax)",
+    category: "Fordon",
+    description: "Frammanar lyxiga superbilen Truffade Thrax i Vice City. Krav för upplåsning: Klara samtliga shoppingutmaningar (Shopping Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Shopping Challenges"
+  },
+  {
+    title: "Spawna Muskelbil ('65 Vapid Dominator)",
+    category: "Fordon",
+    description: "Frammanar den klassiska muskelbilen '65 Vapid Dominator. Krav för upplåsning: Klara samtliga träningsutmaningar (Fitness Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Fitness Challenges"
+  },
+  {
+    title: "Spawna Sporthoj (Nagasaki Carbon RS)",
+    category: "Fordon",
+    description: "Frammanar den snabba motorcykeln Nagasaki Carbon RS. Krav för upplåsning: Klara samtliga utforskningsutmaningar (Exploration Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Exploration Challenges"
+  },
+  {
+    title: "Spawna Chopper (Western Zombie Bobber)",
+    category: "Fordon",
+    description: "Frammanar motorcykeln Western Zombie Bobber. Krav för upplåsning: Klara samtliga brottsutmaningar (Criminal Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Criminal Challenges"
+  },
+  {
+    title: "Spawna Golfbil (Brimstone Golfer)",
+    category: "Fordon",
+    description: "Frammanar en Brimstone Golfer direkt på din position. Krav för upplåsning: Klara samtliga sportutmaningar (Sports Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara alla Sports Challenges"
+  },
+  {
+    title: "Spawna Sjöhelikopter (Nagasaki Sea Sparrow)",
+    category: "Fordon",
+    description: "Frammanar helikoptern Nagasaki Sea Sparrow som kan landa på vatten. Krav för upplåsning: Klara 5 utforskningsutmaningar (Exploration Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 5 Exploration Challenges"
   },
   {
     title: "Spawna Träskbåt (Airboat 09)",
     category: "Fordon",
-    description: "Frammanar en snabb Airboat 09 perfekt för våtmarkerna i Leonida. Krav: Klara 5 överlevnadsutmaningar (Survival Challenges).",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    description: "Frammanar en snabb Airboat 09 perfekt för våtmarkerna i Leonida. Krav för upplåsning: Klara 5 överlevnadsutmaningar (Survival Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Klara 5 Survival Challenges"
   },
   {
-    title: "Spawna BMX (Tuff BMX)",
+    title: "Spawna Racerbåt (Speeder 700 GT)",
     category: "Fordon",
-    description: "Frammanar en Tuff BMX-cykel för tricks och hopp i Vice City. Krav: Klara 5 träningsutmaningar (Fitness Challenges).",
-    verified: true,
-    ps5: "Progress → Cheats → Spawn Vehicle",
-    xbox: "Progress → Cheats → Spawn Vehicle",
+    description: "Frammanar motorbåten Speeder 700 GT. Krav för upplåsning: Klara 5 stridsutmaningar (Combat Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 5 Combat Challenges"
+  },
+  {
+    title: "Spawna Stuntflygplan (Lapwing Mallard)",
+    category: "Fordon",
+    description: "Frammanar det akrobatiska propellerplanet Lapwing Mallard. Krav för upplåsning: Klara 5 fordonsutmaningar (Vehicle Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 5 Vehicle Challenges"
+  },
+  {
+    title: "Spawna Crossmotorcykel (Maibatsu Sanchez)",
+    category: "Fordon",
+    description: "Frammanar terrängmotorcykeln Maibatsu Sanchez. Krav för upplåsning: Klara 5 brottsutmaningar (Criminal Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 5 Criminal Challenges"
+  },
+  {
+    title: "Spawna BMX-cykel (Tuff BMX)",
+    category: "Fordon",
+    description: "Frammanar en Tuff BMX-cykel för tricks och hopp i Vice City. Krav för upplåsning: Klara 5 träningsutmaningar (Fitness Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Klara 5 Fitness Challenges"
   },
+  {
+    title: "Spawna Taxi (Vapid Stanier G2 Taxi)",
+    category: "Fordon",
+    description: "Frammanar en Vapid Stanier G2 Taxi. Krav för upplåsning: Klara 5 sportutmaningar (Sports Challenges).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Klara 5 Sports Challenges"
+  },
+  {
+    title: "Spawna Ambulans (Interstate Ambulance)",
+    category: "Fordon",
+    description: "Frammanar utryckningsfordonet Interstate Ambulance. Krav för upplåsning: Upptäck Interstate Ambulance i Progress-menyn.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Upptäck Interstate Ambulance i Progress"
+  },
+  {
+    title: "Spawna Uppblåsbar Flamingo (Inflatable Flamingo)",
+    category: "Fordon",
+    description: "Frammanar en uppblåsbar rosa flamingo (Inflatable Flamingo). Krav för upplåsning: Förstör 50 kokain-flamingor (Cocaine Flamingos) i Leonida.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Förstör 50 Cocaine Flamingos"
+  },
 
-  // Värld & Polis (World & Police)
+  // ==========================================
+  // VÄRLD & SKÄRMFILTER (3 Environment + 16 Screen Filters)
+  // ==========================================
   {
     title: "Ändra Väder i Vice City (Cycle Weather)",
     category: "Värld",
-    description: "Växlar dynamiskt mellan solsken, tropisk storm, dimma, regn och åskväder i Leonida. Krav: Klara huvudberättelsen / utforska hela kartan.",
+    description: "Växlar dynamiskt mellan solsken, tropisk storm, dimma, regn och åskväder i Leonida. Krav: Klara huvudberättelsen / öppna hela kartan.",
     verified: true,
     ps5: "L1 + R1, Ner, Höger, Upp, Ner, Höger, Upp, Höger",
     xbox: "LB + RB, Ner, Höger, Upp, Ner, Höger, Upp, Höger",
     phone: "Krav: Klara storyn / öppna hela kartan"
   },
   {
-    title: "Höj Heat-nivå (Raise Heat Level)",
-    category: "Värld",
-    description: "Ökar din Heat-nivå hos polisen över hela kartan. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 25 gånger.",
-    verified: true,
-    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
-    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Ner, Upp",
-    phone: "Krav: Fly från 3 stjärnor 25 gånger"
-  },
-  {
-    title: "Höj Efterlysningsnivå (Raise Wanted Level)",
-    category: "Värld",
-    description: "Ökar din Wanted Level direkt för maximal polisjakt i Vice City. Krav för upplåsning: Bli av med 3-stjärnig efterlysning 50 gånger.",
-    verified: true,
-    ps5: "L1 + R1, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
-    xbox: "LB + RB, Vänster, Ner, Höger, Ner, Upp, Höger, Upp",
-    phone: "Krav: Fly från 3 stjärnor 50 gånger"
-  },
-  {
     title: "Spola Fram Tiden (Move Time Forward)",
     category: "Värld",
     description: "Spolar fram tiden på dygnet i spelet. Krav för upplåsning: Hitta 10 samlarklockor (Collectible Watches) runt om i Leonida.",
-    verified: true,
-    ps5: "Progress → Cheats → Environment",
-    xbox: "Progress → Cheats → Environment",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Hitta 10 samlarklockor"
   },
   {
     title: "Pausa Tiden på Dygnet (Pause Time of Day)",
     category: "Värld",
     description: "Låser den nuvarande tiden på dygnet. Krav för upplåsning: Hitta 20 samlarklockor (Collectible Watches) på kartan.",
-    verified: true,
-    ps5: "Progress → Cheats → Environment",
-    xbox: "Progress → Cheats → Environment",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
     phone: "Krav: Hitta 20 samlarklockor"
+  },
+  {
+    title: "Cataclysm – Mörk Rök (Skärmfilter)",
+    category: "Värld",
+    description: "Fyller hela spelvärlden i Leonida med tät, apokalyptisk rök. Krav för upplåsning: Upptäck Martha's Vamos i Progress-menyn.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger",
+    phone: "Krav: Upptäck Martha's Vamos i Progress"
+  },
+  {
+    title: "Dollhouse – Dockhus (Skärmfilter)",
+    category: "Värld",
+    description: "Ger spelet ett färgstarkt dockhusfilter med smalt bildformat. Krav för upplåsning: Spendera 8 timmar tillsammans med din partner.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger",
+    phone: "Krav: Spendera 8 timmar med din partner"
+  },
+  {
+    title: "Faded Glory – Färg-CRT TV (Skärmfilter)",
+    category: "Värld",
+    description: "Applicerar ett nostalgiskt färg-CRT TV-filter över skärmen. Krav för upplåsning: Råna 50 butiker tillsammans med din partner.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger",
+    phone: "Krav: Råna 50 butiker med din partner"
+  },
+  {
+    title: "Golden Hour – Gyllene Timmen (Skärmfilter)",
+    category: "Värld",
+    description: "Applicerar ett filmiskt gyllene solnedgångsfilter med bredbildsformat (widescreen). Krav för upplåsning: Håll handen med din partner i totalt 4 timmar.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Håll handen med din partner i 4 timmar"
+  },
+  {
+    title: "Powdered Sugar – Florsocker (Skärmfilter)",
+    category: "Värld",
+    description: "Förvandlar spelvärlden till vitt med gnistrande ljuseffekter. Krav för upplåsning: Skanna allt rymdskrot (Space Debris) med WAiNK.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Skanna allt rymdskrot med WAiNK"
+  },
+  {
+    title: "Neon Jungle – Neondjungel (Skärmfilter)",
+    category: "Värld",
+    description: "Dränker Vice City och Leonida i intensiva neonkontraster. Krav för upplåsning: Upptäck alla 16 Girlypop-fordon i spelet.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Upptäck alla 16 Girlypop-fordon"
+  },
+  {
+    title: "Pinhole – Hålkamera (Skärmfilter)",
+    category: "Värld",
+    description: "Applicerar ett klassiskt hålkamerafilter med mörk vinjett. Krav för upplåsning: Rensa 25 gängoperationer (Gang Operations) med din partner.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Rensa 25 gängoperationer med partner"
+  },
+  {
+    title: "Yesteryear – Svartvit CRT-TV (Skärmfilter)",
+    category: "Värld",
+    description: "Ger spelet ett klassiskt svartvitt tjock-TV-filter (CRT). Krav för upplåsning: Upptäck The Ridgway i Progress-menyn.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Upptäck The Ridgway i Progress"
+  },
+  {
+    title: "Fast Forward – Snabbspolning (Skärmfilter)",
+    category: "Värld",
+    description: "Lägger till rörelseoskärpa (motion blur) och snabbar upp molnens rörelser på himlen. Krav för upplåsning: Genomför 50 meditationer.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Genomför 50 meditationer"
+  },
+  {
+    title: "Fisheye – Fisköga (Skärmfilter)",
+    category: "Värld",
+    description: "Ger kameran ett extremt vidvinkligt fisheye-objektiv. Krav för upplåsning: Fånga 100 fiskar i Leonida.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Fånga 100 fiskar"
+  },
+  {
+    title: "Pixel Art – Retro Pixlar (Skärmfilter)",
+    category: "Värld",
+    description: "Förvandlar grafiken till ett retro-pixelerat 8-bitars/16-bitars filter. Krav för upplåsning: Tjäna $250 000 på att sälja samlarföremål (Collectibles).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Tjäna $250 000 på att sälja samlarföremål"
+  },
+  {
+    title: "Hellscape – Helveteshetta (Skärmfilter)",
+    category: "Värld",
+    description: "Färgar världen glödande röd och orange med dallrande värmedis. Krav för upplåsning: Stjäl 100 polisbilar.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Stjäl 100 polisbilar"
+  },
+  {
+    title: "Videotape – VHS-kassett (Skärmfilter)",
+    category: "Värld",
+    description: "Ger bilden ett retro 80-tals VHS-videobandsfilter. Krav för upplåsning: Genomför 50 aktiviteter tillsammans med din partner.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Genomför 50 aktiviteter med partner"
+  },
+  {
+    title: "Dark Mirror – Mörk Spegel (Skärmfilter)",
+    category: "Värld",
+    description: "Vänder hela spelvärlden upp och ner och färgar den mörk. Krav för upplåsning: Tjäna $500 000 på att sälja stulna fordon.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Tjäna $500 000 på att sälja fordon"
+  },
+  {
+    title: "Migraine – Migrän (Skärmfilter)",
+    category: "Värld",
+    description: "Applicerar ett suddigt och förvrängt synfält över skärmen. Krav för upplåsning: Överlev i 6 minuter med 6-stjärnig efterlysningsnivå (6-Star Wanted Level).",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Överlev 6 min med 6 stjärnor (Wanted Level)"
+  },
+  {
+    title: "Bubblegum – Tuggummi (Skärmfilter)",
+    category: "Värld",
+    description: "Färgar världen lila och gul med glittrande ljuspunkter. Krav för upplåsning: Hitta alla 24 samlarkort för Vice City Flamingos.",
+    verified: false,
+    ps5: "Kod kommer snart (Progress → Cheats)",
+    xbox: "Kod kommer snart (Progress → Cheats)",
+    phone: "Krav: Hitta alla 24 Vice City Flamingos-kort"
   }
 ];
 
 const PLATFORM_META = {
   ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
   xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Upplåsning / Meny", className: "platform-phone" }
+  phone: { label: "Upplåsningskrav", className: "platform-phone" }
 };
 
 const state = {
@@ -300,6 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isRequirement =
       !codeValue ||
       codeValue.toLowerCase().includes("publiceras") ||
+      codeValue.toLowerCase().includes("kommer snart") ||
       codeValue.toLowerCase().startsWith("krav:");
 
     if (isRequirement) {
@@ -346,7 +706,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const statusBadge = document.createElement("span");
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
-    statusBadge.textContent = cheat.verified ? "Verifierad" : "Inväntar kod";
+    statusBadge.textContent = cheat.verified ? "Verifierad kod" : "Kod kommer snart";
 
     badges.append(catBadge, statusBadge);
     header.append(title, badges);
@@ -456,7 +816,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const matchesSearch =
         !query ||
         item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query);
+        item.description.toLowerCase().includes(query) ||
+        (item.phone && item.phone.toLowerCase().includes(query));
 
       return matchesCategory && matchesPlatform && matchesSearch;
     });
@@ -470,10 +831,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     emptyStateEl.hidden = true;
+    const verifiedCount = cheatsData.filter((c) => c.verified).length;
     resultsCountEl.textContent =
       filtered.length === cheatsData.length
-        ? `Visar alla ${filtered.length} verifierade GTA 6-fusk`
-        : `Visar ${filtered.length} av ${cheatsData.length} fuskkoder`;
+        ? `Visar alla ${filtered.length} GTA 6-fusk (${verifiedCount} med pilkod + ${filtered.length - verifiedCount} med upplåsningskrav)`
+        : `Visar ${filtered.length} av ${cheatsData.length} GTA 6-fusk`;
 
     const fragment = document.createDocumentFragment();
     let adCount = 0;
