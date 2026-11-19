@@ -571,10 +571,40 @@ const cheatsData = [
 ];
 
 const PLATFORM_META = {
-  ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
-  xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Upplåsningskrav", className: "platform-phone" }
+  ps5: { label: "PS5 (via Mobil)", className: "platform-ps5" },
+  xbox: { label: "Xbox (via Mobil)", className: "platform-xbox" },
+  phone: { label: "Mobil / Meny", className: "platform-phone" }
 };
+
+const SAFE_CODES_SEARCH_DATA = [
+  {
+    title: "Kassaskåpskod: Brooks Boatworks (Chapter 2)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod för Illegal Operation i nordöstra Port Gellhorn (Chapter 2). Smyg in genom hålet i det östra staketet upp till kontoret i den grå byggnaden – väggkartan bredvid loggar alla 3 koder.",
+    verified: true,
+    ps5: "6, 8, 2, 3",
+    xbox: "6, 8, 2, 3",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Kassaskåpskod: La Cascara Motel (Chapter 2)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod för Illegal Operation på La Cascara Motel i Port Gellhorn (Chapter 2). Fungerar direkt under dina första timmar i Story Mode.",
+    verified: true,
+    ps5: "6, 9, 6, 9",
+    xbox: "6, 9, 6, 9",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Kassaskåpskod: Kingpin Bowling (Chapter 2)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod för Illegal Operation inne på bakkontoret i Kingpin Bowling i Port Gellhorn (Chapter 2). Vanliga butiksrån har däremot slumpade koder varje gång.",
+    verified: true,
+    ps5: "0, 3, 0, 0",
+    xbox: "0, 3, 0, 0",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  }
+];
 
 const state = {
   search: "",
@@ -652,19 +682,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  function buildCodeSequence(codeValue) {
+  function buildCodeSequence(codeValue, isPhoneMeta = false) {
     const seqContainer = document.createElement("div");
     seqContainer.className = "code-sequence";
 
-    const isRequirement =
+    const lower = String(codeValue || "").toLowerCase();
+    const isSingleBadge =
       !codeValue ||
-      codeValue.toLowerCase().includes("publiceras") ||
-      codeValue.toLowerCase().includes("kommer snart") ||
-      codeValue.toLowerCase().startsWith("krav:");
+      isPhoneMeta ||
+      lower.includes("publiceras") ||
+      lower.includes("kommer snart") ||
+      lower.includes("krav:") ||
+      lower.includes("port gellhorn");
 
-    if (isRequirement) {
+    if (isSingleBadge) {
       const kbd = document.createElement("kbd");
-      kbd.className = "kbd-token kbd-pending";
+      const isPendingText = lower.includes("kommer snart") || lower.includes("publiceras");
+      kbd.className = isPendingText ? "kbd-token kbd-pending" : "kbd-token";
       kbd.textContent = codeValue || "Klara storyn";
       seqContainer.appendChild(kbd);
       return seqContainer;
@@ -730,7 +764,14 @@ document.addEventListener("DOMContentLoaded", () => {
       tag.className = `platform-tag ${meta.className}`;
       tag.textContent = meta.label;
 
-      const sequence = buildCodeSequence(cheat[key]);
+      let value = cheat[key];
+      if (key === "phone" && cheat.category !== "Kassaskåp") {
+        value = cheat.verified
+          ? `Mobil (↑) + L1/LB & R1/RB · ${cheat.phone}`
+          : `Progress → Cheats · ${cheat.phone}`;
+      }
+
+      const sequence = buildCodeSequence(value, key === "phone");
       row.append(tag, sequence);
       codesWrap.appendChild(row);
     });
@@ -810,17 +851,38 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
 
-    const filtered = cheatsData.filter((item) => {
-      const matchesCategory = state.category === "Alla" || item.category === state.category;
-      const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
-      const matchesSearch =
-        !query ||
-        item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        (item.phone && item.phone.toLowerCase().includes(query));
+    const filteredCheats = cheatsData
+      .filter((item) => {
+        const matchesCategory =
+          state.category === "Alla" ||
+          (state.category === "Verifierade" ? item.verified : item.category === state.category);
+        const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
+        const matchesSearch =
+          !query ||
+          item.title.toLowerCase().includes(query) ||
+          item.description.toLowerCase().includes(query) ||
+          (item.phone && item.phone.toLowerCase().includes(query));
 
-      return matchesCategory && matchesPlatform && matchesSearch;
-    });
+        return matchesCategory && matchesPlatform && matchesSearch;
+      })
+      .sort((a, b) => Number(b.verified) - Number(a.verified));
+
+    const matchingSafeCodes = query
+      ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          const codeDigits = item.ps5.replace(/[^0-9]/g, "");
+          return (
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            item.phone.toLowerCase().includes(query) ||
+            codeDigits.includes(query) ||
+            query.includes("kassaskåp") ||
+            query.includes("safe") ||
+            query.includes("chapter 2")
+          );
+        })
+      : [];
+
+    const filtered = [...matchingSafeCodes, ...filteredCheats];
 
     gridEl.textContent = "";
 
@@ -833,9 +895,11 @@ document.addEventListener("DOMContentLoaded", () => {
     emptyStateEl.hidden = true;
     const verifiedCount = cheatsData.filter((c) => c.verified).length;
     resultsCountEl.textContent =
-      filtered.length === cheatsData.length
-        ? `Visar alla ${filtered.length} GTA 6-fusk (${verifiedCount} med pilkod + ${filtered.length - verifiedCount} med upplåsningskrav)`
-        : `Visar ${filtered.length} av ${cheatsData.length} GTA 6-fusk`;
+      !query && state.category === "Alla" && state.platform === "all"
+        ? `Visar alla ${cheatsData.length} GTA 6-fusk (${verifiedCount} klara pilkoder först + ${cheatsData.length - verifiedCount} med upplåsningskrav)`
+        : state.category === "Verifierade" && !query
+        ? `Visar alla ${filtered.length} bekräftade GTA 6-pilkoder (PS5, Xbox & Mobil)`
+        : `Visar ${filtered.length} träffar`;
 
     const fragment = document.createDocumentFragment();
     let adCount = 0;

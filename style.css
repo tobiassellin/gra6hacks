@@ -814,6 +814,80 @@ a.amazon-fallback:hover {
 }
 
 /* ==========================================================================
+   Chapter 2 Safe Codes Quick Strip
+   ========================================================================== */
+
+.safe-codes-strip {
+  background: linear-gradient(135deg, rgba(23, 20, 36, 0.96), rgba(33, 28, 54, 0.94));
+  border: 1px solid rgba(0, 229, 255, 0.28);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.safe-strip-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 14px;
+  margin-bottom: 10px;
+}
+
+.safe-strip-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+.safe-strip-link {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.safe-strip-link:hover {
+  color: var(--accent-cyan);
+}
+
+.safe-strip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .safe-strip-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.safe-strip-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: rgba(13, 11, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+}
+
+.safe-strip-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.safe-strip-note {
+  margin: 9px 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
    Cheats Grid & Cards
    ========================================================================== */
 

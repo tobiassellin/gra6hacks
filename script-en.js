@@ -571,10 +571,40 @@ const cheatsData = [
 ];
 
 const PLATFORM_META = {
-  ps5: { label: "PS5 (D-Pad)", className: "platform-ps5" },
-  xbox: { label: "Xbox Series X|S", className: "platform-xbox" },
-  phone: { label: "Unlock Requirement", className: "platform-phone" }
+  ps5: { label: "PS5 (via Phone)", className: "platform-ps5" },
+  xbox: { label: "Xbox (via Phone)", className: "platform-xbox" },
+  phone: { label: "Phone / Menu", className: "platform-phone" }
 };
+
+const SAFE_CODES_SEARCH_DATA = [
+  {
+    title: "Safe Code: Brooks Boatworks (Chapter 2)",
+    category: "Safe Code",
+    description: "Fixed safe code for the Illegal Operation in northeastern Port Gellhorn (Chapter 2). Slip through the eastern fence hole to the upper office of the gray building—inspecting the wall map logs all 3 codes.",
+    verified: true,
+    ps5: "6, 8, 2, 3",
+    xbox: "6, 8, 2, 3",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Safe Code: La Cascara Motel (Chapter 2)",
+    category: "Safe Code",
+    description: "Fixed safe code for the Illegal Operation at La Cascara Motel in Port Gellhorn (Chapter 2). Usable right away during your first hours in Story Mode.",
+    verified: true,
+    ps5: "6, 9, 6, 9",
+    xbox: "6, 9, 6, 9",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Safe Code: Kingpin Bowling (Chapter 2)",
+    category: "Safe Code",
+    description: "Fixed safe code for the Illegal Operation inside the back office of Kingpin Bowling in Port Gellhorn (Chapter 2). Regular store robberies use randomized codes every time.",
+    verified: true,
+    ps5: "0, 3, 0, 0",
+    xbox: "0, 3, 0, 0",
+    phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  }
+];
 
 const state = {
   search: "",
@@ -628,19 +658,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  function buildCodeSequence(codeValue) {
+  function buildCodeSequence(codeValue, isPhoneMeta = false) {
     const seqContainer = document.createElement("div");
     seqContainer.className = "code-sequence";
 
-    const isRequirement =
+    const lower = String(codeValue || "").toLowerCase();
+    const isSingleBadge =
       !codeValue ||
-      codeValue.toLowerCase().includes("available") ||
-      codeValue.toLowerCase().includes("coming soon") ||
-      codeValue.toLowerCase().startsWith("unlock:");
+      isPhoneMeta ||
+      lower.includes("available") ||
+      lower.includes("coming soon") ||
+      lower.includes("unlock:") ||
+      lower.includes("port gellhorn");
 
-    if (isRequirement) {
+    if (isSingleBadge) {
       const kbd = document.createElement("kbd");
-      kbd.className = "kbd-token kbd-pending";
+      const isPendingText = lower.includes("coming soon") || lower.includes("available");
+      kbd.className = isPendingText ? "kbd-token kbd-pending" : "kbd-token";
       kbd.textContent = codeValue || "Finish Main Story";
       seqContainer.appendChild(kbd);
       return seqContainer;
@@ -706,7 +740,14 @@ document.addEventListener("DOMContentLoaded", () => {
       tag.className = `platform-tag ${meta.className}`;
       tag.textContent = meta.label;
 
-      const sequence = buildCodeSequence(cheat[key]);
+      let value = cheat[key];
+      if (key === "phone" && cheat.category !== "Safe Code") {
+        value = cheat.verified
+          ? `Phone (↑) + L1/LB & R1/RB · ${cheat.phone}`
+          : `Progress → Cheats · ${cheat.phone}`;
+      }
+
+      const sequence = buildCodeSequence(value, key === "phone");
       row.append(tag, sequence);
       codesWrap.appendChild(row);
     });
@@ -786,17 +827,37 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
 
-    const filtered = cheatsData.filter((item) => {
-      const matchesCategory = state.category === "All" || item.category === state.category;
-      const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
-      const matchesSearch =
-        !query ||
-        item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        (item.phone && item.phone.toLowerCase().includes(query));
+    const filteredCheats = cheatsData
+      .filter((item) => {
+        const matchesCategory =
+          state.category === "All" ||
+          (state.category === "Verified" ? item.verified : item.category === state.category);
+        const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
+        const matchesSearch =
+          !query ||
+          item.title.toLowerCase().includes(query) ||
+          item.description.toLowerCase().includes(query) ||
+          (item.phone && item.phone.toLowerCase().includes(query));
 
-      return matchesCategory && matchesPlatform && matchesSearch;
-    });
+        return matchesCategory && matchesPlatform && matchesSearch;
+      })
+      .sort((a, b) => Number(b.verified) - Number(a.verified));
+
+    const matchingSafeCodes = query
+      ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          const codeDigits = item.ps5.replace(/[^0-9]/g, "");
+          return (
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            item.phone.toLowerCase().includes(query) ||
+            codeDigits.includes(query) ||
+            query.includes("safe") ||
+            query.includes("chapter 2")
+          );
+        })
+      : [];
+
+    const filtered = [...matchingSafeCodes, ...filteredCheats];
 
     gridEl.textContent = "";
 
@@ -809,9 +870,11 @@ document.addEventListener("DOMContentLoaded", () => {
     emptyStateEl.hidden = true;
     const verifiedCount = cheatsData.filter((c) => c.verified).length;
     resultsCountEl.textContent =
-      filtered.length === cheatsData.length
-        ? `Showing all ${filtered.length} GTA 6 cheats (${verifiedCount} D-Pad codes + ${filtered.length - verifiedCount} unlock requirements)`
-        : `Showing ${filtered.length} of ${cheatsData.length} GTA 6 cheats`;
+      !query && state.category === "All" && state.platform === "all"
+        ? `Showing all ${cheatsData.length} GTA 6 cheats (${verifiedCount} verified D-Pad codes first + ${cheatsData.length - verifiedCount} unlock requirements)`
+        : state.category === "Verified" && !query
+        ? `Showing all ${filtered.length} verified GTA 6 directional codes (PS5, Xbox & Phone)`
+        : `Showing ${filtered.length} matching results`;
 
     const fragment = document.createDocumentFragment();
     let adCount = 0;
