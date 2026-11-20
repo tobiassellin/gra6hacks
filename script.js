@@ -806,8 +806,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const codesWrap = document.createElement("div");
     codesWrap.className = "cheat-codes";
 
+    const isSafeOrStory = cheat.category === "Kassaskåp" || cheat.category === "Story-kod";
     const platformsToShow =
-      activePlatform === "all" ? ["ps5", "xbox", "phone"] : [activePlatform];
+      activePlatform === "all"
+        ? isSafeOrStory
+          ? ["ps5", "phone"]
+          : ["ps5", "xbox", "phone"]
+        : [activePlatform];
 
     platformsToShow.forEach((key) => {
       const meta = PLATFORM_META[key];
@@ -816,10 +821,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const tag = document.createElement("span");
       tag.className = `platform-tag ${meta.className}`;
-      tag.textContent = meta.label;
+      if (isSafeOrStory && activePlatform === "all") {
+        tag.textContent = key === "ps5" ? "Kod (PS5 & Xbox)" : "Plats / Uppdrag";
+      } else {
+        tag.textContent = meta.label;
+      }
 
       let value = cheat[key];
-      if (key === "phone" && cheat.category !== "Kassaskåp" && cheat.category !== "Story-kod") {
+      if (key === "phone" && !isSafeOrStory) {
         value = cheat.verified
           ? `Mobil (↑) + L1/LB & R1/RB · ${cheat.phone}`
           : `Progress → Cheats · ${cheat.phone}`;
@@ -904,24 +913,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
+    const isSafesCategory = state.category === "Kassaskap";
 
-    const filteredCheats = cheatsData
-      .filter((item) => {
-        const matchesCategory =
-          state.category === "Alla" ||
-          (state.category === "Verifierade" ? item.verified : item.category === state.category);
-        const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
-        const matchesSearch =
-          !query ||
-          item.title.toLowerCase().includes(query) ||
-          item.description.toLowerCase().includes(query) ||
-          (item.phone && item.phone.toLowerCase().includes(query));
+    const filteredCheats = isSafesCategory
+      ? []
+      : cheatsData
+          .filter((item) => {
+            const matchesCategory =
+              state.category === "Alla" ||
+              (state.category === "Verifierade" ? item.verified : item.category === state.category);
+            const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
+            const matchesSearch =
+              !query ||
+              item.title.toLowerCase().includes(query) ||
+              item.description.toLowerCase().includes(query) ||
+              (item.phone && item.phone.toLowerCase().includes(query));
 
-        return matchesCategory && matchesPlatform && matchesSearch;
-      })
-      .sort((a, b) => Number(b.verified) - Number(a.verified));
+            return matchesCategory && matchesPlatform && matchesSearch;
+          })
+          .sort((a, b) => Number(b.verified) - Number(a.verified));
 
-    const matchingSafeCodes = query
+    const matchingSafeCodes = isSafesCategory
+      ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          if (!query) return true;
+          const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
+          return (
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            item.phone.toLowerCase().includes(query) ||
+            (codeNormalized && codeNormalized.includes(query))
+          );
+        })
+      : query
       ? SAFE_CODES_SEARCH_DATA.filter((item) => {
           const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
           return (
@@ -943,7 +966,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (filtered.length === 0) {
       emptyStateEl.hidden = false;
-      resultsCountEl.textContent = "0 fuskkoder hittades";
+      resultsCountEl.textContent = "0 koder hittades";
       return;
     }
 
@@ -954,6 +977,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? `Visar alla ${cheatsData.length} GTA 6-fusk (${verifiedCount} klara pilkoder först + ${cheatsData.length - verifiedCount} med upplåsningskrav)`
         : state.category === "Verifierade" && !query
         ? `Visar alla ${filtered.length} bekräftade GTA 6-pilkoder (PS5, Xbox & Mobil)`
+        : isSafesCategory && !query
+        ? `Visar alla ${filtered.length} verifierade kassaskåps- & dörrkoder (Story Mode)`
         : `Visar ${filtered.length} träffar`;
 
     const fragment = document.createDocumentFragment();
