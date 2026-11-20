@@ -10,11 +10,17 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 3. **Aktivera fuskmenyn:** **Håll inne L1 och tryck på R1** (PS5) eller **håll inne LB och tryck på RB** (Xbox Series X|S).
 4. **Slå in pilkoden:** Mata in fuskets riktningssekvens på styrkorset (Upp, Ner, Vänster, Höger).
 
-## Kassaskåpskoder i GTA 6 – Chapter 2 (Port Gellhorn Safe Codes)
-- **Brooks Boatworks:** `6823` *(Nordöstra Port Gellhorn – väggkartan i kontoret på övervåningen loggar även alla 3 koder)*
-- **La Cascara Motel:** `6969` *(Port Gellhorn – Illegal Operation)*
-- **Kingpin Bowling:** `0300` *(Port Gellhorn – Illegal Operation)*
-- **Vanliga butiksrån (Store Robberies):** Slumpade koder varje gång.
+## Kassaskåpskoder & Dörrkoder i GTA 6 Story Mode (Chapter 1–3)
+- **Brooks Boatworks (Port Gellhorn – Chapter 2):** `6823` *(Nordöstra Port Gellhorn – väggkartan i kontoret på övervåningen loggar även alla 3 koder)*
+- **La Cascara Motel (Port Gellhorn – Chapter 2):** `6969` *(Illegal Operation)*
+- **Kingpin Bowling (Port Gellhorn – Chapter 2):** `0300` *(Illegal Operation)*
+- **Moonstone Boutique / Acid Lab ("Lab Fees" – Chapter 1):** `0420` *(Bakdörrens keypad)*
+- **Brian's Lockup ("Lab Fees" – Chapter 1):** `7700` *(Stöldgodsdörrens keypad)*
+- **Pelican Valley Crab Research Outpost (PC-lösenord):** `CLEAVES`
+- **Pelican Valley Crab Research Outpost (Kassaskåp):** `0072`
+- **Pelican Valley Dock Building (Keypad):** `0212` *(Låser upp det unika vapnet Crabshack VF5 SMG)*
+- **Randy's Wishlist Garage ('74 Vamos):** `2727` *(Garagedörrens keypad)*
+- **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
 ## Verifierade D-Pad-pilkoder i GTA 6 (18 st)
 - **$250 000 Pengar ($250,000 Cash):** `Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger` *(Krav: Klara storyn)*

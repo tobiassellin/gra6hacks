@@ -603,6 +603,60 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "0, 3, 0, 0",
     xbox: "0, 3, 0, 0",
     phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Dörrkod: Moonstone Boutique / Acid Lab (Lab Fees)",
+    category: "Story-kod",
+    description: "Fast keypad-kod till bakdörren på Moonstone Boutique (Acid Lab) under uppdraget Lab Fees (Brian's Rent) i Chapter 1.",
+    verified: true,
+    ps5: "0, 4, 2, 0",
+    xbox: "0, 4, 2, 0",
+    phone: "Uppdrag: Lab Fees · Chapter 1 (Keypad)"
+  },
+  {
+    title: "Dörrkod: Brian's Lockup (Lab Fees)",
+    category: "Story-kod",
+    description: "Fast dörrkod till Brian's Lockup (stöldgodsförrådet) under uppdraget Lab Fees i Chapter 1.",
+    verified: true,
+    ps5: "7, 7, 0, 0",
+    xbox: "7, 7, 0, 0",
+    phone: "Uppdrag: Lab Fees · Chapter 1 (Keypad)"
+  },
+  {
+    title: "Datorlösenord: Pelican Valley Crab Research Outpost",
+    category: "Story-kod",
+    description: "Lösenordet till datorn på Pelican Valley Crab Research Outpost (hittas inristat på golvet i sidorummet när du slagit på strömmen utomhus).",
+    verified: true,
+    ps5: "CLEAVES",
+    xbox: "CLEAVES",
+    phone: "Pelican Valley · Crabshack VF5 SMG-pussel"
+  },
+  {
+    title: "Kassaskåpskod: Pelican Valley Crab Research Outpost",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod (dubbla labbnumret 0036) i Pelican Valley Crab Research Outpost. Innehåller koden 0212 till hamnbyggnaden med det unika vapnet Crabshack VF5 SMG.",
+    verified: true,
+    ps5: "0, 0, 7, 2",
+    xbox: "0, 0, 7, 2",
+    phone: "Pelican Valley · Crabshack VF5 SMG-pussel"
+  },
+  {
+    title: "Keypad-kod: Pelican Valley Dock Building (Crabshack VF5 SMG)",
+    category: "Story-kod",
+    description: "Låser upp hamnbyggnaden vid Pelican Valley Crab Research Outpost där du hittar det unika vapnet Crabshack VF5 SMG.",
+    verified: true,
+    ps5: "0, 2, 1, 2",
+    xbox: "0, 2, 1, 2",
+    phone: "Pelican Valley · Unikt vapen (Crabshack VF5 SMG)"
+  },
+  {
+    title: "Garagedörr-kod: Randy's Wishlist Garage ('74 Vamos)",
+    category: "Story-kod",
+    description: "Fast keypad-kod till garagedörren för att stjäla '74 Vamos från Randy's Wishlist.",
+    verified: true,
+    ps5: "2, 7, 2, 7",
+    xbox: "2, 7, 2, 7",
+    phone: "Randy's Wishlist · Garagedörr (Keypad)"
   }
 ];
 
@@ -765,7 +819,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tag.textContent = meta.label;
 
       let value = cheat[key];
-      if (key === "phone" && cheat.category !== "Kassaskåp") {
+      if (key === "phone" && cheat.category !== "Kassaskåp" && cheat.category !== "Story-kod") {
         value = cheat.verified
           ? `Mobil (↑) + L1/LB & R1/RB · ${cheat.phone}`
           : `Progress → Cheats · ${cheat.phone}`;
@@ -869,15 +923,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const matchingSafeCodes = query
       ? SAFE_CODES_SEARCH_DATA.filter((item) => {
-          const codeDigits = item.ps5.replace(/[^0-9]/g, "");
+          const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
           return (
             item.title.toLowerCase().includes(query) ||
             item.description.toLowerCase().includes(query) ||
             item.phone.toLowerCase().includes(query) ||
-            codeDigits.includes(query) ||
+            (codeNormalized && codeNormalized.includes(query)) ||
             query.includes("kassaskåp") ||
             query.includes("safe") ||
-            query.includes("chapter 2")
+            query.includes("dörrkod") ||
+            query.includes("keypad")
           );
         })
       : [];

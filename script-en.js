@@ -603,6 +603,60 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "0, 3, 0, 0",
     xbox: "0, 3, 0, 0",
     phone: "Port Gellhorn · Chapter 2 (Illegal Operation)"
+  },
+  {
+    title: "Door Code: Moonstone Boutique / Acid Lab (Lab Fees)",
+    category: "Story Code",
+    description: "Fixed keypad code for the backroom door of Moonstone Boutique (Acid Lab) during the Lab Fees mission (Brian's Rent) in Chapter 1.",
+    verified: true,
+    ps5: "0, 4, 2, 0",
+    xbox: "0, 4, 2, 0",
+    phone: "Mission: Lab Fees · Chapter 1 (Keypad)"
+  },
+  {
+    title: "Door Code: Brian's Lockup (Lab Fees)",
+    category: "Story Code",
+    description: "Fixed door keypad code for Brian's Lockup stash house during the Lab Fees mission in Chapter 1.",
+    verified: true,
+    ps5: "7, 7, 0, 0",
+    xbox: "7, 7, 0, 0",
+    phone: "Mission: Lab Fees · Chapter 1 (Keypad)"
+  },
+  {
+    title: "PC Password: Pelican Valley Crab Research Outpost",
+    category: "Story Code",
+    description: "Computer password at Pelican Valley Crab Research Outpost (scratched on the side room floor after flipping the outdoor power switch).",
+    verified: true,
+    ps5: "CLEAVES",
+    xbox: "CLEAVES",
+    phone: "Pelican Valley · Crabshack VF5 SMG Puzzle"
+  },
+  {
+    title: "Safe Code: Pelican Valley Crab Research Outpost",
+    category: "Safe Code",
+    description: "Fixed safe code (double specimen ID 0036) inside Pelican Valley Crab Research Outpost. Reveals code 0212 for the dock building containing the unique Crabshack VF5 SMG.",
+    verified: true,
+    ps5: "0, 0, 7, 2",
+    xbox: "0, 0, 7, 2",
+    phone: "Pelican Valley · Crabshack VF5 SMG Puzzle"
+  },
+  {
+    title: "Keypad Code: Pelican Valley Dock Building (Crabshack VF5 SMG)",
+    category: "Story Code",
+    description: "Unlocks the dock building at Pelican Valley Crab Research Outpost where you can pick up the unique Crabshack VF5 SMG.",
+    verified: true,
+    ps5: "0, 2, 1, 2",
+    xbox: "0, 2, 1, 2",
+    phone: "Pelican Valley · Unique Weapon (Crabshack VF5 SMG)"
+  },
+  {
+    title: "Garage Code: Randy's Wishlist Garage ('74 Vamos)",
+    category: "Story Code",
+    description: "Fixed garage keypad code to steal the '74 Vamos from Randy's Wishlist.",
+    verified: true,
+    ps5: "2, 7, 2, 7",
+    xbox: "2, 7, 2, 7",
+    phone: "Randy's Wishlist · Garage Door (Keypad)"
   }
 ];
 
@@ -741,7 +795,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tag.textContent = meta.label;
 
       let value = cheat[key];
-      if (key === "phone" && cheat.category !== "Safe Code") {
+      if (key === "phone" && cheat.category !== "Safe Code" && cheat.category !== "Story Code") {
         value = cheat.verified
           ? `Phone (↑) + L1/LB & R1/RB · ${cheat.phone}`
           : `Progress → Cheats · ${cheat.phone}`;
@@ -845,14 +899,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const matchingSafeCodes = query
       ? SAFE_CODES_SEARCH_DATA.filter((item) => {
-          const codeDigits = item.ps5.replace(/[^0-9]/g, "");
+          const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
           return (
             item.title.toLowerCase().includes(query) ||
             item.description.toLowerCase().includes(query) ||
             item.phone.toLowerCase().includes(query) ||
-            codeDigits.includes(query) ||
+            (codeNormalized && codeNormalized.includes(query)) ||
             query.includes("safe") ||
-            query.includes("chapter 2")
+            query.includes("door code") ||
+            query.includes("keypad")
           );
         })
       : [];
