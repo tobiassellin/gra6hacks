@@ -20,6 +20,14 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Pelican Valley Crab Research Outpost (Kassaskåp):** `0072`
 - **Pelican Valley Dock Building (Keypad):** `0212` *(Låser upp det unika vapnet Crabshack VF5 SMG)*
 - **Randy's Wishlist Garage ('74 Vamos):** `2727` *(Garagedörrens keypad)*
+- **Casa de Empeño (Chapter 3 – Yasmani's Jewelry Jobs):** `1680` *(Pantbankens kassaskåp)*
+- **Richardson Jewelry & Diamonds (Chapter 3 – Yasmani's Jewelry Jobs):** `6815` *(Juvelerarens kassaskåp)*
+- **Donovan Banks & Co. (Chapter 3 – Yasmani's Jewelry Jobs):** `0104` *(Ametisthalsband – glöm ej inledande nolla)*
+- **Sunrise RV Park (Kingfishers Gang Operation):** `6769` *(Kassaskåp i lagret)*
+- **Nova Auto Junkyard (M7 Gang Operation):** `7777` *(Bilskrotens kassaskåp)*
+- **Key Lento Party House (Garagedörr):** `092319` *(Hemliga samlarföremål & Los Santos Pounders-kort)*
+- **Cottonmouth Lake Trailer (Grassrivers):** `44017` *(Laki Maivia / Los Santos Pounders-samlarkort)*
+- **Mount Kalaga National Park (Låst skjul):** `69185` *(Maintenance shed keypad)*
 - **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
 ## Verifierade D-Pad-pilkoder i GTA 6 (18 st)

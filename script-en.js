@@ -657,6 +657,78 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "2, 7, 2, 7",
     xbox: "2, 7, 2, 7",
     phone: "Randy's Wishlist · Garage Door (Keypad)"
+  },
+  {
+    title: "Safe Code: Casa de Empeño (Yasmani's Jewelry Jobs)",
+    category: "Safe Code",
+    description: "Fixed pawn shop safe code at Casa de Empeño during Chapter 3's Yasmani's Jewelry Jobs mission to steal the buffalo skull chain.",
+    verified: true,
+    ps5: "1, 6, 8, 0",
+    xbox: "1, 6, 8, 0",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Safe Code: Richardson Jewelry & Diamonds (Chapter 3)",
+    category: "Safe Code",
+    description: "Fixed safe code at Richardson Jewelry & Diamonds during Chapter 3's Yasmani's Jewelry Jobs mission to steal the diamond ring.",
+    verified: true,
+    ps5: "6, 8, 1, 5",
+    xbox: "6, 8, 1, 5",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Safe Code: Donovan Banks & Co. (Chapter 3)",
+    category: "Safe Code",
+    description: "Fixed safe code at Donovan Banks & Co. during Chapter 3's Yasmani's Jewelry Jobs mission (amethyst necklace). Be sure to enter the leading zero (0104).",
+    verified: true,
+    ps5: "0, 1, 0, 4",
+    xbox: "0, 1, 0, 4",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Safe Code: Sunrise RV Park (Kingfishers Gang Operation)",
+    category: "Safe Code",
+    description: "Fixed safe code inside the warehouse at Sunrise RV Park (Kingfishers Illegal Operation), north of Cottonmouth Lake and northwest of Key Lento.",
+    verified: true,
+    ps5: "6, 7, 6, 9",
+    xbox: "6, 7, 6, 9",
+    phone: "Sunrise RV Park · Kingfishers Gang Operation"
+  },
+  {
+    title: "Safe Code: Nova Auto Junkyard (M7 Gang Operation)",
+    category: "Safe Code",
+    description: "Fixed safe code at Nova Auto Junkyard during the M7 gang Illegal Operation.",
+    verified: true,
+    ps5: "7, 7, 7, 7",
+    xbox: "7, 7, 7, 7",
+    phone: "Nova Auto Junkyard · M7 Gang Operation"
+  },
+  {
+    title: "Garage Code: Key Lento Party House (Hidden Collectibles)",
+    category: "Story Code",
+    description: "6-digit keypad code for the Key Lento party house garage door in southeast Leonida Keys. Unlocks hidden collectibles including a Los Santos Pounders card.",
+    verified: true,
+    ps5: "0, 9, 2, 3, 1, 9",
+    xbox: "0, 9, 2, 3, 1, 9",
+    phone: "Key Lento · Hidden Room & Collectibles"
+  },
+  {
+    title: "Safe Code: Cottonmouth Lake Trailer (Grassrivers)",
+    category: "Safe Code",
+    description: "5-digit safe code inside the trailer on the southwest shore of Cottonmouth Lake (Grassrivers). Contains the Laki Maivia (Los Santos Pounders) collectible card.",
+    verified: true,
+    ps5: "4, 4, 0, 1, 7",
+    xbox: "4, 4, 0, 1, 7",
+    phone: "Cottonmouth Lake · Los Santos Pounders Card"
+  },
+  {
+    title: "Door Code: Mount Kalaga National Park Shed",
+    category: "Story Code",
+    description: "5-digit keypad code to open the locked maintenance shed door in Mount Kalaga National Park in northern Leonida.",
+    verified: true,
+    ps5: "6, 9, 1, 8, 5",
+    xbox: "6, 9, 1, 8, 5",
+    phone: "Mount Kalaga National Park · Locked Shed"
   }
 ];
 

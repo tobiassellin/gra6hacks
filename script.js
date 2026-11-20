@@ -657,6 +657,78 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "2, 7, 2, 7",
     xbox: "2, 7, 2, 7",
     phone: "Randy's Wishlist · Garagedörr (Keypad)"
+  },
+  {
+    title: "Kassaskåpskod: Casa de Empeño (Yasmani's Jewelry Jobs)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod till pantbanken Casa de Empeño under Chapter 3-uppdraget Yasmani's Jewelry Jobs för att stjäla buffalo skull-kedjan.",
+    verified: true,
+    ps5: "1, 6, 8, 0",
+    xbox: "1, 6, 8, 0",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Kassaskåpskod: Richardson Jewelry & Diamonds (Chapter 3)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod hos juveleraren Richardson Jewelry & Diamonds under Chapter 3-uppdraget Yasmani's Jewelry Jobs (diamantring).",
+    verified: true,
+    ps5: "6, 8, 1, 5",
+    xbox: "6, 8, 1, 5",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Kassaskåpskod: Donovan Banks & Co. (Chapter 3)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod hos Donovan Banks & Co. under Chapter 3-uppdraget Yasmani's Jewelry Jobs (ametisthalsband). Glöm inte den inledande nollan (0104).",
+    verified: true,
+    ps5: "0, 1, 0, 4",
+    xbox: "0, 1, 0, 4",
+    phone: "Chapter 3 · Yasmani's Jewelry Jobs"
+  },
+  {
+    title: "Kassaskåpskod: Sunrise RV Park (Kingfishers Gang Operation)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod i lagret vid Sunrise RV Park (Kingfishers Illegal Operation), norr om Cottonmouth Lake och nordväst om Key Lento.",
+    verified: true,
+    ps5: "6, 7, 6, 9",
+    xbox: "6, 7, 6, 9",
+    phone: "Sunrise RV Park · Kingfishers Gang Operation"
+  },
+  {
+    title: "Kassaskåpskod: Nova Auto Junkyard (M7 Gang Operation)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod på bilskroten Nova Auto Junkyard under M7-gängets Illegal Operation.",
+    verified: true,
+    ps5: "7, 7, 7, 7",
+    xbox: "7, 7, 7, 7",
+    phone: "Nova Auto Junkyard · M7 Gang Operation"
+  },
+  {
+    title: "Garagedörr-kod: Key Lento Party House (Hemliga samlarföremål)",
+    category: "Story-kod",
+    description: "Sexsiffrig keypad-kod till garagedörren på partyhuset i sydöstra Key Lento (Leonida Keys). Ger tillgång till gömda samlarföremål och ett Los Santos Pounders-kort.",
+    verified: true,
+    ps5: "0, 9, 2, 3, 1, 9",
+    xbox: "0, 9, 2, 3, 1, 9",
+    phone: "Key Lento · Hemligt rum & Samlarkort"
+  },
+  {
+    title: "Kassaskåpskod: Cottonmouth Lake Trailer (Grassrivers)",
+    category: "Kassaskåp",
+    description: "Femsiffrig kassaskåpskod till husvagnen på sydvästra sidan av Cottonmouth Lake (Grassrivers). Innehåller Laki Maivia-samlarkortet (Los Santos Pounders).",
+    verified: true,
+    ps5: "4, 4, 0, 1, 7",
+    xbox: "4, 4, 0, 1, 7",
+    phone: "Cottonmouth Lake · Los Santos Pounders-kort"
+  },
+  {
+    title: "Dörrkod: Mount Kalaga National Park (Låst skjul)",
+    category: "Story-kod",
+    description: "Femsiffrig keypad-kod till det låsta underhållsskjulet (maintenance shed) i Mount Kalaga National Park i norra Leonida.",
+    verified: true,
+    ps5: "6, 9, 1, 8, 5",
+    xbox: "6, 9, 1, 8, 5",
+    phone: "Mount Kalaga National Park · Hemligt skjul"
   }
 ];
 
