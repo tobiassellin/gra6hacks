@@ -1476,3 +1476,56 @@ body.ads-review-mode .site-footer.has-bottom-ad {
   font-size: 0.88rem;
   color: var(--text-secondary);
 }
+
+/* Interactive Safe & Challenge Checklist */
+.checklist-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  background: rgba(33, 28, 54, 0.85);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin: 14px 0;
+}
+
+.checklist-progress {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+.checklist-reset-btn {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 42, 133, 0.45);
+  background: rgba(255, 42, 133, 0.14);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checklist-reset-btn:hover {
+  background: var(--accent-pink);
+  color: #ffffff;
+}
+
+.safe-check-cell {
+  width: 38px;
+  text-align: center;
+}
+
+.safe-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-cyan);
+  cursor: pointer;
+}
+
+.static-reference-table tr.row-checked td {
+  opacity: 0.52;
+  text-decoration: line-through;
+}

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="sv" href="https://gta6hacks.se/kassaskapskoder.html" />
+  <link rel="alternate" hreflang="en" href="https://gta6hacks.se/safe-codes.html" />
+  <link rel="alternate" hreflang="x-default" href="https://gta6hacks.se/safe-codes.html" />
   <title>Alla 23 Kassaskåpskoder &amp; Dörrkoder i GTA 6 (Story Mode) – Guide</title>
   <meta name="description" content="Komplett guide till alla 23 fasta kassaskåpskoder, dörrkoder och pussel i GTA 6 Story Mode: Port Gellhorn, Chapter 3 Yasmani's Jewelry Jobs, Guardia Brothers och Crabshack VF5 SMG.">
   <meta name="robots" content="index, follow">
@@ -20,7 +23,7 @@
   <meta property="og:description" content="Steg-för-steg-guide till alla 23 fasta kassaskåp, dörrkoder och det gömda vapnet Crabshack VF5 SMG i Grand Theft Auto VI.">
   <meta property="og:image" content="https://gta6hacks.se/logo.png">
 
-  <link rel="stylesheet" href="style.css?v=20261121b">
+  <link rel="stylesheet" href="style.css?v=20261121c">
 
   <script type="application/ld+json">
   {
@@ -62,8 +65,8 @@
         </a>
         <div class="header-badges">
           <nav class="lang-switch" aria-label="Språk / Language">
-            <a href="index.html?lang=sv" class="lang-btn active" hreflang="sv">SV</a>
-            <a href="en.html" class="lang-btn" hreflang="en">EN</a>
+            <a href="kassaskapskoder.html" class="lang-btn active" hreflang="sv">SV</a>
+            <a href="safe-codes.html" class="lang-btn" hreflang="en">EN</a>
           </nav>
           <span class="release-badge">
             <span class="pulse-dot" aria-hidden="true"></span>
@@ -83,10 +86,10 @@
       <nav class="quick-nav" aria-label="Huvudmeny">
         <a href="index.html">Alla 61 Fuskkoder</a>
         <a href="kassaskapskoder.html" aria-current="page">Kassaskåp &amp; Dörrkoder (23)</a>
-        <a href="utmaningar.html">Upplåsningsguide (61 fusk)</a>
+        <a href="fordonsfusk.html">Fordonsfusk (21)</a>
+        <a href="utmaningar.html">Upplåsningsguide</a>
         <a href="pengaguide.html">Tjäna pengar snabbt</a>
         <a href="om-oss.html">Om oss &amp; Kontakt</a>
-        <a href="integritet.html">Integritetspolicy</a>
       </nav>
     </div>
   </header>
@@ -110,9 +113,13 @@
         bensinmack eller pantbank i den öppna världen).
       </p>
 
-      <h2>Snabbtabell: Alla 23 fasta kassaskåps- &amp; dörrkoder i GTA 6</h2>
+      <h2>Interaktiv checklista: Alla 23 fasta kassaskåps- &amp; dörrkoder i GTA 6</h2>
+      <div class="checklist-bar">
+        <span class="checklist-progress" id="safe-progress-text">Öppnade: 0 av 23 kassaskåp &amp; dörrar</span>
+        <button type="button" class="checklist-reset-btn" id="reset-safe-checklist">Nollställ checklista</button>
+      </div>
       <div class="table-scroll-wrap">
-        <table class="static-reference-table">
+        <table class="static-reference-table" id="safe-checklist-table">
           <thead>
             <tr>
               <th>Plats / Uppdrag</th>
@@ -410,6 +417,82 @@
     </div>
   </footer>
 
+  <script>
+    (function initSafeChecklistSv() {
+      const STORAGE_KEY = "gta6_safe_checklist_v1";
+      const table = document.getElementById("safe-checklist-table");
+      const progressText = document.getElementById("safe-progress-text");
+      const resetBtn = document.getElementById("reset-safe-checklist");
+      if (!table || !progressText) return;
+
+      const headRow = table.querySelector("thead tr");
+      if (headRow) {
+        const th = document.createElement("th");
+        th.className = "safe-check-cell";
+        th.textContent = "Klar";
+        headRow.prepend(th);
+      }
+
+      const rows = Array.from(table.querySelectorAll("tbody tr"));
+      rows.forEach((row, idx) => {
+        const id = "s" + (idx + 1);
+        row.setAttribute("data-safe-id", id);
+        const td = document.createElement("td");
+        td.className = "safe-check-cell";
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.className = "safe-checkbox";
+        cb.setAttribute("aria-label", "Markera som klar");
+        td.appendChild(cb);
+        row.prepend(td);
+      });
+
+      let saved = {};
+      try {
+        saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {};
+      } catch (_e) {
+        saved = {};
+      }
+
+      function updateUI() {
+        let doneCount = 0;
+        rows.forEach((row) => {
+          const id = row.getAttribute("data-safe-id");
+          const cb = row.querySelector(".safe-checkbox");
+          const isChecked = Boolean(saved[id]);
+          if (cb) cb.checked = isChecked;
+          row.classList.toggle("row-checked", isChecked);
+          if (isChecked) doneCount += 1;
+        });
+        progressText.textContent = "Öppnade: " + doneCount + " av " + rows.length + " kassaskåp & dörrar";
+      }
+
+      table.addEventListener("change", (e) => {
+        const cb = e.target.closest(".safe-checkbox");
+        if (!cb) return;
+        const row = cb.closest("tr[data-safe-id]");
+        if (!row) return;
+        const id = row.getAttribute("data-safe-id");
+        saved[id] = cb.checked;
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        } catch (_e) {}
+        updateUI();
+      });
+
+      if (resetBtn) {
+        resetBtn.addEventListener("click", () => {
+          saved = {};
+          try {
+            localStorage.removeItem(STORAGE_KEY);
+          } catch (_e) {}
+          updateUI();
+        });
+      }
+
+      updateUI();
+    })();
+  </script>
   <script data-goatcounter="https://gta6hacks.goatcounter.com/count"
           async src="https://gc.zgo.at/count.js"></script>
 </body>
