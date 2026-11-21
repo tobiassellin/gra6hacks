@@ -1365,6 +1365,7 @@ kbd.kbd-pending {
 
 body.ads-review-mode .ad-rail,
 body.ads-review-mode .ad-banner-top-wrap,
+body.ads-review-mode .ad-rectangle-wrap,
 body.ads-review-mode #sticky-bottom-ad {
   display: none !important;
 }
