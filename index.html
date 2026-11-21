@@ -298,9 +298,42 @@
         </p>
       </section>
 
-      <!-- Rutnät för fuskkoder (in-feed-annonser skjuts in automatiskt efter var 4:e kort) -->
+      <!-- Rutnät för fuskkoder (statisk HTML-tabell som fallback för sökrobotar, ersätts av interaktiva kort) -->
       <section id="fuskkoder" aria-label="Lista med fuskkoder">
-        <div id="cheats-grid" class="cheats-grid"></div>
+        <div id="cheats-grid" class="cheats-grid">
+          <div class="table-scroll-wrap">
+            <table class="static-reference-table">
+              <thead>
+                <tr>
+                  <th>Fusk / Effekt</th>
+                  <th>Kategori</th>
+                  <th>Pilkombination (D-Pad efter L1+R1 / LB+RB)</th>
+                  <th>Krav för upplåsning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>$250 000 Pengar (Instant Cash)</strong></td><td>Spelare</td><td><code>Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger</code></td><td>Klara storyn (91 uppdrag)</td></tr>
+                <tr><td><strong>Oändligt Fokus (Unlimited Focus)</strong></td><td>Spelare</td><td><code>Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger</code></td><td>Klara storyn (91 uppdrag)</td></tr>
+                <tr><td><strong>Skyddsväst (Body Armor)</strong></td><td>Spelare</td><td><code>Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner</code></td><td>Genomför 100 träningspass</td></tr>
+                <tr><td><strong>Höj Heat-nivå (Raise Heat Level)</strong></td><td>Spelare</td><td><code>Vänster, Ner, Höger, Ner, Upp, Ner, Upp</code></td><td>Bli av med 3 stjärnor 25 gånger</td></tr>
+                <tr><td><strong>Höj Efterlysningsnivå (Raise Wanted Level)</strong></td><td>Spelare</td><td><code>Vänster, Ner, Höger, Ner, Upp, Höger, Upp</code></td><td>Bli av med 3 stjärnor 50 gånger</td></tr>
+                <tr><td><strong>Full Ammunition (Max Ammo)</strong></td><td>Vapen</td><td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster</code></td><td>25 brons på skjutbanan</td></tr>
+                <tr><td><strong>Oändlig Ammunition (Infinite Ammo)</strong></td><td>Vapen</td><td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner</code></td><td>25 silver på skjutbanan</td></tr>
+                <tr><td><strong>Ingen Omladdning (No Reload)</strong></td><td>Vapen</td><td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp</code></td><td>25 guld på skjutbanan</td></tr>
+                <tr><td><strong>Superkraft i Skott &amp; Närstrid (Attack Force)</strong></td><td>Vapen</td><td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner</code></td><td>Klara storyn (91 uppdrag)</td></tr>
+                <tr><td><strong>Explosiva Sportbollar (Exploding Balls)</strong></td><td>Vapen</td><td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger</code></td><td>Träffa 20 fiender med explosiv skada</td></tr>
+                <tr><td><strong>Fordonskraft (Vehicle Force)</strong></td><td>Vapen</td><td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner</code></td><td>Besegra 25 fiender med fordon</td></tr>
+                <tr><td><strong>Spawna Maibatsu Boomazoom</strong></td><td>Fordon</td><td><code>Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster</code></td><td>Klara 5 Shopping Challenges</td></tr>
+                <tr><td><strong>Spawna MTL Pumper (Brandbil)</strong></td><td>Fordon</td><td><code>Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp</code></td><td>Upptäck MTL Pumper i Progress-menyn</td></tr>
+                <tr><td><strong>Spawna HVY Bulldozer</strong></td><td>Fordon</td><td><code>Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner</code></td><td>Upptäck HVY Bulldozer i Progress-menyn</td></tr>
+                <tr><td><strong>Ändra Väder i Vice City (Cycle Weather)</strong></td><td>Värld</td><td><code>Ner, Höger, Upp, Ner, Höger, Upp, Höger</code></td><td>Klara storyn / öppna hela kartan</td></tr>
+                <tr><td><strong>Cataclysm – Mörk Rök (Skärmfilter)</strong></td><td>Värld</td><td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger</code></td><td>Upptäck Martha&apos;s Vamos i Progress</td></tr>
+                <tr><td><strong>Dollhouse – Dockhus (Skärmfilter)</strong></td><td>Värld</td><td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger</code></td><td>Spendera 8 timmar med din partner</td></tr>
+                <tr><td><strong>Faded Glory – Färg-CRT TV (Skärmfilter)</strong></td><td>Värld</td><td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger</code></td><td>Råna 50 butiker med din partner</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div id="empty-state" class="empty-state" hidden>
           <h2 data-i18n="emptyTitle">Inga fuskkoder matchade din sökning</h2>
           <p data-i18n="emptyDesc">Prova ett annat sökord eller återställ filtren för att visa alla 61 GTA 6-fusk.</p>
@@ -346,237 +379,9 @@
         </div>
       </div>
 
-      <!-- Informativ SEO-, kassaskåps-, guide- och FAQ-sektion -->
-      <section class="seo-faq-section" id="seo-guide-section" aria-labelledby="kassaskapskoder">
-        <h2 id="kassaskapskoder">Kassaskåpskoder &amp; Dörrkoder i GTA 6 Story Mode (Chapter 1–3)</h2>
-        <div class="seo-intro">
-          <p>
-            Eftersom vanliga fuskkoder i <strong>Grand Theft Auto VI</strong> först kan aktiveras när du har klarat
-            huvudberättelsens 91 uppdrag, är <strong>kassaskåpskoder och dörrkoder (Safe &amp; Keypad Codes)</strong>
-            det snabbaste sättet att tjäna pengar och låsa upp hemliga vapen och samlarkort i Story Mode. Här
-            är samtliga <strong>23 verifierade fasta koder</strong> (läs även vår
-            <a href="kassaskapskoder.html">kompletta kassaskåpsguide</a>):
-          </p>
-        </div>
-
-        <div class="faq-grid">
-          <article class="faq-item">
-            <h3>Brooks Boatworks – Kassaskåpskod (Chapter 2)</h3>
-            <p>
-              <strong>Kod: <kbd class="kbd-token">6823</kbd></strong><br>
-              Ligger i nordöstra Port Gellhorn. Smyg in genom hålet i det östra staketet och gå upp till kontoret på
-              övervåningen i den grå byggnaden. <em>Tips:</em> Inspektera kartan på väggen bredvid kassaskåpet för att
-              automatiskt logga alla tre Illegal Operations-koderna i spelet!
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>La Cascara Motel &amp; Kingpin Bowling (Chapter 2)</h3>
-            <p>
-              <strong>La Cascara Motel: <kbd class="kbd-token">6969</kbd></strong> &middot;
-              <strong>Kingpin Bowling: <kbd class="kbd-token">0300</kbd></strong><br>
-              Fasta koder till de två övriga Illegal Operations-kassaskåpen i Port Gellhorn (bakre kontoret på
-              motellet respektive bakkontoret i bowlinghallen).
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Chapter 3: &rdquo;Yasmani&apos;s Jewelry Jobs&rdquo; (3 Kassaskåp)</h3>
-            <p>
-              <strong>Casa de Empe&ntilde;o: <kbd class="kbd-token">1680</kbd></strong> &middot;
-              <strong>Richardson Jewelry: <kbd class="kbd-token">6815</kbd></strong> &middot;
-              <strong>Donovan Banks &amp; Co.: <kbd class="kbd-token">0104</kbd></strong><br>
-              Fasta kassaskåpskoder för juvelkuppen i Chapter 3 (buffalo skull-kedja, diamantring och ametisthalsband).
-              Glöm inte den inledande nollan på <code>0104</code>!
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Uppdraget &rdquo;Lab Fees&rdquo; – Dörrkoder (Chapter 1)</h3>
-            <p>
-              <strong>Acid Lab / Moonstone Boutique: <kbd class="kbd-token">0420</kbd></strong><br>
-              <strong>Brian&apos;s Lockup (stöldgodsdörr): <kbd class="kbd-token">7700</kbd></strong><br>
-              Fasta keypad-koder i uppdraget <em>Lab Fees</em> (Brian&apos;s Rent) för bakdörren till syralabbet samt
-              förrådet där du lämnar av stöldgodset.
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Pelican Valley Crab Research Outpost (Hemligt vapen)</h3>
-            <p>
-              <strong>PC-lösenord: <kbd class="kbd-token">CLEAVES</kbd></strong> &middot;
-              <strong>Kassaskåp: <kbd class="kbd-token">0072</kbd></strong> &middot;
-              <strong>Dock Building: <kbd class="kbd-token">0212</kbd></strong><br>
-              Slå på strömmen utomhus, logga in på datorn (<code>CLEAVES</code>), öppna kassaskåpet (<code>0072</code>)
-              och använd <strong>0212</strong> på hamnbyggnaden för att låsa upp unika vapnet
-              <strong>Crabshack VF5 SMG</strong>!
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Gäng-kassaskåp: Guardia Brothers, San4San, M7 &amp; McKittrick</h3>
-            <p>
-              <strong>Casa Guardia: <kbd class="kbd-token">1965</kbd></strong> &middot;
-              <strong>Saber Facility: <kbd class="kbd-token">1122</kbd></strong> &middot;
-              <strong>Saber Yard: <kbd class="kbd-token">8046</kbd></strong><br>
-              <strong>Illegal Sneaker Trade (San4San): <kbd class="kbd-token">4124</kbd></strong> &middot;
-              <strong>Farm Fix Meth Lab: <kbd class="kbd-token">2121</kbd></strong><br>
-              <strong>Sunrise RV Park: <kbd class="kbd-token">6769</kbd></strong> &middot;
-              <strong>Nova Auto Junkyard: <kbd class="kbd-token">7777</kbd></strong>
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Hemliga dörrar, UFO-bunker, garage &amp; samlarkort</h3>
-            <p>
-              <strong>South Point Airfield (UFO-kontrollrum): <kbd class="kbd-token">2341</kbd></strong><br>
-              <strong>Randy&apos;s Wishlist (&apos;74 Vamos): <kbd class="kbd-token">2727</kbd></strong> &middot;
-              <strong>Key Lento Party House: <kbd class="kbd-token">092319</kbd></strong><br>
-              <strong>Cottonmouth Lake Trailer: <kbd class="kbd-token">44017</kbd></strong> &middot;
-              <strong>Mount Kalaga Shed: <kbd class="kbd-token">69185</kbd></strong>
-            </p>
-          </article>
-
-          <article class="faq-item">
-            <h3>Vanliga butiksrån &amp; slumpade kassaskåp (Chapter 3+)</h3>
-            <p>
-              <strong>Kod: <kbd class="kbd-token kbd-pending">Slumpad kod varje gång</kbd></strong><br>
-              Vanliga butiker och dynamiska rån har slumpade koder. <em>Tre sätt att lösa dem:</em>
-              tryck ner <strong>L3 + R3 (Focus Mode)</strong> för att lysa upp dolda post-it-lappar i rummet, hota
-              anställda/vakter så de ger upp koden, eller spräng dörren med en <strong>Sticky Bomb</strong> (utlöser larm).
-            </p>
-          </article>
-        </div>
-
-        <h2 id="alla-18-pilkoder" class="seo-sub-heading">Snabbtabell: Alla 18 verifierade D-Pad-pilkoder i GTA 6</h2>
-        <p>
-          Här är samtliga 18 bekräftade pilkoder som slås in via mobiltelefonen i spelet (tryck <strong>Upp ↑</strong>,
-          håll inne <strong>L1 + tryck R1</strong> på PS5 eller håll inne <strong>LB + tryck RB</strong> på Xbox Series X|S):
-        </p>
-        <div class="table-scroll-wrap">
-          <table class="static-reference-table">
-            <thead>
-              <tr>
-                <th>Fusk / Effekt</th>
-                <th>Kategori</th>
-                <th>Pilkombination (D-Pad efter L1+R1 / LB+RB)</th>
-                <th>Krav för upplåsning</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>$250 000 Pengar (Instant Cash)</strong></td>
-                <td>Spelare</td>
-                <td><code>Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger</code></td>
-                <td>Klara storyn (91 uppdrag)</td>
-              </tr>
-              <tr>
-                <td><strong>Oändligt Fokus (Unlimited Focus)</strong></td>
-                <td>Spelare</td>
-                <td><code>Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger</code></td>
-                <td>Klara storyn (91 uppdrag)</td>
-              </tr>
-              <tr>
-                <td><strong>Skyddsväst (Body Armor)</strong></td>
-                <td>Spelare</td>
-                <td><code>Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner</code></td>
-                <td>Genomför 100 träningspass</td>
-              </tr>
-              <tr>
-                <td><strong>Höj Heat-nivå (Raise Heat Level)</strong></td>
-                <td>Spelare</td>
-                <td><code>Vänster, Ner, Höger, Ner, Upp, Ner, Upp</code></td>
-                <td>Bli av med 3 stjärnor 25 gånger</td>
-              </tr>
-              <tr>
-                <td><strong>Höj Efterlysningsnivå (Raise Wanted Level)</strong></td>
-                <td>Spelare</td>
-                <td><code>Vänster, Ner, Höger, Ner, Upp, Höger, Upp</code></td>
-                <td>Bli av med 3 stjärnor 50 gånger</td>
-              </tr>
-              <tr>
-                <td><strong>Full Ammunition (Max Ammo)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster</code></td>
-                <td>25 brons på skjutbanan</td>
-              </tr>
-              <tr>
-                <td><strong>Oändlig Ammunition (Infinite Ammo)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner</code></td>
-                <td>25 silver på skjutbanan</td>
-              </tr>
-              <tr>
-                <td><strong>Ingen Omladdning (No Reload)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp</code></td>
-                <td>25 guld på skjutbanan</td>
-              </tr>
-              <tr>
-                <td><strong>Superkraft i Skott &amp; Närstrid (Attack Force)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner</code></td>
-                <td>Klara storyn (91 uppdrag)</td>
-              </tr>
-              <tr>
-                <td><strong>Explosiva Sportbollar (Exploding Balls)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger</code></td>
-                <td>Träffa 20 fiender med explosiv skada</td>
-              </tr>
-              <tr>
-                <td><strong>Fordonskraft (Vehicle Force)</strong></td>
-                <td>Vapen</td>
-                <td><code>Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner</code></td>
-                <td>Besegra 25 fiender med fordon</td>
-              </tr>
-              <tr>
-                <td><strong>Spawna Maibatsu Boomazoom</strong></td>
-                <td>Fordon</td>
-                <td><code>Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster</code></td>
-                <td>Klara 5 Shopping Challenges</td>
-              </tr>
-              <tr>
-                <td><strong>Spawna MTL Pumper (Brandbil)</strong></td>
-                <td>Fordon</td>
-                <td><code>Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp</code></td>
-                <td>Upptäck MTL Pumper i Progress-menyn</td>
-              </tr>
-              <tr>
-                <td><strong>Spawna HVY Bulldozer</strong></td>
-                <td>Fordon</td>
-                <td><code>Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner</code></td>
-                <td>Upptäck HVY Bulldozer i Progress-menyn</td>
-              </tr>
-              <tr>
-                <td><strong>Ändra Väder i Vice City (Cycle Weather)</strong></td>
-                <td>Värld</td>
-                <td><code>Ner, Höger, Upp, Ner, Höger, Upp, Höger</code></td>
-                <td>Klara storyn / öppna hela kartan</td>
-              </tr>
-              <tr>
-                <td><strong>Cataclysm – Mörk Rök (Skärmfilter)</strong></td>
-                <td>Värld</td>
-                <td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger</code></td>
-                <td>Upptäck Martha&apos;s Vamos i Progress</td>
-              </tr>
-              <tr>
-                <td><strong>Dollhouse – Dockhus (Skärmfilter)</strong></td>
-                <td>Värld</td>
-                <td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger</code></td>
-                <td>Spendera 8 timmar med din partner</td>
-              </tr>
-              <tr>
-                <td><strong>Faded Glory – Färg-CRT TV (Skärmfilter)</strong></td>
-                <td>Värld</td>
-                <td><code>Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger</code></td>
-                <td>Råna 50 butiker med din partner</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h2 class="seo-sub-heading">Fördjupade guider för Grand Theft Auto VI</h2>
+      <!-- Informativ SEO-, guide- och FAQ-sektion -->
+      <section class="seo-faq-section" id="seo-guide-section" aria-labelledby="aktivera-fusk">
+        <h2>Fördjupade guider &amp; checklistor för Grand Theft Auto VI</h2>
         <div class="guide-nav-cards">
           <a href="kassaskapskoder.html" class="guide-nav-card">
             <strong>Alla 23 Kassaskåps- &amp; Dörrkoder (Checklista) &rarr;</strong>
