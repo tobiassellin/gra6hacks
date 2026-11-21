@@ -1209,6 +1209,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function activateSafesFilter() {
+    state.category = "Kassaskap";
+    const safeBtn = categoryFilters.querySelector('[data-category="Kassaskap"]');
+    if (safeBtn) setActiveButton(categoryFilters, safeBtn);
+    renderCheats();
+  }
+
+  function syncHashFilter() {
+    if (window.location.hash === "#kassaskapskoder") {
+      activateSafesFilter();
+    }
+  }
+
+  document.querySelectorAll('a[href="#kassaskapskoder"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      activateSafesFilter();
+    });
+  });
+
+  document.querySelectorAll('a[href="#fuskkoder"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      if (state.category === "Kassaskap") {
+        state.category = "Alla";
+        const allBtn = categoryFilters.querySelector('[data-category="Alla"]');
+        if (allBtn) setActiveButton(categoryFilters, allBtn);
+        renderCheats();
+      }
+    });
+  });
+
+  window.addEventListener("hashchange", syncHashFilter);
+
   observeAdSlots();
-  renderCheats();
+  if (window.location.hash === "#kassaskapskoder") {
+    syncHashFilter();
+  } else {
+    renderCheats();
+  }
 });

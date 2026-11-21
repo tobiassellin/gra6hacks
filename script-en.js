@@ -1214,6 +1214,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function activateSafesFilter() {
+    state.category = "Safes";
+    const safeBtn = categoryFilters.querySelector('[data-category="Safes"]');
+    if (safeBtn) setActiveButton(categoryFilters, safeBtn);
+    renderCheats();
+  }
+
+  function syncHashFilter() {
+    if (window.location.hash === "#safe-codes") {
+      activateSafesFilter();
+    }
+  }
+
+  document.querySelectorAll('a[href="#safe-codes"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      activateSafesFilter();
+    });
+  });
+
+  document.querySelectorAll('a[href="#cheats-section"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      if (state.category === "Safes") {
+        state.category = "All";
+        const allBtn = categoryFilters.querySelector('[data-category="All"]');
+        if (allBtn) setActiveButton(categoryFilters, allBtn);
+        renderCheats();
+      }
+    });
+  });
+
+  window.addEventListener("hashchange", syncHashFilter);
+
   observeAdSlots();
-  renderCheats();
+  if (window.location.hash === "#safe-codes") {
+    syncHashFilter();
+  } else {
+    renderCheats();
+  }
 });
