@@ -28,6 +28,12 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Key Lento Party House (Garagedörr):** `092319` *(Hemliga samlarföremål & Los Santos Pounders-kort)*
 - **Cottonmouth Lake Trailer (Grassrivers):** `44017` *(Laki Maivia / Los Santos Pounders-samlarkort)*
 - **Mount Kalaga National Park (Låst skjul):** `69185` *(Maintenance shed keypad)*
+- **Farm Fix Meth Lab (McKittrick Farm – Final Chapter Gang):** `2121` *(Kassaskåp)*
+- **Illegal Sneaker Trade (San4San – Vice City):** `4124` *(Kassaskåp)*
+- **Casa Guardia (The Guardia Brothers):** `1965` *(Kassaskåp)*
+- **Saber Shipping Facility (The Guardia Brothers):** `1122` *(Kassaskåp)*
+- **Saber Shipping Yard (The Guardia Brothers):** `8046` *(Kassaskåp)*
+- **South Point Airfield (Underjordiskt UFO-kontrollrum / taklucka):** `2341` *(Keypad)*
 - **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
 ## Verifierade D-Pad-pilkoder i GTA 6 (18 st)

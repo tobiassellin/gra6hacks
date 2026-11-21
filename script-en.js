@@ -729,6 +729,60 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "6, 9, 1, 8, 5",
     xbox: "6, 9, 1, 8, 5",
     phone: "Mount Kalaga National Park · Locked Shed"
+  },
+  {
+    title: "Safe Code: Farm Fix Meth Lab (McKittrick Farm)",
+    category: "Safe Code",
+    description: "Fixed safe code for the Illegal Operation at Farm Fix Meth Lab on McKittrick Farm (Final Chapter gang).",
+    verified: true,
+    ps5: "2, 1, 2, 1",
+    xbox: "2, 1, 2, 1",
+    phone: "McKittrick Farm · Final Chapter Gang Operation"
+  },
+  {
+    title: "Safe Code: Illegal Sneaker Trade (San4San – Vice City)",
+    category: "Safe Code",
+    description: "Fixed safe combination inside the San4San gang's Illegal Sneaker Trade operation in Vice City.",
+    verified: true,
+    ps5: "4, 1, 2, 4",
+    xbox: "4, 1, 2, 4",
+    phone: "Vice City · San4San Gang Operation"
+  },
+  {
+    title: "Safe Code: Casa Guardia (The Guardia Brothers)",
+    category: "Safe Code",
+    description: "Fixed safe code inside Casa Guardia during the Illegal Operation against The Guardia Brothers.",
+    verified: true,
+    ps5: "1, 9, 6, 5",
+    xbox: "1, 9, 6, 5",
+    phone: "Casa Guardia · The Guardia Brothers"
+  },
+  {
+    title: "Safe Code: Saber Shipping Facility (Guardia Brothers)",
+    category: "Safe Code",
+    description: "Fixed safe code inside the Saber Shipping Facility (The Guardia Brothers Illegal Operation).",
+    verified: true,
+    ps5: "1, 1, 2, 2",
+    xbox: "1, 1, 2, 2",
+    phone: "Saber Shipping Facility · The Guardia Brothers"
+  },
+  {
+    title: "Safe Code: Saber Shipping Yard (Guardia Brothers)",
+    category: "Safe Code",
+    description: "Fixed safe code at the Saber Shipping Yard (The Guardia Brothers Illegal Operation).",
+    verified: true,
+    ps5: "8, 0, 4, 6",
+    xbox: "8, 0, 4, 6",
+    phone: "Saber Shipping Yard · The Guardia Brothers"
+  },
+  {
+    title: "Door Code: South Point Airfield (Underground UFO Control Room)",
+    category: "Story Code",
+    description: "Fixed keypad code for the roof hatch and underground elevator control room at South Point Airfield (tied to Pilot Pete and the alien/UFO mystery).",
+    verified: true,
+    ps5: "2, 3, 4, 1",
+    xbox: "2, 3, 4, 1",
+    phone: "South Point Airfield · Secret UFO Bunker"
   }
 ];
 

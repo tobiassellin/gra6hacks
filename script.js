@@ -729,6 +729,60 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "6, 9, 1, 8, 5",
     xbox: "6, 9, 1, 8, 5",
     phone: "Mount Kalaga National Park · Hemligt skjul"
+  },
+  {
+    title: "Kassaskåpskod: Farm Fix Meth Lab (McKittrick Farm)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod för Illegal Operation i Farm Fix Meth Lab vid McKittrick Farm (Final Chapter-gänget).",
+    verified: true,
+    ps5: "2, 1, 2, 1",
+    xbox: "2, 1, 2, 1",
+    phone: "McKittrick Farm · Final Chapter Gang Operation"
+  },
+  {
+    title: "Kassaskåpskod: Illegal Sneaker Trade (San4San – Vice City)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod i San4San-gängets Illegal Sneaker Trade-lokal i Vice City.",
+    verified: true,
+    ps5: "4, 1, 2, 4",
+    xbox: "4, 1, 2, 4",
+    phone: "Vice City · San4San Gang Operation"
+  },
+  {
+    title: "Kassaskåpskod: Casa Guardia (The Guardia Brothers)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne på Casa Guardia under Illegal Operation mot The Guardia Brothers.",
+    verified: true,
+    ps5: "1, 9, 6, 5",
+    xbox: "1, 9, 6, 5",
+    phone: "Casa Guardia · The Guardia Brothers"
+  },
+  {
+    title: "Kassaskåpskod: Saber Shipping Facility (Guardia Brothers)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne i huvudbyggnaden på Saber Shipping Facility (The Guardia Brothers Illegal Operation).",
+    verified: true,
+    ps5: "1, 1, 2, 2",
+    xbox: "1, 1, 2, 2",
+    phone: "Saber Shipping Facility · The Guardia Brothers"
+  },
+  {
+    title: "Kassaskåpskod: Saber Shipping Yard (Guardia Brothers)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod ute på bangården/hamnområdet Saber Shipping Yard (The Guardia Brothers Illegal Operation).",
+    verified: true,
+    ps5: "8, 0, 4, 6",
+    xbox: "8, 0, 4, 6",
+    phone: "Saber Shipping Yard · The Guardia Brothers"
+  },
+  {
+    title: "Dörrkod: South Point Airfield (Underjordiskt UFO-kontrollrum)",
+    category: "Story-kod",
+    description: "Fast keypad-kod till takluckan och det underjordiska kontrollrummet på South Point Airfield (kopplat till Pilot Pete och spelets UFO/Alien-mysterium).",
+    verified: true,
+    ps5: "2, 3, 4, 1",
+    xbox: "2, 3, 4, 1",
+    phone: "South Point Airfield · Hemlig UFO-bunker"
   }
 ];
 
