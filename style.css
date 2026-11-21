@@ -1358,3 +1358,120 @@ kbd.kbd-pending {
   margin-bottom: 18px;
   font-weight: 600;
 }
+
+/* ==========================================================================
+   AdSense Review Mode & Editorial Guide Subpages
+   ========================================================================== */
+
+body.ads-review-mode .ad-rail,
+body.ads-review-mode .ad-banner-top-wrap,
+body.ads-review-mode #sticky-bottom-ad {
+  display: none !important;
+}
+
+body.ads-review-mode .page-shell {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 1040px;
+}
+
+body.ads-review-mode .site-footer.has-bottom-ad {
+  padding-bottom: 32px;
+}
+
+.table-scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 14px 0 22px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(13, 11, 20, 0.72);
+}
+
+.static-reference-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.static-reference-table th,
+.static-reference-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.static-reference-table th {
+  background: rgba(33, 28, 54, 0.9);
+  color: var(--accent-cyan);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.static-reference-table td {
+  color: var(--text-secondary);
+}
+
+.static-reference-table td strong {
+  color: var(--text-primary);
+}
+
+.static-reference-table tr:last-child td {
+  border-bottom: none;
+}
+
+.guide-callout {
+  background: rgba(0, 229, 255, 0.07);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 16px 0;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.guide-callout strong {
+  color: var(--text-primary);
+}
+
+.guide-nav-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 18px 0 24px;
+}
+
+@media (min-width: 720px) {
+  .guide-nav-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.guide-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(13, 11, 20, 0.72);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: transform 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+}
+
+.guide-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+  background: rgba(33, 28, 54, 0.85);
+}
+
+.guide-nav-card strong {
+  font-size: 1rem;
+  color: var(--accent-cyan);
+}
+
+.guide-nav-card span {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
