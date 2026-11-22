@@ -73,10 +73,10 @@ const cheatsData = [
   {
     title: "Drunk Mode",
     category: "Player",
-    description: "Instantly makes both you and your partner drunk. Unlock requirement: Spend $2,500 on alcohol in-game.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Instantly makes both you and your partner drunk. Note: The code is accepted once the challenge is completed. Unlock requirement: Spend $2,500 on alcohol in-game.",
+    verified: true,
+    ps5: "L1 + R1, Up, Left, Right, Up, Up, Left, Right, Up, Left, Right",
+    xbox: "LB + RB, Up, Left, Right, Up, Up, Left, Right, Up, Left, Right",
     phone: "Unlock: Spend $2,500 on Alcohol"
   },
   {
@@ -783,6 +783,51 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "2, 3, 4, 1",
     xbox: "2, 3, 4, 1",
     phone: "South Point Airfield · Secret UFO Bunker"
+  },
+  {
+    title: "Garage Code: La Perle Garage (Boobie's Laptop / Pfister Growler)",
+    category: "Story Code",
+    description: "5-digit keypad code for the roller-door garage next to Auntie's Place on Del Rio Boulevard in La Perle (Vice City). Solved via Boobie's apartment laptop in Chapter 3 to claim the garage and Vanessa's custom pink Pfister Growler.",
+    verified: true,
+    ps5: "9, 2, 6, 6, 5",
+    xbox: "9, 2, 6, 6, 5",
+    phone: "La Perle (Vice City) · Chapter 3 & Pfister Growler"
+  },
+  {
+    title: "Door Code: Black Eagle Warehouse (Balsero Back Office)",
+    category: "Story Code",
+    description: "6-digit keypad code for the back office door inside the Black Eagle import/export warehouse in Balsero (Vice City). Unlocks access to the Black Eagle office safe (031462).",
+    verified: true,
+    ps5: "7, 8, 9, 9, 8, 7",
+    xbox: "7, 8, 9, 9, 8, 7",
+    phone: "Balsero (Vice City) · Black Eagle Warehouse"
+  },
+  {
+    title: "Safe Code: Black Eagle Warehouse (Unique Kalinga .50 Pistol)",
+    category: "Safe Code",
+    description: "6-digit combination for the office safe inside Black Eagle Warehouse (after door keypad 789987). Rewards the unique Black Eagle Import Kalinga .50 pistol.",
+    verified: true,
+    ps5: "0, 3, 1, 4, 6, 2",
+    xbox: "0, 3, 1, 4, 6, 2",
+    phone: "Balsero (Vice City) · Unique Weapon (Kalinga .50)"
+  },
+  {
+    title: "Safe Code: Janjak's Garage (San4San Weed Garage – La Perle)",
+    category: "Safe Code",
+    description: "Fixed office safe code inside Janjak's Garage (San4San Weed Garage) in La Perle, Vice City (clue note on the office fridge). Contains cash, a pink Declasse Gin Tulip, and the unique San4San KZ-59 rifle.",
+    verified: true,
+    ps5: "4, 4, 4, 4",
+    xbox: "4, 4, 4, 4",
+    phone: "La Perle (Vice City) · San4San KZ-59 Rifle & Cash"
+  },
+  {
+    title: "Safe Code: Abandoned Laundry (Northwest Belville)",
+    category: "Safe Code",
+    description: "5-digit reinforced wall safe code inside the Abandoned Laundry in northwest Belville (just south of the Biker Hideout—enter through the roof hole; code hidden beneath a collectible card).",
+    verified: true,
+    ps5: "6, 2, 4, 1, 2",
+    xbox: "6, 2, 4, 1, 2",
+    phone: "Belville (Ambrosia) · Reinforced Wall Safe"
   }
 ];
 

@@ -73,10 +73,10 @@ const cheatsData = [
   {
     title: "Fylleri-läge (Drunk Mode)",
     category: "Spelare",
-    description: "Gör omedelbart både dig och din partner berusade. Krav för upplåsning: Spendera totalt $2 500 på alkohol i spelet.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Gör omedelbart både dig och din partner berusade. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Spendera totalt $2 500 på alkohol i spelet.",
+    verified: true,
+    ps5: "L1 + R1, Upp, Vänster, Höger, Upp, Upp, Vänster, Höger, Upp, Vänster, Höger",
+    xbox: "LB + RB, Upp, Vänster, Höger, Upp, Upp, Vänster, Höger, Upp, Vänster, Höger",
     phone: "Krav: Spendera $2 500 på alkohol"
   },
   {
@@ -783,6 +783,51 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "2, 3, 4, 1",
     xbox: "2, 3, 4, 1",
     phone: "South Point Airfield · Hemlig UFO-bunker"
+  },
+  {
+    title: "Garagedörr-kod: La Perle Garage (Boobies laptop / Pfister Growler)",
+    category: "Story-kod",
+    description: "Femsiffrig keypad-kod till garaget bredvid Auntie's Place på Del Rio Boulevard i La Perle (Vice City). Löses via Boobies laptop i Chapter 3 och låser upp garaget samt Vanessas rosa Pfister Growler.",
+    verified: true,
+    ps5: "9, 2, 6, 6, 5",
+    xbox: "9, 2, 6, 6, 5",
+    phone: "La Perle (Vice City) · Chapter 3 & Pfister Growler"
+  },
+  {
+    title: "Dörrkod: Black Eagle Warehouse (Balsero – Bakkontor)",
+    category: "Story-kod",
+    description: "Sexsiffrig keypad-kod till bakkontoret inne på Black Eagle-lagret i Balsero (Vice City). Ger tillgång till rummet med Black Eagle-kassaskåpet (031462).",
+    verified: true,
+    ps5: "7, 8, 9, 9, 8, 7",
+    xbox: "7, 8, 9, 9, 8, 7",
+    phone: "Balsero (Vice City) · Black Eagle Warehouse"
+  },
+  {
+    title: "Kassaskåpskod: Black Eagle Warehouse (Unik Kalinga .50 Pistol)",
+    category: "Kassaskåp",
+    description: "Sexsiffrig kassaskåpskod inne på bakkontoret i Black Eagle Warehouse (efter dörrkod 789987). Innehåller den unika pistolen Black Eagle Import Kalinga .50.",
+    verified: true,
+    ps5: "0, 3, 1, 4, 6, 2",
+    xbox: "0, 3, 1, 4, 6, 2",
+    phone: "Balsero (Vice City) · Unikt vapen (Kalinga .50)"
+  },
+  {
+    title: "Kassaskåpskod: Janjak's Garage (San4San Weed Garage – La Perle)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod på kontoret i San4San-gängets weed-garage i La Perle (Vice City, ledtråd på kylskåpet). Belöning: kontanter, rosa Declasse Gin Tulip och unika geväret San4San KZ-59.",
+    verified: true,
+    ps5: "4, 4, 4, 4",
+    xbox: "4, 4, 4, 4",
+    phone: "La Perle (Vice City) · San4San KZ-59 & Cash"
+  },
+  {
+    title: "Kassaskåpskod: Abandoned Laundry (Nordvästra Belville)",
+    category: "Kassaskåp",
+    description: "Femsiffrig kod till det förstärkta väggkassaskåpet inne i den övergivna tvättstugan i nordvästra Belville (söder om Biker Hideout – gå in via hålet i taket; koden står under ett samlarkort).",
+    verified: true,
+    ps5: "6, 2, 4, 1, 2",
+    xbox: "6, 2, 4, 1, 2",
+    phone: "Belville (Ambrosia) · Väggkassaskåp"
   }
 ];
 

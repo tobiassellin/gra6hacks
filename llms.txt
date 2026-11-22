@@ -10,7 +10,7 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 3. **Aktivera fuskmenyn:** **Håll inne L1 och tryck på R1** (PS5) eller **håll inne LB och tryck på RB** (Xbox Series X|S).
 4. **Slå in pilkoden:** Mata in fuskets riktningssekvens på styrkorset (Upp, Ner, Vänster, Höger).
 
-## Kassaskåpskoder & Dörrkoder i GTA 6 Story Mode (Chapter 1–3)
+## Kassaskåpskoder & Dörrkoder i GTA 6 Story Mode (28 st verifierade)
 - **Brooks Boatworks (Port Gellhorn – Chapter 2):** `6823` *(Nordöstra Port Gellhorn – väggkartan i kontoret på övervåningen loggar även alla 3 koder)*
 - **La Cascara Motel (Port Gellhorn – Chapter 2):** `6969` *(Illegal Operation)*
 - **Kingpin Bowling (Port Gellhorn – Chapter 2):** `0300` *(Illegal Operation)*
@@ -23,6 +23,11 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Casa de Empeño (Chapter 3 – Yasmani's Jewelry Jobs):** `1680` *(Pantbankens kassaskåp)*
 - **Richardson Jewelry & Diamonds (Chapter 3 – Yasmani's Jewelry Jobs):** `6815` *(Juvelerarens kassaskåp)*
 - **Donovan Banks & Co. (Chapter 3 – Yasmani's Jewelry Jobs):** `0104` *(Ametisthalsband – glöm ej inledande nolla)*
+- **La Perle Garage (Boobies laptop / Auntie's Place – Chapter 3):** `92665` *(Garagedörrens keypad – Vanessas rosa Pfister Growler)*
+- **Black Eagle Warehouse (Balsero, Vice City – Kontorsdörr):** `789987` *(6-siffrig keypad-dörr)*
+- **Black Eagle Warehouse (Balsero, Vice City – Kassaskåp):** `031462` *(Unikt vapen: Black Eagle Import Kalinga .50 Pistol)*
+- **Janjak's Garage (San4San Weed Garage – La Perle, Vice City):** `4444` *(Kontanter, rosa Declasse Gin Tulip & unikt gevär San4San KZ-59)*
+- **Abandoned Laundry (Nordvästra Belville, Ambrosia):** `62412` *(Förstärkt väggkassaskåp – ingång via hålet i taket)*
 - **Sunrise RV Park (Kingfishers Gang Operation):** `6769` *(Kassaskåp i lagret)*
 - **Nova Auto Junkyard (M7 Gang Operation):** `7777` *(Bilskrotens kassaskåp)*
 - **Key Lento Party House (Garagedörr):** `092319` *(Hemliga samlarföremål & Los Santos Pounders-kort)*
@@ -36,10 +41,11 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **South Point Airfield (Underjordiskt UFO-kontrollrum / taklucka):** `2341` *(Keypad)*
 - **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
-## Verifierade D-Pad-pilkoder i GTA 6 (18 st)
+## Verifierade D-Pad-pilkoder i GTA 6 (19 st)
 - **$250 000 Pengar ($250,000 Cash):** `Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger` *(Krav: Klara storyn)*
 - **Oändligt Fokus (Unlimited Focus):** `Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger` *(Krav: Klara storyn)*
 - **Skyddsväst (Body Armor):** `Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner` *(Krav: 100 träningspass)*
+- **Fylleri-läge (Drunk Mode):** `Upp, Vänster, Höger, Upp, Upp, Vänster, Höger, Upp, Vänster, Höger` *(Krav: Spendera $2 500 på alkohol)*
 - **Höj Heat-nivå (Raise Heat Level):** `Vänster, Ner, Höger, Ner, Upp, Ner, Upp` *(Krav: Bli av med 3 stjärnor 25 gånger)*
 - **Höj Efterlysningsnivå (Raise Wanted Level):** `Vänster, Ner, Höger, Ner, Upp, Höger, Upp` *(Krav: Bli av med 3 stjärnor 50 gånger)*
 - **Full Ammunition (Max Ammo):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster` *(Krav: 25 brons på skjutbanan)*
@@ -66,8 +72,8 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 ## Viktiga länkar & guider
 - [GTA 6 Fuskkoder (Svenska)](https://gta6hacks.se/)
 - [GTA 6 Cheat Codes (English)](https://gta6hacks.se/en.html)
-- [Alla 23 Kassaskåpskoder & Dörrkoder i GTA 6 (SV)](https://gta6hacks.se/kassaskapskoder.html)
-- [All 23 GTA 6 Safe & Door Codes Checklist (EN)](https://gta6hacks.se/safe-codes.html)
+- [Alla 28 Kassaskåpskoder & Dörrkoder i GTA 6 (SV)](https://gta6hacks.se/kassaskapskoder.html)
+- [All 28 GTA 6 Safe & Door Codes Checklist (EN)](https://gta6hacks.se/safe-codes.html)
 - [Alla 21 Fordonsfusk i GTA 6 – Tank, Flygplan & Bilar (SV)](https://gta6hacks.se/fordonsfusk.html)
 - [All 21 GTA 6 Vehicle Spawn Cheats (EN)](https://gta6hacks.se/vehicle-cheats.html)
 - [Så låser du upp alla 61 fusk i GTA 6 – Utmaningsguide (SV)](https://gta6hacks.se/utmaningar.html)
