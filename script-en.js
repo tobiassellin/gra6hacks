@@ -828,6 +828,69 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "6, 2, 4, 1, 2",
     xbox: "6, 2, 4, 1, 2",
     phone: "Belville (Ambrosia) · Reinforced Wall Safe"
+  },
+  {
+    title: "Safe Code: Biker Hideout (The Thirsty Wolf – Belville)",
+    category: "Safe Code",
+    description: "Fixed safe code inside the Final Chapter MC clubhouse at The Thirsty Wolf bar in Belville (matching the biker gang's founding year, 1982).",
+    verified: true,
+    ps5: "1, 9, 8, 2",
+    xbox: "1, 9, 8, 2",
+    phone: "Belville · Final Chapter Gang Operation"
+  },
+  {
+    title: "Safe Code: Leonida Carrier Warehouse (Balsero, Vice City)",
+    category: "Safe Code",
+    description: "Fixed safe combination in the back office of Leonida Carrier Warehouse in Balsero, Vice City (drop in via the roof hatch).",
+    verified: true,
+    ps5: "9, 2, 5, 6",
+    xbox: "9, 2, 5, 6",
+    phone: "Balsero (Vice City) · Back Office via Roof Hatch"
+  },
+  {
+    title: "Safe Code: Marbelle Hotel (Haunted Silent Hill Easter Egg)",
+    category: "Safe Code",
+    description: "6-digit code for the ground-floor safe inside the haunted Marbelle Hotel in southern Crosstown, Vice City (revealed via the top-floor wall writing tied to the Silent Hill Easter egg).",
+    verified: true,
+    ps5: "9, 5, 5, 2, 1, 4",
+    xbox: "9, 5, 5, 2, 1, 4",
+    phone: "South Crosstown (Vice City) · Secret Easter Egg"
+  },
+  {
+    title: "Safe Code: Watson Bay Safehouse (La Polilla Negra)",
+    category: "Safe Code",
+    description: "Fixed safe code (from the kitchen PC email) at La Polilla Negra's secluded compound northeast of Watson Bay. Rewards cash under the microwave, the suppressed black-and-gold La Polilla Negra VF-G1 rifle upstairs, and an untracked Canis Black Moth Kamacho in the garage.",
+    verified: true,
+    ps5: "1, 8, 1, 9",
+    xbox: "1, 8, 1, 9",
+    phone: "Watson Bay (Grassrivers) · VF-G1 & Kamacho"
+  },
+  {
+    title: "Safe Code: Palmer Fishing Warehouse (La Polilla Negra)",
+    category: "Safe Code",
+    description: "Fixed safe code at the Bobcat Key warehouse in Watson Bay (also reported as 1886 on select patch builds). Contains $3,400–$5,400+ cash, a rare golden La Polilla Negra KZ-59 assault rifle, and a luxury watch.",
+    verified: true,
+    ps5: "1, 8, 8, 7",
+    xbox: "1, 8, 8, 7",
+    phone: "Bobcat Key / Watson Bay · Gold KZ-59 & Cash"
+  },
+  {
+    title: "Safe Code: Delights Cabaret Office (Mission: Afternoon Delight)",
+    category: "Safe Code",
+    description: "Fixed office safe code inside Delights Cabaret in Port Gellhorn during the mission Afternoon Delight.",
+    verified: true,
+    ps5: "2, 0, 0, 8",
+    xbox: "2, 0, 0, 8",
+    phone: "Port Gellhorn · Mission: Afternoon Delight"
+  },
+  {
+    title: "Door Code: Cigar Import (Front Door – Illegal Operation)",
+    category: "Story Code",
+    description: "Fixed 4-digit keypad combination for the front entrance door of the Cigar Import Illegal Operation.",
+    verified: true,
+    ps5: "1, 4, 2, 6",
+    xbox: "1, 4, 2, 6",
+    phone: "Cigar Import · Illegal Operation (Keypad)"
   }
 ];
 

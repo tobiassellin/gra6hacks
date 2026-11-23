@@ -828,6 +828,69 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "6, 2, 4, 1, 2",
     xbox: "6, 2, 4, 1, 2",
     phone: "Belville (Ambrosia) · Väggkassaskåp"
+  },
+  {
+    title: "Kassaskåpskod: Biker Hideout (The Thirsty Wolf – Belville)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod i Final Chapter-gängets klubbhus vid baren The Thirsty Wolf i Belville (samma årtal som MC-klubbens grundande, 1982).",
+    verified: true,
+    ps5: "1, 9, 8, 2",
+    xbox: "1, 9, 8, 2",
+    phone: "Belville · Final Chapter Gang Operation"
+  },
+  {
+    title: "Kassaskåpskod: Leonida Carrier Warehouse (Balsero, Vice City)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne på bakkontoret i Leonida Carrier Warehouse i Balsero, Vice City (nås via takluckan på byggnaden).",
+    verified: true,
+    ps5: "9, 2, 5, 6",
+    xbox: "9, 2, 5, 6",
+    phone: "Balsero (Vice City) · Bakkontor via taklucka"
+  },
+  {
+    title: "Kassaskåpskod: Marbelle Hotel (Spökhotell / Silent Hill Easter Egg)",
+    category: "Kassaskåp",
+    description: "Sexsiffrig kod till bottenvåningens kassaskåp i det hemsökta Marbelle Hotel i södra Crosstown, Vice City (koden finns skriven på väggen högst upp – kopplad till spelets Silent Hill-påskägg).",
+    verified: true,
+    ps5: "9, 5, 5, 2, 1, 4",
+    xbox: "9, 5, 5, 2, 1, 4",
+    phone: "Södra Crosstown (Vice City) · Hemligt Easter Egg"
+  },
+  {
+    title: "Kassaskåpskod: Watson Bay Safehouse (La Polilla Negra)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod (från köksdatorn) i La Polilla Negras gömställe nordost om Watson Bay. Ger kontanter under mikrovågsugnen, ljuddämpade specialgeväret La Polilla Negra VF-G1 samt en Canis Black Moth Kamacho i garaget.",
+    verified: true,
+    ps5: "1, 8, 1, 9",
+    xbox: "1, 8, 1, 9",
+    phone: "Watson Bay (Grassrivers) · VF-G1 & Kamacho"
+  },
+  {
+    title: "Kassaskåpskod: Palmer Fishing Warehouse (La Polilla Negra)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod på Bobcat Key i Watson Bay (på enstaka patchversioner även rapporterad som 1886). Innehåller kontanter (upp till $5 400+), guldfärgade specialgeväret La Polilla Negra KZ-59 och lyxklocka.",
+    verified: true,
+    ps5: "1, 8, 8, 7",
+    xbox: "1, 8, 8, 7",
+    phone: "Bobcat Key / Watson Bay · Guld-KZ-59 & Cash"
+  },
+  {
+    title: "Kassaskåpskod: Delights Cabaret Office (Uppdrag: Afternoon Delight)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod till kontoret inne på Delights Cabaret i Port Gellhorn under uppdraget Afternoon Delight.",
+    verified: true,
+    ps5: "2, 0, 0, 8",
+    xbox: "2, 0, 0, 8",
+    phone: "Port Gellhorn · Uppdrag: Afternoon Delight"
+  },
+  {
+    title: "Dörrkod: Cigar Import (Entrédörr – Illegal Operation)",
+    category: "Story-kod",
+    description: "Fast fyrsiffrig keypad-kod till huvudentrén på Cigar Import Illegal Operation.",
+    verified: true,
+    ps5: "1, 4, 2, 6",
+    xbox: "1, 4, 2, 6",
+    phone: "Cigar Import · Illegal Operation (Keypad)"
   }
 ];
 
