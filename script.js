@@ -891,6 +891,24 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "1, 4, 2, 6",
     xbox: "1, 4, 2, 6",
     phone: "Cigar Import · Illegal Operation (Keypad)"
+  },
+  {
+    title: "Kassaskåpskod: Abandoned House (Ambrosia)",
+    category: "Kassaskåp",
+    description: "Femsiffrig kod till kassaskåpet i det övergivna huset i Ambrosia. Klättra upp på taket och gå ner genom hålet i taket – koden står uppe på utedasset (outhouse).",
+    verified: true,
+    ps5: "2, 3, 5, 5, 4",
+    xbox: "2, 3, 5, 5, 4",
+    phone: "Ambrosia · Övergivet hus (Ingång via taket)"
+  },
+  {
+    title: "Kassaskåpskod: Slator Towing Inc. / Guarded House (Gloriana Key)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod på övervåningen inne på kontoret i det bevakade huset vid Slator Towing Inc. (Illegal Operation / Chop Shop) på Gloriana Key.",
+    verified: true,
+    ps5: "4, 5, 6, 7",
+    xbox: "4, 5, 6, 7",
+    phone: "Gloriana Key · Slator Towing Inc. (Illegal Operation)"
   }
 ];
 

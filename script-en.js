@@ -891,6 +891,24 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "1, 4, 2, 6",
     xbox: "1, 4, 2, 6",
     phone: "Cigar Import · Illegal Operation (Keypad)"
+  },
+  {
+    title: "Safe Code: Abandoned House (Ambrosia)",
+    category: "Safe Code",
+    description: "5-digit safe combination inside the abandoned house in Ambrosia. Climb onto the roof and drop through the hole inside—the clue code is displayed on top of the outhouse.",
+    verified: true,
+    ps5: "2, 3, 5, 5, 4",
+    xbox: "2, 3, 5, 5, 4",
+    phone: "Ambrosia · Abandoned House (Roof Entry)"
+  },
+  {
+    title: "Safe Code: Slator Towing Inc. / Guarded House (Gloriana Key)",
+    category: "Safe Code",
+    description: "Fixed safe code located upstairs in the office of the guarded house at Slator Towing Inc. (Illegal Operation / Chop Shop) on Gloriana Key.",
+    verified: true,
+    ps5: "4, 5, 6, 7",
+    xbox: "4, 5, 6, 7",
+    phone: "Gloriana Key · Slator Towing Inc. (Illegal Operation)"
   }
 ];
 
