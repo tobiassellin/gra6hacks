@@ -909,6 +909,33 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "4, 5, 6, 7",
     xbox: "4, 5, 6, 7",
     phone: "Gloriana Key · Slator Towing Inc. (Illegal Operation)"
+  },
+  {
+    title: "Garage Code: Waxman Island Garage (Mission: First Impressions)",
+    category: "Story Code",
+    description: "Fixed wall keypad code for the garage shutter on Waxman Island during the Chapter 3 main mission First Impressions (Raul Bautista) to pick up the getaway Schafter.",
+    verified: true,
+    ps5: "2, 4, 0, 4",
+    xbox: "2, 4, 0, 4",
+    phone: "Chapter 3 · Waxman Island (First Impressions)"
+  },
+  {
+    title: "Door Code: North Balsero Lockup Lab (Take Out Kitty Litter)",
+    category: "Story Code",
+    description: "Fixed keypad code for the shutter door guarding the drug lab in North Balsero during Tyrone's Take Out Kitty Litter side mission (clue displayed on a nearby billboard).",
+    verified: true,
+    ps5: "1, 9, 9, 9",
+    xbox: "1, 9, 9, 9",
+    phone: "North Balsero · Take Out Kitty Litter (Keypad)"
+  },
+  {
+    title: "Safe Code: Pilot Pete's Hangar (The Last Mile: Passing the Torch)",
+    category: "Safe Code",
+    description: "Fixed safe combination in the back room behind the red door of Pilot Pete's hangar at Sundown Private Airfield during the Chapter 4 mission The Last Mile: Passing the Torch.",
+    verified: true,
+    ps5: "3, 7, 1, 8",
+    xbox: "3, 7, 1, 8",
+    phone: "Chapter 4 · Sundown Private Airfield (Pilot Pete)"
   }
 ];
 

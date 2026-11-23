@@ -909,6 +909,33 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "4, 5, 6, 7",
     xbox: "4, 5, 6, 7",
     phone: "Gloriana Key · Slator Towing Inc. (Illegal Operation)"
+  },
+  {
+    title: "Garagedörr-kod: Waxman Island Garage (Uppdrag: First Impressions)",
+    category: "Story-kod",
+    description: "Fast keypad-kod till garageporten på Waxman Island under Chapter 3-uppdraget First Impressions (Raul Bautista) för att hämta flyktbilen Schafter.",
+    verified: true,
+    ps5: "2, 4, 0, 4",
+    xbox: "2, 4, 0, 4",
+    phone: "Chapter 3 · Waxman Island (First Impressions)"
+  },
+  {
+    title: "Dörrkod: North Balsero Lockup Lab (Take Out Kitty Litter)",
+    category: "Story-kod",
+    description: "Fast keypad-kod till den låsta garageporten vid knarklabbet i norra Balsero under sidoaktiviteten Take Out Kitty Litter (Tyrone; ledtråd på närliggande skylt).",
+    verified: true,
+    ps5: "1, 9, 9, 9",
+    xbox: "1, 9, 9, 9",
+    phone: "Norra Balsero · Take Out Kitty Litter (Keypad)"
+  },
+  {
+    title: "Kassaskåpskod: Pilot Pete's Hangar (The Last Mile: Passing the Torch)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod i bakrummet bakom den röda dörren i Pilot Petes hangar på Sundown Private Airfield under Chapter 4-uppdraget The Last Mile: Passing the Torch.",
+    verified: true,
+    ps5: "3, 7, 1, 8",
+    xbox: "3, 7, 1, 8",
+    phone: "Chapter 4 · Sundown Private Airfield (Pilot Pete)"
   }
 ];
 
