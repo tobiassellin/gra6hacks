@@ -704,13 +704,13 @@ const SAFE_CODES_SEARCH_DATA = [
     phone: "Nova Auto Junkyard · M7 Gang Operation"
   },
   {
-    title: "Garage Code: Key Lento Party House (Hidden Collectibles)",
+    title: "Garage Code: Key Lento Party House (Invetero Spiderweb Coquette)",
     category: "Story Code",
-    description: "6-digit keypad code for the Key Lento party house garage door in southeast Leonida Keys. Unlocks hidden collectibles including a Los Santos Pounders card.",
+    description: "6-digit keypad code for the Key Lento party house garage door in southeast Leonida Keys. Unlocks the garage holding the unique Invetero Spiderweb Coquette, hidden collectibles, and a Los Santos Pounders card.",
     verified: true,
     ps5: "0, 9, 2, 3, 1, 9",
     xbox: "0, 9, 2, 3, 1, 9",
-    phone: "Key Lento · Hidden Room & Collectibles"
+    phone: "Key Lento · Unique Car (Spiderweb Coquette) & Card"
   },
   {
     title: "Safe Code: Cottonmouth Lake Trailer (Grassrivers)",
@@ -787,11 +787,11 @@ const SAFE_CODES_SEARCH_DATA = [
   {
     title: "Garage Code: La Perle Garage (Boobie's Laptop / Pfister Growler)",
     category: "Story Code",
-    description: "5-digit keypad code for the roller-door garage next to Auntie's Place on Del Rio Boulevard in La Perle (Vice City). Solved via Boobie's apartment laptop in Chapter 3 to claim the garage and Vanessa's custom pink Pfister Growler.",
+    description: "5-digit keypad code for the roller-door garage next to Auntie's Place on Del Rio Blvd in La Perle (Vice City). Chapter 3 laptop password: Muffins → Queen → 15. MISSABLE: Complete before finishing Chapter 3 to claim the garage and Vanessa's custom pink Pfister Growler.",
     verified: true,
     ps5: "9, 2, 6, 6, 5",
     xbox: "9, 2, 6, 6, 5",
-    phone: "La Perle (Vice City) · Chapter 3 & Pfister Growler"
+    phone: "La Perle · Chapter 3 (Missable!) & Pfister Growler"
   },
   {
     title: "Door Code: Black Eagle Warehouse (Balsero Back Office)",
@@ -936,6 +936,15 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "3, 7, 1, 8",
     xbox: "3, 7, 1, 8",
     phone: "Chapter 4 · Sundown Private Airfield (Pilot Pete)"
+  },
+  {
+    title: "Garage Code: Father Scrumpy's Red Apple Orchard (Applesauce Bobcat)",
+    category: "Story Code",
+    description: "6-digit keypad code for the locked garage at Father Scrumpy's Red Apple Orchard in Manifest Canyon (Kelly County). Clue comes from the Manly Gaze magazine in the main barn loft (Issue 36, Month 07, Year 82). Rewards the secret Declasse \"Applesauce\" Bobcat truck.",
+    verified: true,
+    ps5: "3, 6, 0, 7, 8, 2",
+    xbox: "3, 6, 0, 7, 8, 2",
+    phone: "Manifest Canyon (Kelly County) · Secret Applesauce Bobcat"
   }
 ];
 

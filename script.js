@@ -704,13 +704,13 @@ const SAFE_CODES_SEARCH_DATA = [
     phone: "Nova Auto Junkyard · M7 Gang Operation"
   },
   {
-    title: "Garagedörr-kod: Key Lento Party House (Hemliga samlarföremål)",
+    title: "Garagedörr-kod: Key Lento Party House (Invetero Spiderweb Coquette)",
     category: "Story-kod",
-    description: "Sexsiffrig keypad-kod till garagedörren på partyhuset i sydöstra Key Lento (Leonida Keys). Ger tillgång till gömda samlarföremål och ett Los Santos Pounders-kort.",
+    description: "Sexsiffrig keypad-kod till garagedörren på partyhuset i sydöstra Key Lento (Leonida Keys). Låser upp garaget med den unika bilen Invetero Spiderweb Coquette, samlarföremål och ett Los Santos Pounders-kort.",
     verified: true,
     ps5: "0, 9, 2, 3, 1, 9",
     xbox: "0, 9, 2, 3, 1, 9",
-    phone: "Key Lento · Hemligt rum & Samlarkort"
+    phone: "Key Lento · Unik bil (Spiderweb Coquette) & Kort"
   },
   {
     title: "Kassaskåpskod: Cottonmouth Lake Trailer (Grassrivers)",
@@ -787,11 +787,11 @@ const SAFE_CODES_SEARCH_DATA = [
   {
     title: "Garagedörr-kod: La Perle Garage (Boobies laptop / Pfister Growler)",
     category: "Story-kod",
-    description: "Femsiffrig keypad-kod till garaget bredvid Auntie's Place på Del Rio Boulevard i La Perle (Vice City). Löses via Boobies laptop i Chapter 3 och låser upp garaget samt Vanessas rosa Pfister Growler.",
+    description: "Femsiffrig keypad-kod till rullporten bredvid Auntie's Place på Del Rio Blvd i La Perle (Vice City). Laptop-lösenord i Chapter 3: Muffins → Queen → 15. OBS: Missbar! Måste göras före slutet av Chapter 3 för att få garaget och Vanessas rosa Pfister Growler.",
     verified: true,
     ps5: "9, 2, 6, 6, 5",
     xbox: "9, 2, 6, 6, 5",
-    phone: "La Perle (Vice City) · Chapter 3 & Pfister Growler"
+    phone: "La Perle · Chapter 3 (Missbar!) & Pfister Growler"
   },
   {
     title: "Dörrkod: Black Eagle Warehouse (Balsero – Bakkontor)",
@@ -936,6 +936,15 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "3, 7, 1, 8",
     xbox: "3, 7, 1, 8",
     phone: "Chapter 4 · Sundown Private Airfield (Pilot Pete)"
+  },
+  {
+    title: "Garagedörr-kod: Father Scrumpy's Red Apple Orchard (Applesauce Bobcat)",
+    category: "Story-kod",
+    description: "Sexsiffrig keypad-kod till garaget på Father Scrumpy's Red Apple Orchard i Manifest Canyon (Kelly County). Ledtråd från tidningen Manly Gaze på ladans loft (nr 36, månad 07, år 82). Belöning: Hemliga bilen Declasse \"Applesauce\" Bobcat.",
+    verified: true,
+    ps5: "3, 6, 0, 7, 8, 2",
+    xbox: "3, 6, 0, 7, 8, 2",
+    phone: "Manifest Canyon (Kelly County) · Hemlig Applesauce Bobcat"
   }
 ];
 
