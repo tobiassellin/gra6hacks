@@ -954,6 +954,42 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "5, 8, 0, 0",
     xbox: "5, 8, 0, 0",
     phone: "Waxman Island (Vice-Dale County) · Upstairs Office Safe"
+  },
+  {
+    title: "Safe Code: Carter Mining Boathouse (Lummox County)",
+    category: "Safe Code",
+    description: "Fixed combination for the locked safe inside Carter Mining Boathouse (Illegal Gang Operation in Bonanza, far northern Lummox County). Grants cash, valuables, and progress toward 100% completion.",
+    verified: true,
+    ps5: "8, 4, 4, 0",
+    xbox: "8, 4, 4, 0",
+    phone: "Bonanza (Lummox County) · Illegal Gang Operation"
+  },
+  {
+    title: "Safe Code: Belpoint Shipwreck / Room 115 (Leonida Keys)",
+    category: "Safe Code",
+    description: "Fixed 4-digit combination for the locked safe at Belpoint Shipwreck / Room 115 in the Leonida Keys. Rewards cash and valuables.",
+    verified: true,
+    ps5: "4, 2, 4, 2",
+    xbox: "4, 2, 4, 2",
+    phone: "Leonida Keys · Belpoint Shipwreck / Room 115"
+  },
+  {
+    title: "Safe Code: Stormy's (Backroom Safe – Vice City)",
+    category: "Safe Code",
+    description: "Fixed combination for the backroom safe inside Stormy's in Vice City. Unlocks the safe immediately without hunting down clues for quick cash and loot.",
+    verified: true,
+    ps5: "7, 8, 6, 9",
+    xbox: "7, 8, 6, 9",
+    phone: "Vice City · Stormy's (Backroom Safe)"
+  },
+  {
+    title: "Safe Code: Slum House (Vice City)",
+    category: "Safe Code",
+    description: "Fixed combination for the safe hidden inside the Slum House in Vice City. Rewards hidden cash and stash valuables.",
+    verified: true,
+    ps5: "9, 7, 9, 0",
+    xbox: "9, 7, 9, 0",
+    phone: "Vice City · Slum House (Safe)"
   }
 ];
 

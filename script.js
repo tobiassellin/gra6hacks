@@ -954,6 +954,42 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "5, 8, 0, 0",
     xbox: "5, 8, 0, 0",
     phone: "Waxman Island (Vice-Dale County) · Kontorskassaskåp"
+  },
+  {
+    title: "Kassaskåpskod: Carter Mining Boathouse (Lummox County)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne i båthuset vid Carter Mining Boathouse (Illegal Gang Operation i Bonanza, längst norrut i Lummox County). Ger kontanter, värdesaker och framsteg mot 100 %.",
+    verified: true,
+    ps5: "8, 4, 4, 0",
+    xbox: "8, 4, 4, 0",
+    phone: "Bonanza (Lummox County) · Illegal Gang Operation"
+  },
+  {
+    title: "Kassaskåpskod: Belpoint Shipwreck / Room 115 (Leonida Keys)",
+    category: "Kassaskåp",
+    description: "Fast fyrsiffrig kassaskåpskod till det låsta kassaskåpet vid Belpoint Shipwreck / Room 115 i Leonida Keys. Belöning: kontanter och värdesaker.",
+    verified: true,
+    ps5: "4, 2, 4, 2",
+    xbox: "4, 2, 4, 2",
+    phone: "Leonida Keys · Belpoint Shipwreck / Room 115"
+  },
+  {
+    title: "Kassaskåpskod: Stormy's (Bakkontor – Vice City)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod i bakrummet på Stormy's i Vice City. Öppnar kassaskåpet direkt utan att leta ledtrådar och belönar dig med kontanter och byte.",
+    verified: true,
+    ps5: "7, 8, 6, 9",
+    xbox: "7, 8, 6, 9",
+    phone: "Vice City · Stormy's (Bakrumskassaskåp)"
+  },
+  {
+    title: "Kassaskåpskod: Slum House (Vice City)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne i Slum House i Vice City. Ger snabb tillgång till gömda kontanter och värdeföremål.",
+    verified: true,
+    ps5: "9, 7, 9, 0",
+    xbox: "9, 7, 9, 0",
+    phone: "Vice City · Slum House (Kassaskåp)"
   }
 ];
 
