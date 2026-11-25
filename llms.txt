@@ -10,7 +10,7 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 3. **Aktivera fuskmenyn:** **Håll inne L1 och tryck på R1** (PS5) eller **håll inne LB och tryck på RB** (Xbox Series X|S).
 4. **Slå in pilkoden:** Mata in fuskets riktningssekvens på styrkorset (Upp, Ner, Vänster, Höger).
 
-## Kassaskåpskoder & Dörrkoder i GTA 6 Story Mode (41 st verifierade)
+## Kassaskåpskoder & Dörrkoder i GTA 6 Story Mode (42 st verifierade)
 - **Brooks Boatworks (Port Gellhorn – Chapter 2):** `6823` *(Nordöstra Port Gellhorn – väggkartan i kontoret på övervåningen loggar även alla 3 koder)*
 - **La Cascara Motel (Port Gellhorn – Chapter 2):** `6969` *(Illegal Operation)*
 - **Kingpin Bowling (Port Gellhorn – Chapter 2):** `0300` *(Illegal Operation)*
@@ -52,9 +52,10 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **North Balsero Lockup Lab (Take Out Kitty Litter – Tyrone):** `1999` *(Keypad till garageporten vid knarklabbet)*
 - **Pilot Pete's Hangar (Chapter 4 – The Last Mile: Passing the Torch):** `3718` *(Kassaskåp bakom röda dörren på Sundown Private Airfield)*
 - **Father Scrumpy's Red Apple Orchard (Manifest Canyon, Kelly County):** `360782` *(6-siffrig garagekod – hemliga bilen Declasse "Applesauce" Bobcat)*
+- **Chatfield Storage & Logistics (Waxman Island, Vice-Dale County):** `5800` *(Kontorskassaskåp en trappa upp, ledtråd på laptop i öppen container)*
 - **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
-## Verifierade D-Pad-pilkoder i GTA 6 (19 st)
+## Verifierade D-Pad-pilkoder i GTA 6 (21 st)
 - **$250 000 Pengar ($250,000 Cash):** `Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger` *(Krav: Klara storyn)*
 - **Oändligt Fokus (Unlimited Focus):** `Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger` *(Krav: Klara storyn)*
 - **Skyddsväst (Body Armor):** `Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner` *(Krav: 100 träningspass)*
@@ -74,6 +75,8 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Cataclysm (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger` *(Krav: Upptäck Martha's Vamos)*
 - **Dollhouse (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger` *(Krav: Spendera 8 timmar med partner)*
 - **Faded Glory (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger` *(Krav: Råna 50 butiker med partner)*
+- **Videotape (Skärmfilter – VHS):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Ner` *(Krav: Klara 50 aktiviteter med partner)*
+- **Dark Mirror (Skärmfilter – Upp och ner):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Vänster` *(Krav: Tjäna $500 000 på att sälja fordon)*
 
 ## Populära upplåsningsfusk bland alla 61 fusk
 - **Hauners Rhino Tank (Stridsvagn):** Klara alla Survival-utmaningar.
@@ -85,8 +88,8 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 ## Viktiga länkar & guider
 - [GTA 6 Fuskkoder (Svenska)](https://gta6hacks.se/)
 - [GTA 6 Cheat Codes (English)](https://gta6hacks.se/en.html)
-- [Alla 41 Kassaskåpskoder & Dörrkoder i GTA 6 (SV)](https://gta6hacks.se/kassaskapskoder.html)
-- [All 41 GTA 6 Safe & Door Codes Checklist (EN)](https://gta6hacks.se/safe-codes.html)
+- [Alla 42 Kassaskåpskoder & Dörrkoder i GTA 6 (SV)](https://gta6hacks.se/kassaskapskoder.html)
+- [All 42 GTA 6 Safe & Door Codes Checklist (EN)](https://gta6hacks.se/safe-codes.html)
 - [Alla 21 Fordonsfusk i GTA 6 – Tank, Flygplan & Bilar (SV)](https://gta6hacks.se/fordonsfusk.html)
 - [All 21 GTA 6 Vehicle Spawn Cheats (EN)](https://gta6hacks.se/vehicle-cheats.html)
 - [Så låser du upp alla 61 fusk i GTA 6 – Utmaningsguide (SV)](https://gta6hacks.se/utmaningar.html)

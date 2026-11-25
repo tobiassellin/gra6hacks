@@ -535,19 +535,19 @@ const cheatsData = [
   {
     title: "Videotape – VHS-kassett (Skärmfilter)",
     category: "Värld",
-    description: "Ger bilden ett retro 80-tals VHS-videobandsfilter. Krav för upplåsning: Genomför 50 aktiviteter tillsammans med din partner.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Ger bilden ett retro 80-tals VHS-videobandsfilter. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Genomför 50 aktiviteter tillsammans med din partner.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Ner",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Ner",
     phone: "Krav: Genomför 50 aktiviteter med partner"
   },
   {
     title: "Dark Mirror – Mörk Spegel (Skärmfilter)",
     category: "Värld",
-    description: "Vänder hela spelvärlden upp och ner och färgar den mörk. Krav för upplåsning: Tjäna $500 000 på att sälja stulna fordon.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Vänder hela spelvärlden upp och ner och färgar den mörk. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Tjäna $500 000 på att sälja stulna fordon.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Vänster",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Vänster",
     phone: "Krav: Tjäna $500 000 på att sälja fordon"
   },
   {
@@ -945,6 +945,15 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "3, 6, 0, 7, 8, 2",
     xbox: "3, 6, 0, 7, 8, 2",
     phone: "Manifest Canyon (Kelly County) · Hemlig Applesauce Bobcat"
+  },
+  {
+    title: "Kassaskåpskod: Chatfield Storage & Logistics (Waxman Island)",
+    category: "Kassaskåp",
+    description: "Fast kassaskåpskod inne på kontoret en trappa upp (via utomhustrappan) vid Chatfield Storage & Logistics på Waxman Island i Vice-Dale County. Koden hittas även i ett mejl på en laptop i en öppen container på gården.",
+    verified: true,
+    ps5: "5, 8, 0, 0",
+    xbox: "5, 8, 0, 0",
+    phone: "Waxman Island (Vice-Dale County) · Kontorskassaskåp"
   }
 ];
 

@@ -535,19 +535,19 @@ const cheatsData = [
   {
     title: "Videotape – VHS Filter (Screen Filter)",
     category: "World",
-    description: "Applies a retro 1980s VHS videotape filter. Unlock requirement: Complete 50 activities with your partner.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Applies a retro 1980s VHS videotape filter. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete 50 activities with your partner.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Right, Down",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Right, Down",
     phone: "Unlock: Complete 50 Activities with Partner"
   },
   {
     title: "Dark Mirror – Upside Down (Screen Filter)",
     category: "World",
-    description: "Flips the entire game world upside down and turns it black. Unlock requirement: Make $500,000 selling vehicles.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Flips the entire game world upside down and turns it black. Note: The code is accepted once the challenge is completed. Unlock requirement: Make $500,000 selling vehicles.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Right, Left",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Right, Left",
     phone: "Unlock: Make $500,000 Selling Vehicles"
   },
   {
@@ -945,6 +945,15 @@ const SAFE_CODES_SEARCH_DATA = [
     ps5: "3, 6, 0, 7, 8, 2",
     xbox: "3, 6, 0, 7, 8, 2",
     phone: "Manifest Canyon (Kelly County) · Secret Applesauce Bobcat"
+  },
+  {
+    title: "Safe Code: Chatfield Storage & Logistics (Waxman Island)",
+    category: "Safe Code",
+    description: "Fixed safe combination inside the upstairs site office (up the outdoor stairs) at Chatfield Storage & Logistics on Waxman Island in Vice-Dale County. Clue email can be read on a laptop inside an open shipping container in the yard.",
+    verified: true,
+    ps5: "5, 8, 0, 0",
+    xbox: "5, 8, 0, 0",
+    phone: "Waxman Island (Vice-Dale County) · Upstairs Office Safe"
   }
 ];
 
