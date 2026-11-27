@@ -55,19 +55,19 @@ const cheatsData = [
   {
     title: "Ingen Fallskada (No Fall Damage)",
     category: "Spelare",
-    description: "Gör dig helt immun mot fallskador från höga höjder. Krav för upplåsning: Överlev 20 fria fall från minst 12 meter (40 fot).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Gör dig helt immun mot fallskador från höga höjder. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Överlev 20 fria fall från minst 12 meter (40 fot).",
+    verified: true,
+    ps5: "L1 + R1, Ner, Upp, Upp, Upp, Upp, Upp, Upp, Upp, Ner",
+    xbox: "LB + RB, Ner, Upp, Upp, Upp, Upp, Upp, Upp, Upp, Ner",
     phone: "Krav: Överlev 20 fria fall från 12 m (40 fot)"
   },
   {
     title: "Fallskärm (Parachute)",
     category: "Spelare",
-    description: "Lägger till en fallskärm direkt i din utrustning. Krav för upplåsning: Genomför 50 fallskärmshopp från minst 90 meter (300 fot).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Lägger till en fallskärm direkt i din utrustning. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Genomför 50 fallskärmshopp från minst 90 meter (300 fot).",
+    verified: true,
+    ps5: "L1 + R1, Höger, Upp, Vänster, Upp, Höger, Upp, Vänster, Upp, Höger",
+    xbox: "LB + RB, Höger, Upp, Vänster, Upp, Höger, Upp, Vänster, Upp, Höger",
     phone: "Krav: 50 fallskärmshopp från 300 fot+"
   },
   {
@@ -82,19 +82,19 @@ const cheatsData = [
   {
     title: "Reparera Fordon (Repair Vehicle)",
     category: "Spelare",
-    description: "Reparerar omedelbart ditt nuvarande fordon till nyskick. Krav: Ta 1:a plats i 10 lopp på Gellhorn Raceway, Thrillbilly Mud Club och Boone Speedway.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Reparerar omedelbart ditt nuvarande fordon till nyskick. Koden accepteras först när utmaningen är klar. Krav: Ta 1:a plats i 10 lopp på Gellhorn Raceway, Thrillbilly Mud Club och Boone Speedway.",
+    verified: true,
+    ps5: "L1 + R1, Höger, Ner, Ner, Höger, Ner, Höger, Höger, Ner",
+    xbox: "LB + RB, Höger, Ner, Ner, Höger, Ner, Höger, Höger, Ner",
     phone: "Krav: Vinn 1:a plats i 10 lopp"
   },
   {
     title: "Oändlig Lustgas & Bränsle (Unlimited Nitrous)",
     category: "Spelare",
-    description: "Lustgas (Nitrous) och bränsle tar aldrig slut i fordon. Krav för upplåsning: Klara 50 stunthopp (Stunt Jumps) i Leonida.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Lustgas (Nitrous) och bränsle tar aldrig slut i fordon. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara 50 stunthopp (Stunt Jumps) i Leonida.",
+    verified: true,
+    ps5: "L1 + R1, Höger, Ner, Ner, Höger, Ner, Höger, Höger, Vänster",
+    xbox: "LB + RB, Höger, Ner, Ner, Höger, Ner, Höger, Höger, Vänster",
     phone: "Krav: Klara 50 stunthopp (Stunt Jumps)"
   },
 
@@ -234,19 +234,19 @@ const cheatsData = [
   {
     title: "Spawna Stridsvagn (Hauners Rhino Tank)",
     category: "Fordon",
-    description: "Frammanar den bepansrade stridsvagnen Hauners Rhino Tank. Krav för upplåsning: Klara samtliga överlevnadsutmaningar (Survival Challenges).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Frammanar den bepansrade stridsvagnen Hauners Rhino Tank. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara samtliga överlevnadsutmaningar (Survival Challenges).",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Höger, Vänster, Upp",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Höger, Vänster, Upp",
     phone: "Krav: Klara alla Survival-utmaningar"
   },
   {
     title: "Spawna Stridsflygplan (Hauners P-996 Lazer)",
     category: "Fordon",
-    description: "Frammanar stridsflygplanet Hauners P-996 Lazer Jet. Krav för upplåsning: Klara samtliga utmaningar i hela spelet (100% Challenges).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Frammanar stridsflygplanet Hauners P-996 Lazer Jet. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara samtliga utmaningar i hela spelet (100% Challenges).",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Ner",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Ner",
     phone: "Krav: Klara alla utmaningar i spelet"
   },
   {
@@ -288,10 +288,10 @@ const cheatsData = [
   {
     title: "Spawna Sporthoj (Nagasaki Carbon RS)",
     category: "Fordon",
-    description: "Frammanar den snabba motorcykeln Nagasaki Carbon RS. Krav för upplåsning: Klara samtliga utforskningsutmaningar (Exploration Challenges).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Frammanar den snabba motorcykeln Nagasaki Carbon RS. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara samtliga utforskningsutmaningar (Exploration Challenges).",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp",
     phone: "Krav: Klara alla Exploration Challenges"
   },
   {
@@ -315,10 +315,10 @@ const cheatsData = [
   {
     title: "Spawna Sjöhelikopter (Nagasaki Sea Sparrow)",
     category: "Fordon",
-    description: "Frammanar helikoptern Nagasaki Sea Sparrow som kan landa på vatten. Krav för upplåsning: Klara 5 utforskningsutmaningar (Exploration Challenges).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Frammanar helikoptern Nagasaki Sea Sparrow som kan landa på vatten. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara 5 utforskningsutmaningar (Exploration Challenges).",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Höger",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Höger",
     phone: "Krav: Klara 5 Exploration Challenges"
   },
   {
@@ -342,10 +342,10 @@ const cheatsData = [
   {
     title: "Spawna Stuntflygplan (Lapwing Mallard)",
     category: "Fordon",
-    description: "Frammanar det akrobatiska propellerplanet Lapwing Mallard. Krav för upplåsning: Klara 5 fordonsutmaningar (Vehicle Challenges).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Frammanar det akrobatiska propellerplanet Lapwing Mallard. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Klara 5 fordonsutmaningar (Vehicle Challenges).",
+    verified: true,
+    ps5: "L1 + R1, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Upp",
+    xbox: "LB + RB, Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Upp",
     phone: "Krav: Klara 5 Vehicle Challenges"
   },
   {
@@ -409,19 +409,19 @@ const cheatsData = [
   {
     title: "Spola Fram Tiden (Move Time Forward)",
     category: "Värld",
-    description: "Spolar fram tiden på dygnet i spelet. Krav för upplåsning: Hitta 10 samlarklockor (Collectible Watches) runt om i Leonida.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Spolar fram tiden på dygnet i spelet. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Hitta 10 samlarklockor (Collectible Watches) runt om i Leonida.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Höger, Upp, Ner, Höger, Upp, Upp",
+    xbox: "LB + RB, Ner, Höger, Upp, Ner, Höger, Upp, Upp",
     phone: "Krav: Hitta 10 samlarklockor"
   },
   {
     title: "Pausa Tiden på Dygnet (Pause Time of Day)",
     category: "Värld",
-    description: "Låser den nuvarande tiden på dygnet. Krav för upplåsning: Hitta 20 samlarklockor (Collectible Watches) på kartan.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Låser den nuvarande tiden på dygnet. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Hitta 20 samlarklockor (Collectible Watches) på kartan.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Höger, Upp, Ner, Höger, Upp, Vänster",
+    xbox: "LB + RB, Ner, Höger, Upp, Ner, Höger, Upp, Vänster",
     phone: "Krav: Hitta 20 samlarklockor"
   },
   {
@@ -517,19 +517,19 @@ const cheatsData = [
   {
     title: "Pixel Art – Retro Pixlar (Skärmfilter)",
     category: "Värld",
-    description: "Förvandlar grafiken till ett retro-pixelerat 8-bitars/16-bitars filter. Krav för upplåsning: Tjäna $250 000 på att sälja samlarföremål (Collectibles).",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Förvandlar grafiken till ett retro-pixelerat 8-bitars/16-bitars filter. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Tjäna $250 000 på att sälja samlarföremål (Collectibles).",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Ner",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Ner",
     phone: "Krav: Tjäna $250 000 på att sälja samlarföremål"
   },
   {
     title: "Hellscape – Helveteshetta (Skärmfilter)",
     category: "Värld",
-    description: "Färgar världen glödande röd och orange med dallrande värmedis. Krav för upplåsning: Stjäl 100 polisbilar.",
-    verified: false,
-    ps5: "Pausmeny: Progress → Cheats",
-    xbox: "Pausmeny: Progress → Cheats",
+    description: "Färgar världen glödande röd och orange med dallrande värmedis. Koden accepteras först när utmaningen är klar. Krav för upplåsning: Stjäl 100 polisbilar.",
+    verified: true,
+    ps5: "L1 + R1, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Vänster",
+    xbox: "LB + RB, Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Vänster",
     phone: "Krav: Stjäl 100 polisbilar"
   },
   {

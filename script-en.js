@@ -55,19 +55,19 @@ const cheatsData = [
   {
     title: "No Fall Damage",
     category: "Player",
-    description: "Makes your character completely immune to fall damage from any height. Unlock requirement: Survive a freefall from 40 feet (12 meters) 20 times.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Makes your character completely immune to fall damage from any height. Note: The code is accepted once the challenge is completed. Unlock requirement: Survive a freefall from 40 feet (12 meters) 20 times.",
+    verified: true,
+    ps5: "L1 + R1, Down, Up, Up, Up, Up, Up, Up, Up, Down",
+    xbox: "LB + RB, Down, Up, Up, Up, Up, Up, Up, Up, Down",
     phone: "Unlock: Survive 20 Freefalls from 40ft (12m)"
   },
   {
     title: "Parachute",
     category: "Player",
-    description: "Adds a parachute directly to your loadout. Unlock requirement: Complete 50 parachute jumps from 300 feet or higher.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Adds a parachute directly to your loadout. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete 50 parachute jumps from 300 feet or higher.",
+    verified: true,
+    ps5: "L1 + R1, Right, Up, Left, Up, Right, Up, Left, Up, Right",
+    xbox: "LB + RB, Right, Up, Left, Up, Right, Up, Left, Up, Right",
     phone: "Unlock: Complete 50 Parachute Jumps (300ft+)"
   },
   {
@@ -82,19 +82,19 @@ const cheatsData = [
   {
     title: "Repair Vehicle",
     category: "Player",
-    description: "Fully repairs your current vehicle instantly. Unlock requirement: Finish 1st place in 10 races at Gellhorn Raceway, Thrillbilly Mud Club, and Boone Speedway.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Fully repairs your current vehicle instantly. Note: The code is accepted once the challenge is completed. Unlock requirement: Finish 1st place in 10 races at Gellhorn Raceway, Thrillbilly Mud Club, and Boone Speedway.",
+    verified: true,
+    ps5: "L1 + R1, Right, Down, Down, Right, Down, Right, Right, Down",
+    xbox: "LB + RB, Right, Down, Down, Right, Down, Right, Right, Down",
     phone: "Unlock: Win 1st Place in 10 Races"
   },
   {
     title: "Unlimited Nitrous & Fuel",
     category: "Player",
-    description: "Nitrous boost and fuel never run out on any vehicle. Unlock requirement: Complete 50 Stunt Jumps across Leonida.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Nitrous boost and fuel never run out on any vehicle. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete 50 Stunt Jumps across Leonida.",
+    verified: true,
+    ps5: "L1 + R1, Right, Down, Down, Right, Down, Right, Right, Left",
+    xbox: "LB + RB, Right, Down, Down, Right, Down, Right, Right, Left",
     phone: "Unlock: Complete 50 Stunt Jumps"
   },
 
@@ -234,19 +234,19 @@ const cheatsData = [
   {
     title: "Spawn Tank (Hauners Rhino Tank)",
     category: "Vehicles",
-    description: "Spawns the heavily armored Hauners Rhino Tank. Unlock requirement: Complete all Survival Challenges.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Spawns the heavily armored Hauners Rhino Tank. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete all Survival Challenges.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Right, Left, Up",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Right, Left, Up",
     phone: "Unlock: Complete All Survival Challenges"
   },
   {
     title: "Spawn Fighter Jet (Hauners P-996 Lazer)",
     category: "Vehicles",
-    description: "Spawns the Hauners P-996 Lazer military fighter jet. Unlock requirement: Complete all challenges in the entire game (100% completionist reward).",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Spawns the Hauners P-996 Lazer military fighter jet. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete all challenges in the entire game (100% completionist reward).",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Up, Up, Down",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Up, Up, Down",
     phone: "Unlock: Complete All Challenges in the Game"
   },
   {
@@ -288,10 +288,10 @@ const cheatsData = [
   {
     title: "Spawn Sport Bike (Nagasaki Carbon RS)",
     category: "Vehicles",
-    description: "Spawns a high-speed Nagasaki Carbon RS motorcycle. Unlock requirement: Complete all Exploration Challenges.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Spawns a high-speed Nagasaki Carbon RS motorcycle. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete all Exploration Challenges.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Left, Up, Up",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Left, Up, Up",
     phone: "Unlock: Complete All Exploration Challenges"
   },
   {
@@ -315,10 +315,10 @@ const cheatsData = [
   {
     title: "Spawn Sea Helicopter (Nagasaki Sea Sparrow)",
     category: "Vehicles",
-    description: "Spawns a Nagasaki Sea Sparrow amphibious helicopter. Unlock requirement: Complete 5 Exploration Challenges.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Spawns a Nagasaki Sea Sparrow amphibious helicopter. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete 5 Exploration Challenges.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Up, Up, Right",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Up, Up, Right",
     phone: "Unlock: Complete 5 Exploration Challenges"
   },
   {
@@ -342,10 +342,10 @@ const cheatsData = [
   {
     title: "Spawn Stunt Plane (Lapwing Mallard)",
     category: "Vehicles",
-    description: "Spawns an acrobatic Lapwing Mallard stunt plane. Unlock requirement: Complete 5 Vehicle Challenges.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Spawns an acrobatic Lapwing Mallard stunt plane. Note: The code is accepted once the challenge is completed. Unlock requirement: Complete 5 Vehicle Challenges.",
+    verified: true,
+    ps5: "L1 + R1, Left, Up, Right, Down, Left, Up, Up, Up",
+    xbox: "LB + RB, Left, Up, Right, Down, Left, Up, Up, Up",
     phone: "Unlock: Complete 5 Vehicle Challenges"
   },
   {
@@ -409,19 +409,19 @@ const cheatsData = [
   {
     title: "Move Time Forward",
     category: "World",
-    description: "Advances the in-game time of day forward. Unlock requirement: Find 10 Collectible Watches hidden around Leonida.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Advances the in-game time of day forward. Note: The code is accepted once the challenge is completed. Unlock requirement: Find 10 Collectible Watches hidden around Leonida.",
+    verified: true,
+    ps5: "L1 + R1, Down, Right, Up, Down, Right, Up, Up",
+    xbox: "LB + RB, Down, Right, Up, Down, Right, Up, Up",
     phone: "Unlock: Find 10 Collectible Watches"
   },
   {
     title: "Pause Time of Day",
     category: "World",
-    description: "Locks the current time of day in place. Unlock requirement: Find 20 Collectible Watches across the map.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Locks the current time of day in place. Note: The code is accepted once the challenge is completed. Unlock requirement: Find 20 Collectible Watches across the map.",
+    verified: true,
+    ps5: "L1 + R1, Down, Right, Up, Down, Right, Up, Left",
+    xbox: "LB + RB, Down, Right, Up, Down, Right, Up, Left",
     phone: "Unlock: Find 20 Collectible Watches"
   },
   {
@@ -517,19 +517,19 @@ const cheatsData = [
   {
     title: "Pixel Art – Retro Pixelated (Screen Filter)",
     category: "World",
-    description: "Applies a retro pixelated graphical filter over the game world. Unlock requirement: Make $250,000 selling collectibles.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Applies a retro pixelated graphical filter over the game world. Note: The code is accepted once the challenge is completed. Unlock requirement: Make $250,000 selling collectibles.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Left, Down",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Left, Down",
     phone: "Unlock: Make $250,000 Selling Collectibles"
   },
   {
     title: "Hellscape – Heat Haze (Screen Filter)",
     category: "World",
-    description: "Turns the world red and orange with a heavy heat-haze distortion. Unlock requirement: Steal 100 police vehicles.",
-    verified: false,
-    ps5: "Pause Menu: Progress → Cheats",
-    xbox: "Pause Menu: Progress → Cheats",
+    description: "Turns the world red and orange with a heavy heat-haze distortion. Note: The code is accepted once the challenge is completed. Unlock requirement: Steal 100 police vehicles.",
+    verified: true,
+    ps5: "L1 + R1, Down, Down, Up, Right, Right, Up, Left, Left, Left, Left",
+    xbox: "LB + RB, Down, Down, Up, Right, Right, Up, Left, Left, Left, Left",
     phone: "Unlock: Steal 100 Police Vehicles"
   },
   {
