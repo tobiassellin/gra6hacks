@@ -1,8 +1,8 @@
 # GTA 6 Fuskkoder Sverige (gta6hacks.se)
 
-> Komplett svensk och engelsk databas med alla 61 fuskkoder, verifierade D-Pad-pilkoder, exakta upplåsningskrav och Chapter 2-kassaskåpskoder till Grand Theft Auto VI (GTA 6) på PlayStation 5 (PS5) och Xbox Series X|S.
+> Komplett svensk och engelsk databas med samtliga 61 verifierade fuskkoder (61/61 D-Pad-pilkoder – 100 %), exakta upplåsningskrav och 46 fasta kassaskåps- och dörrkoder till Grand Theft Auto VI (GTA 6) på PlayStation 5 (PS5) och Xbox Series X|S.
 
-GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html) samlar samtliga 61 fusk och utmaningar för enspelarläget i Grand Theft Auto VI (10 Player, 11 Combat, 21 Spawn Vehicle, 3 Environment och 16 Screen Filters) samt fasta kassaskåpskoder för Chapter 2.
+GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html) samlar samtliga 61 fusk och utmaningar för enspelarläget i Grand Theft Auto VI (10 Player, 11 Combat, 21 Spawn Vehicle, 3 Environment och 16 Screen Filters – alla 61/61 med verifierade pilkoder) samt 46 fasta kassaskåps- och dörrkoder i Story Mode.
 
 ## Hur man slår in fusk i GTA 6 (PS5 & Xbox Series X|S)
 1. **Klara huvudberättelsen & utmaningen:** Du måste klara alla 91 huvuduppdrag i Story Mode samt fuskets specifika utmaning för att låsa upp det under *Progress → Cheats*. Spelet accepterar inte pilkoden förrän fuskets utmaning är avklarad.
@@ -59,7 +59,9 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Slum House (Vice City):** `9790` *(Kassaskåp – kontanter & värdesaker)*
 - **Vanliga butiksrån & Chapter 3+ kassaskåp:** Slumpade koder varje gång – använd **L3 + R3 (Focus Mode)** för att lysa upp gömda lappar, hota personal/vakter eller använd **Sticky Bomb** (utlöser larm).
 
-## Verifierade D-Pad-pilkoder i GTA 6 (34 st)
+## Alla 61 Verifierade D-Pad-pilkoder i GTA 6 (61/61 – 100 %)
+
+### Spelare / Player (10 st)
 - **$250 000 Pengar ($250,000 Cash):** `Upp, Höger, Ner, Vänster, Upp, Vänster, Ner, Höger` *(Krav: Klara storyn)*
 - **Oändligt Fokus (Unlimited Focus):** `Ner, Upp, Upp, Ner, Upp, Ner, Upp, Ner, Upp, Höger` *(Krav: Klara storyn)*
 - **Skyddsväst (Body Armor):** `Ner, Upp, Vänster, Upp, Upp, Upp, Upp, Upp, Ner, Ner` *(Krav: 100 träningspass)*
@@ -70,35 +72,65 @@ GTA 6 Fuskkoder Sverige (https://gta6hacks.se/ och https://gta6hacks.se/en.html)
 - **Oändlig Lustgas & Bränsle (Unlimited Nitrous):** `Höger, Ner, Ner, Höger, Ner, Höger, Höger, Vänster` *(Krav: Klara 50 stunthopp)*
 - **Höj Heat-nivå (Raise Heat Level):** `Vänster, Ner, Höger, Ner, Upp, Ner, Upp` *(Krav: Bli av med 3 stjärnor 25 gånger)*
 - **Höj Efterlysningsnivå (Raise Wanted Level):** `Vänster, Ner, Höger, Ner, Upp, Höger, Upp` *(Krav: Bli av med 3 stjärnor 50 gånger)*
+
+### Strid & Vapen / Combat (11 st)
 - **Full Ammunition (Max Ammo):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp, Ner, Vänster` *(Krav: 25 brons på skjutbanan)*
 - **Oändlig Ammunition (Infinite Ammo):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Ner` *(Krav: 25 silver på skjutbanan)*
 - **Ingen Omladdning (No Reload):** `Ner, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner, Ner, Upp` *(Krav: 25 guld på skjutbanan)*
+- **Alla Explosiva Vapen (All Explosive Weapons):** `Höger, Upp, Vänster, Upp, Höger, Upp, Vänster, Upp, Vänster` *(Krav: Kasta 100 granater)*
+- **Brandammunition (Incendiary Ammo):** `Ner, Upp, Höger, Ner, Vänster, Ner, Upp, Höger, Ner, Ner` *(Krav: Besegra 100 fiender med eld)*
 - **Attack Force (Superkraft i skott & närstrid):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Ner` *(Krav: Klara storyn)*
 - **Exploding Balls (Explosiva sportbollar):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Höger` *(Krav: Träffa 20 fiender med explosiv skada)*
+- **Exploding Bottles (Explosiva flaskor):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Ner, Upp, Vänster` *(Krav: Träffa 50 mål med kastade föremål)*
+- **Explosivt Hagelgevär (Explosive Shotgun – Mason & Keen Shortstraw):** `Ner, Upp, Höger, Ner, Vänster, Ner, Upp, Höger, Ner, Vänster` *(Krav: Träffa 100 fiender med explosiv skada)*
+- **Hauners H-AT (Pansarvärnsgevär):** `Höger, Upp, Vänster, Upp, Höger, Upp, Vänster, Upp, Upp` *(Krav: Spräng 100 fordon)*
 - **Vehicle Force (Fordonskrockar slungar mål):** `Ner, Upp, Vänster, Vänster, Höger, Ner, Vänster, Upp, Ner` *(Krav: Besegra 25 fiender med fordon)*
+
+### Spawna Fordon / Spawn Vehicle (21 st)
 - **Spawna Hauners Rhino Tank (Stridsvagn):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Vänster, Upp` *(Krav: Klara alla Survival-utmaningar)*
 - **Spawna Hauners P-996 Lazer (Stridsflygplan):** `Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Ner` *(Krav: Klara alla utmaningar i hela spelet)*
-- **Spawna Maibatsu Boomazoom:** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster` *(Krav: Klara 5 Shopping Challenges)*
+- **Spawna Bravado Banshee (Sportbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Upp, Vänster` *(Krav: Klara alla Combat Challenges)*
+- **Spawna Progen Emerus (Hyperbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Upp, Höger` *(Krav: Klara alla Vehicle Challenges)*
+- **Spawna Truffade Thrax (Superbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Upp, Upp` *(Krav: Klara alla Shopping Challenges)*
+- **Spawna '65 Vapid Dominator (Muskelbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Vänster, Höger` *(Krav: Klara alla Fitness Challenges)*
 - **Spawna Nagasaki Carbon RS (Sporthoj):** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Upp` *(Krav: Klara alla Exploration Challenges)*
+- **Spawna Western Zombie Bobber (Chopper):** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Ner` *(Krav: Klara alla Criminal Challenges)*
+- **Spawna Brimstone Golfer (Golfbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Upp, Ner` *(Krav: Klara alla Sports Challenges)*
 - **Spawna Nagasaki Sea Sparrow (Sjöhelikopter):** `Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Höger` *(Krav: Klara 5 Exploration Challenges)*
 - **Spawna Lapwing Mallard (Stuntflygplan):** `Vänster, Upp, Höger, Ner, Vänster, Upp, Upp, Upp` *(Krav: Klara 5 Vehicle Challenges)*
+- **Spawna Airboat 09 (Träskbåt):** `Vänster, Upp, Höger, Ner, Vänster, Ner, Upp, Höger` *(Krav: Klara 5 Survival Challenges)*
+- **Spawna Speeder 700 GT (Racerbåt):** `Vänster, Upp, Höger, Ner, Vänster, Ner, Upp, Upp` *(Krav: Klara 5 Combat Challenges)*
+- **Spawna Maibatsu Boomazoom:** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Vänster` *(Krav: Klara 5 Shopping Challenges)*
+- **Spawna Maibatsu Sanchez (Crossmotorcykel):** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Höger, Upp` *(Krav: Klara 5 Criminal Challenges)*
+- **Spawna Tuff BMX (BMX-cykel):** `Vänster, Upp, Höger, Ner, Vänster, Vänster, Upp, Höger` *(Krav: Klara 5 Fitness Challenges)*
+- **Spawna Vapid Stanier G2 Taxi:** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Vänster` *(Krav: Klara 5 Sports Challenges)*
 - **Spawna MTL Pumper (Brandbil):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Upp` *(Krav: Upptäck MTL Pumper i Progress-menyn)*
+- **Spawna Interstate Ambulance (Ambulans):** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Höger` *(Krav: Upptäck Interstate Ambulance i Progress-menyn)*
 - **Spawna HVY Bulldozer:** `Vänster, Upp, Höger, Ner, Vänster, Höger, Höger, Ner` *(Krav: Upptäck HVY Bulldozer i Progress-menyn)*
+- **Spawna Inflatable Flamingo (Uppblåsbar flamingo):** `Vänster, Upp, Höger, Ner, Vänster, Ner, Upp, Ner` *(Krav: Upptäck Inflatable Flamingo i Progress-menyn)*
+
+### Miljö / Environment (3 st)
 - **Ändra Väder (Cycle Weather):** `Ner, Höger, Upp, Ner, Höger, Upp, Höger` *(Krav: Klara storyn / öppna hela kartan)*
 - **Spola Fram Tiden (Move Time Forward):** `Ner, Höger, Upp, Ner, Höger, Upp, Upp` *(Krav: Hitta 10 samlarklockor)*
 - **Pausa Tiden (Pause Time of Day):** `Ner, Höger, Upp, Ner, Höger, Upp, Vänster` *(Krav: Hitta 20 samlarklockor)*
-- **Cataclysm (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger` *(Krav: Upptäck Martha's Vamos)*
-- **Dollhouse (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger` *(Krav: Spendera 8 timmar med partner)*
-- **Faded Glory (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger` *(Krav: Råna 50 butiker med partner)*
-- **Videotape (Skärmfilter – VHS):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Ner` *(Krav: Klara 50 aktiviteter med partner)*
-- **Dark Mirror (Skärmfilter – Upp och ner):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Vänster` *(Krav: Tjäna $500 000 på att sälja fordon)*
-- **Pixel Art (Skärmfilter – Retro Pixlar):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Ner` *(Krav: Tjäna $250 000 på samlarföremål)*
-- **Hellscape (Skärmfilter – Helveteshetta):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Vänster` *(Krav: Stjäl 100 polisbilar)*
 
-## Kvarvarande upplåsningsfusk bland alla 61 fusk (27 st)
-- **All Explosive Weapons / Incendiary Ammo / Explosive Shotgun / Hauners H-AT:** Låses upp via stridsutmaningar (100 granater, 100 eldfiender, 100 explosiva träffar, 100 sprängda fordon).
-- **Bravado Banshee / Progen Emerus / Truffade Thrax / '65 Vapid Dominator:** Låses upp genom att klara alla Combat-, Vehicle-, Shopping- respektive Fitness-utmaningar.
-- **Övriga skärmfilter (9 st):** Golden Hour, Powdered Sugar, Neon Jungle, Pinhole, Yesteryear, Fast Forward, Fisheye, Migraine och Bubblegum.
+### Skärmfilter / Screen Filters (16 st)
+- **Golden Hour (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Upp, Upp` *(Krav: Håll handen med din partner i 4 timmar)*
+- **Powdered Sugar (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Upp, Höger` *(Krav: Skanna allt rymdskrot med WAiNK)*
+- **Neon Jungle (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Upp, Vänster` *(Krav: Upptäck alla 16 Girlypop-fordon)*
+- **Pinhole (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Upp, Ner` *(Krav: Rensa 25 gängoperationer med partner)*
+- **Yesteryear (Skärmfilter – Svartvit CRT-TV):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Upp` *(Krav: Upptäck The Ridgway i Progress)*
+- **Cataclysm (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Höger` *(Krav: Upptäck Martha's Vamos)*
+- **Dark Mirror (Skärmfilter – Upp och ner):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Vänster` *(Krav: Tjäna $500 000 på att sälja fordon)*
+- **Videotape (Skärmfilter – VHS):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Höger, Ner` *(Krav: Klara 50 aktiviteter med partner)*
+- **Fisheye (Skärmfilter – Fisköga):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Upp` *(Krav: Fånga 100 fiskar)*
+- **Faded Glory (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Höger` *(Krav: Råna 50 butiker med partner)*
+- **Hellscape (Skärmfilter – Helveteshetta):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Vänster` *(Krav: Stjäl 100 polisbilar)*
+- **Pixel Art (Skärmfilter – Retro Pixlar):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Vänster, Ner` *(Krav: Tjäna $250 000 på samlarföremål)*
+- **Migraine (Skärmfilter – Migrän):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Upp` *(Krav: Överlev 6 min med 6 stjärnor)*
+- **Dollhouse (Skärmfilter):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Höger` *(Krav: Spendera 8 timmar med partner)*
+- **Fast Forward (Skärmfilter – Snabbspolning):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Vänster` *(Krav: Genomför 50 meditationer)*
+- **Bubblegum (Skärmfilter – Tuggummi):** `Ner, Ner, Upp, Höger, Höger, Upp, Vänster, Vänster, Ner, Ner` *(Krav: Hitta alla 24 Vice City Flamingos-kort)*
 
 ## Viktiga länkar & guider
 - [GTA 6 Fuskkoder (Svenska)](https://gta6hacks.se/)
