@@ -1019,6 +1019,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const stickyBottomAd = document.getElementById("sticky-bottom-ad");
   const closeStickyBtn = document.getElementById("close-sticky-ad");
   const siteFooter = document.getElementById("site-footer");
+  const favFilterBtn = document.getElementById("fav-filter-btn");
+
+  cheatsData.forEach((item, idx) => {
+    item._favId = "c" + (idx + 1);
+  });
+  SAFE_CODES_SEARCH_DATA.forEach((item, idx) => {
+    item._favId = "sc" + (idx + 1);
+  });
+
+  const FAVORITES_KEY = "gta6_favorites_v1";
+  const favoritesSet = new Set();
+  try {
+    const rawFavs = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
+    if (Array.isArray(rawFavs)) {
+      rawFavs.forEach((id) => {
+        if (typeof id === "string") favoritesSet.add(id);
+      });
+    }
+  } catch (_e) {
+    // Ignore storage errors in private mode
+  }
+
+  function saveFavorites() {
+    try {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify(Array.from(favoritesSet)));
+    } catch (_e) {
+      // Ignore storage errors
+    }
+  }
+
+  function updateFavFilterLabel() {
+    if (favFilterBtn) {
+      favFilterBtn.textContent = `★ Favorites (${favoritesSet.size})`;
+    }
+  }
+
+  updateFavFilterLabel();
 
   const AMAZON_INFEED_OFFERS = [
     {
@@ -1086,8 +1123,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function createCheatCard(cheat, activePlatform) {
+    const isFav = Boolean(cheat._favId && favoritesSet.has(cheat._favId));
     const card = document.createElement("article");
-    card.className = "cheat-card";
+    card.className = isFav ? "cheat-card is-favorite" : "cheat-card";
 
     const header = document.createElement("div");
     header.className = "cheat-card-header";
@@ -1107,7 +1145,39 @@ document.addEventListener("DOMContentLoaded", () => {
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
     statusBadge.textContent = cheat.verified ? "Verified D-Pad Code" : "Menu Unlock";
 
-    badges.append(catBadge, statusBadge);
+    const favBtn = document.createElement("button");
+    favBtn.type = "button";
+    favBtn.className = isFav ? "fav-btn active" : "fav-btn";
+    favBtn.setAttribute("aria-pressed", String(isFav));
+    favBtn.setAttribute("aria-label", isFav ? "Remove from favorites" : "Save to favorites");
+    favBtn.title = isFav ? "Remove from favorites" : "Save to favorites";
+    favBtn.textContent = isFav ? "★" : "☆";
+
+    favBtn.addEventListener("click", () => {
+      if (!cheat._favId) return;
+      const nowFav = !favoritesSet.has(cheat._favId);
+      if (nowFav) {
+        favoritesSet.add(cheat._favId);
+      } else {
+        favoritesSet.delete(cheat._favId);
+      }
+      saveFavorites();
+      updateFavFilterLabel();
+
+      if (state.category === "Favorites") {
+        renderCheats();
+        return;
+      }
+
+      favBtn.classList.toggle("active", nowFav);
+      favBtn.setAttribute("aria-pressed", String(nowFav));
+      favBtn.setAttribute("aria-label", nowFav ? "Remove from favorites" : "Save to favorites");
+      favBtn.title = nowFav ? "Remove from favorites" : "Save to favorites";
+      favBtn.textContent = nowFav ? "★" : "☆";
+      card.classList.toggle("is-favorite", nowFav);
+    });
+
+    badges.append(catBadge, statusBadge, favBtn);
     header.append(title, badges);
 
     const desc = document.createElement("p");
@@ -1225,6 +1295,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
     const isSafesCategory = state.category === "Safes";
+    const isFavoritesCategory = state.category === "Favorites";
 
     const filteredCheats = isSafesCategory
       ? []
@@ -1232,7 +1303,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .filter((item) => {
             const matchesCategory =
               state.category === "All" ||
-              (state.category === "Verified" ? item.verified : item.category === state.category);
+              (isFavoritesCategory ? favoritesSet.has(item._favId) : item.category === state.category);
             const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
             const matchesSearch =
               !query ||
@@ -1246,6 +1317,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const matchingSafeCodes = isSafesCategory
       ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          if (!query) return true;
+          const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
+          return (
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            item.phone.toLowerCase().includes(query) ||
+            (codeNormalized && codeNormalized.includes(query))
+          );
+        })
+      : isFavoritesCategory
+      ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          if (!favoritesSet.has(item._favId)) return false;
           if (!query) return true;
           const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
           return (
@@ -1270,13 +1353,32 @@ document.addEventListener("DOMContentLoaded", () => {
         })
       : [];
 
-    const filtered = [...matchingSafeCodes, ...filteredCheats];
+    const filtered = isFavoritesCategory
+      ? [...filteredCheats, ...matchingSafeCodes]
+      : [...matchingSafeCodes, ...filteredCheats];
 
     gridEl.textContent = "";
 
+    const emptyTitleEl = emptyStateEl ? emptyStateEl.querySelector("h2") : null;
+    const emptyDescEl = emptyStateEl ? emptyStateEl.querySelector("p") : null;
+
     if (filtered.length === 0) {
       emptyStateEl.hidden = false;
-      resultsCountEl.textContent = "0 codes found";
+      if (isFavoritesCategory && !query) {
+        if (emptyTitleEl) emptyTitleEl.textContent = "No saved favorites yet";
+        if (emptyDescEl) {
+          emptyDescEl.textContent =
+            "Tap the star (☆) in the top-right corner of any cheat or safe code card to save your go-to codes right here.";
+        }
+        resultsCountEl.textContent = "0 saved favorites";
+      } else {
+        if (emptyTitleEl) emptyTitleEl.textContent = "No cheat codes matched your search";
+        if (emptyDescEl) {
+          emptyDescEl.textContent =
+            "Try a different keyword or reset the filters to view all 61 GTA 6 cheats.";
+        }
+        resultsCountEl.textContent = "0 codes found";
+      }
       return;
     }
 
@@ -1287,8 +1389,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? verifiedCount === cheatsData.length
           ? `Showing all ${cheatsData.length} GTA 6 cheats (100% – all ${verifiedCount} D-Pad codes verified!)`
           : `Showing all ${cheatsData.length} GTA 6 cheats (${verifiedCount} verified D-Pad codes first + ${cheatsData.length - verifiedCount} unlock requirements)`
-        : state.category === "Verified" && !query
-        ? `Showing all ${filtered.length} verified GTA 6 directional codes (PS5, Xbox & Phone)`
+        : isFavoritesCategory && !query
+        ? `Showing your ${filtered.length} saved favorite codes (saved automatically on this device)`
         : isSafesCategory && !query
         ? `Showing all ${filtered.length} verified safe & door codes (Story Mode)`
         : `Showing ${filtered.length} matching results`;
@@ -1444,7 +1546,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('a[href="#cheats-section"]').forEach((link) => {
     link.addEventListener("click", () => {
-      if (state.category === "Safes") {
+      if (state.category === "Safes" || state.category === "Favorites") {
         state.category = "All";
         const allBtn = categoryFilters.querySelector('[data-category="All"]');
         if (allBtn) setActiveButton(categoryFilters, allBtn);

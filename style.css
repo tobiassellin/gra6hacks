@@ -939,9 +939,61 @@ a.amazon-fallback:hover {
 .cheat-badges {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
   gap: 6px;
   flex-shrink: 0;
+}
+
+.fav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 26px;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(13, 11, 20, 0.65);
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.fav-btn:hover {
+  border-color: #fbbf24;
+  color: #fde68a;
+  transform: scale(1.08);
+}
+
+.fav-btn.active {
+  background: rgba(251, 191, 36, 0.18);
+  border-color: rgba(251, 191, 36, 0.65);
+  color: #fbbf24;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.45);
+}
+
+.cheat-card.is-favorite {
+  border-color: rgba(251, 191, 36, 0.38);
+}
+
+.filter-btn-fav {
+  border-color: rgba(251, 191, 36, 0.38);
+  color: #fde68a;
+}
+
+.filter-btn-fav:hover {
+  border-color: #fbbf24;
+  color: #fef3c7;
+}
+
+.filter-btn-fav.active {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  border-color: #fbbf24;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(251, 191, 36, 0.35);
 }
 
 .badge {

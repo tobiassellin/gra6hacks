@@ -1013,6 +1013,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const stickyBottomAd = document.getElementById("sticky-bottom-ad");
   const closeStickyBtn = document.getElementById("close-sticky-ad");
   const siteFooter = document.getElementById("site-footer");
+  const favFilterBtn = document.getElementById("fav-filter-btn");
+
+  cheatsData.forEach((item, idx) => {
+    item._favId = "c" + (idx + 1);
+  });
+  SAFE_CODES_SEARCH_DATA.forEach((item, idx) => {
+    item._favId = "sc" + (idx + 1);
+  });
+
+  const FAVORITES_KEY = "gta6_favorites_v1";
+  const favoritesSet = new Set();
+  try {
+    const rawFavs = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
+    if (Array.isArray(rawFavs)) {
+      rawFavs.forEach((id) => {
+        if (typeof id === "string") favoritesSet.add(id);
+      });
+    }
+  } catch (_e) {
+    // Ignorera lagringsfel i privat läge
+  }
+
+  function saveFavorites() {
+    try {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify(Array.from(favoritesSet)));
+    } catch (_e) {
+      // Ignorera lagringsfel
+    }
+  }
+
+  function updateFavFilterLabel() {
+    if (favFilterBtn) {
+      favFilterBtn.textContent = `★ Favoriter (${favoritesSet.size})`;
+    }
+  }
+
+  updateFavFilterLabel();
 
   const AMAZON_INFEED_OFFERS = [
     {
@@ -1080,8 +1117,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function createCheatCard(cheat, activePlatform) {
+    const isFav = Boolean(cheat._favId && favoritesSet.has(cheat._favId));
     const card = document.createElement("article");
-    card.className = "cheat-card";
+    card.className = isFav ? "cheat-card is-favorite" : "cheat-card";
 
     const header = document.createElement("div");
     header.className = "cheat-card-header";
@@ -1101,7 +1139,39 @@ document.addEventListener("DOMContentLoaded", () => {
     statusBadge.className = cheat.verified ? "badge badge-verified" : "badge badge-pending";
     statusBadge.textContent = cheat.verified ? "Verifierad pilkod" : "Meny-upplåsning";
 
-    badges.append(catBadge, statusBadge);
+    const favBtn = document.createElement("button");
+    favBtn.type = "button";
+    favBtn.className = isFav ? "fav-btn active" : "fav-btn";
+    favBtn.setAttribute("aria-pressed", String(isFav));
+    favBtn.setAttribute("aria-label", isFav ? "Ta bort från favoriter" : "Spara som favorit");
+    favBtn.title = isFav ? "Ta bort från favoriter" : "Spara som favorit";
+    favBtn.textContent = isFav ? "★" : "☆";
+
+    favBtn.addEventListener("click", () => {
+      if (!cheat._favId) return;
+      const nowFav = !favoritesSet.has(cheat._favId);
+      if (nowFav) {
+        favoritesSet.add(cheat._favId);
+      } else {
+        favoritesSet.delete(cheat._favId);
+      }
+      saveFavorites();
+      updateFavFilterLabel();
+
+      if (state.category === "Favoriter") {
+        renderCheats();
+        return;
+      }
+
+      favBtn.classList.toggle("active", nowFav);
+      favBtn.setAttribute("aria-pressed", String(nowFav));
+      favBtn.setAttribute("aria-label", nowFav ? "Ta bort från favoriter" : "Spara som favorit");
+      favBtn.title = nowFav ? "Ta bort från favoriter" : "Spara som favorit";
+      favBtn.textContent = nowFav ? "★" : "☆";
+      card.classList.toggle("is-favorite", nowFav);
+    });
+
+    badges.append(catBadge, statusBadge, favBtn);
     header.append(title, badges);
 
     const desc = document.createElement("p");
@@ -1219,6 +1289,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCheats() {
     const query = state.search.trim().toLowerCase();
     const isSafesCategory = state.category === "Kassaskap";
+    const isFavoritesCategory = state.category === "Favoriter";
 
     const filteredCheats = isSafesCategory
       ? []
@@ -1226,7 +1297,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .filter((item) => {
             const matchesCategory =
               state.category === "Alla" ||
-              (state.category === "Verifierade" ? item.verified : item.category === state.category);
+              (isFavoritesCategory ? favoritesSet.has(item._favId) : item.category === state.category);
             const matchesPlatform = state.platform === "all" || Boolean(item[state.platform]);
             const matchesSearch =
               !query ||
@@ -1240,6 +1311,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const matchingSafeCodes = isSafesCategory
       ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          if (!query) return true;
+          const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
+          return (
+            item.title.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
+            item.phone.toLowerCase().includes(query) ||
+            (codeNormalized && codeNormalized.includes(query))
+          );
+        })
+      : isFavoritesCategory
+      ? SAFE_CODES_SEARCH_DATA.filter((item) => {
+          if (!favoritesSet.has(item._favId)) return false;
           if (!query) return true;
           const codeNormalized = item.ps5.replace(/[^a-z0-9]/gi, "").toLowerCase();
           return (
@@ -1265,13 +1348,32 @@ document.addEventListener("DOMContentLoaded", () => {
         })
       : [];
 
-    const filtered = [...matchingSafeCodes, ...filteredCheats];
+    const filtered = isFavoritesCategory
+      ? [...filteredCheats, ...matchingSafeCodes]
+      : [...matchingSafeCodes, ...filteredCheats];
 
     gridEl.textContent = "";
 
+    const emptyTitleEl = emptyStateEl ? emptyStateEl.querySelector("h2") : null;
+    const emptyDescEl = emptyStateEl ? emptyStateEl.querySelector("p") : null;
+
     if (filtered.length === 0) {
       emptyStateEl.hidden = false;
-      resultsCountEl.textContent = "0 koder hittades";
+      if (isFavoritesCategory && !query) {
+        if (emptyTitleEl) emptyTitleEl.textContent = "Du har inga sparade favoriter ännu";
+        if (emptyDescEl) {
+          emptyDescEl.textContent =
+            "Klicka på stjärnan (☆) uppe till höger på valfritt fusk eller kassaskåp så sparas dina favoritkoder direkt här i webbläsaren.";
+        }
+        resultsCountEl.textContent = "0 sparade favoriter";
+      } else {
+        if (emptyTitleEl) emptyTitleEl.textContent = "Inga fuskkoder matchade din sökning";
+        if (emptyDescEl) {
+          emptyDescEl.textContent =
+            "Prova ett annat sökord eller återställ filtren för att visa alla 61 GTA 6-fusk.";
+        }
+        resultsCountEl.textContent = "0 koder hittades";
+      }
       return;
     }
 
@@ -1282,8 +1384,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? verifiedCount === cheatsData.length
           ? `Visar alla ${cheatsData.length} GTA 6-fusk (100 % – samtliga ${verifiedCount} pilkoder verifierade!)`
           : `Visar alla ${cheatsData.length} GTA 6-fusk (${verifiedCount} klara pilkoder först + ${cheatsData.length - verifiedCount} med upplåsningskrav)`
-        : state.category === "Verifierade" && !query
-        ? `Visar alla ${filtered.length} bekräftade GTA 6-pilkoder (PS5, Xbox & Mobil)`
+        : isFavoritesCategory && !query
+        ? `Visar dina ${filtered.length} sparade favoritkoder (sparas automatiskt på den här enheten)`
         : isSafesCategory && !query
         ? `Visar alla ${filtered.length} verifierade kassaskåps- & dörrkoder (Story Mode)`
         : `Visar ${filtered.length} träffar`;
@@ -1439,7 +1541,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('a[href="#fuskkoder"]').forEach((link) => {
     link.addEventListener("click", () => {
-      if (state.category === "Kassaskap") {
+      if (state.category === "Kassaskap" || state.category === "Favoriter") {
         state.category = "Alla";
         const allBtn = categoryFilters.querySelector('[data-category="Alla"]');
         if (allBtn) setActiveButton(categoryFilters, allBtn);
